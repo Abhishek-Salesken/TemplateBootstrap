@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Sections</title>
 <%
 String url = request.getRequestURL().toString();
 String baseURL = url.substring(0, url.length() - request.getRequestURI().length()) + request.getContextPath() + "/";
@@ -18,7 +18,7 @@ body{
     top: 15px;
 }
 </style>
-<link rel="stylesheet" href="<%=baseURL %>assets/css/bootstrap.min.css" >
+<link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/bootstrap.min.css" >
 </head>
 <body  data-spy="scroll" data-offset="15" data-target="#myScrollspy">
 
@@ -102,8 +102,8 @@ body{
     </div>
 </div>
 
-<script src="<%=baseURL %>assets/js/jquery-3.4.1.min.js"></script>
-<script src="<%=baseURL %>assets/js/popper.min.js"></script>
-<script src="<%=baseURL %>assets/js/bootstrap.min.js"></script>
+<script src="<%=baseURL %>webapp/assets/js/jquery-3.4.1.min.js"></script>
+<script src="<%=baseURL %>webapp/assets/js/popper.min.js"></script>
+<script src="<%=baseURL %>webapp/assets/js/bootstrap.min.js"></script>
 </body>
 </html>
