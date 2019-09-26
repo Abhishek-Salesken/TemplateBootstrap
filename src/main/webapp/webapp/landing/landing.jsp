@@ -51,6 +51,7 @@ body {
 			<div class="col-sm-9">
 				<jsp:include page="../inc/sections/section1.jsp"></jsp:include>
 				<jsp:include page="../inc/sections/section2.jsp"></jsp:include>
+				<jsp:include page="../inc/sections/section3.jsp"></jsp:include>
 				
 				<hr>
 				<div id="section3">
