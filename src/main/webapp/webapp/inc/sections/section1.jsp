@@ -1,9 +1,119 @@
 <hr>
 <div id="section1">
-				<h2>Section One</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
-                <p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
-                 <p>Orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
-                <p>Nam eget purus nec est consectetur vehicula. Nullam ultrices nisl risus, in viverra libero egestas sit amet. Etiam porttitor dolor non eros pulvinar malesuada. Vestibulum sit amet est mollis nulla tempus aliquet. Praesent luctus hendrerit arcu non laoreet. Morbi consequat placerat magna, ac ornare odio sagittis sed. Donec vitae ullamcorper purus. Vivamus non metus ac justo porta volutpat.</p>
-                <p>Pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id arcu eget blandit. Proin imperdiet mattis augue in porttitor. Quisque tempus enim id lobortis feugiat. Suspendisse tincidunt risus quis dolor fringilla blandit. Ut sed sapien at purus lacinia porttitor. Nullam iaculis, felis a pretium ornare, dolor nisl semper tortor, vel sagittis lacus est consequat eros. Sed id pretium nisl. Curabitur dolor nisl, laoreet vitae aliquam id.</p>
-            </div>
+<h2 class="display-4">Section 1</h2>
+<p><small>Different Use Cases of Grid System for small screen resolution.</small></p>
+
+
+<div class="container">
+<b>Case:1</b>
+<div class="row">
+    <div class="col-md-6 border border-primary">.col-md-4</div>
+    <div class="col-md-6 border border-secondary">.col-md-4 .offset-md-4</div>
+  </div>
+  <b>Case:2</b>
+  <div class="row">
+    <div class="col-md-3 col-12 border border-secondary">.col-md-4</div>
+    <div class="col-md-3 col-4 border border-primary">.col-md-4</div>
+    <div class="col-md-3 col-4 border border-info">.col-md-4</div>
+    <div class="col-md-3 col-4 border border-dark">.col-md-4</div>
+   
+  </div>
+  <b>Case:3</b>
+  <div class="row py-4">
+    <div class="col-md-2 col-6 border border-primary">.col-md-1</div>
+    <div class="col-md-2 col-6  border border-secondary">.col-md-2</div>
+    <div class="col-md-2 col-12 text-center border border-success">.col-md-3</div>
+    <div class="col-md-2 col-4 border border-danger">.col-md-4</div>
+    <div class="col-md-2 col-4 border border-info">.col-md-5</div>
+    <div class="col-md-2 col-4 border border-dark">.col-md-6</div>
+  </div>
+  <b>Case:4</b>
+    <div class="row py-4">
+    <div class="col-md col-4 border border-secondary">1</div>
+    <div class="col-md col-4  border border-success">2</div>
+    <div class="col-md col-4 border border-danger">3</div>
+    <div class="col-md col-12 border border-info">4</div>
+    <div class="col-md col-6 border border-dark">5</div>
+    <div class="col-md col-6 border border-secondary">6</div>
+    <div class="col-md col-12  border border-success">7</div>
+    <div class="col-md col-6 border border-danger">8</div>
+    <div class="col-md col-6 border border-info">9</div>
+    <div class="col-md col-12 border border-dark">10</div>
+     
+   
+   
+  </div>
+ 
+  <b>Case:5</b>
+    <div class="row py-4">
+    <div class="col-md-12 col-12 border border-secondary">1MB</div>
+    <div class="col-md-3 col-12  border border-success">2MB</div>
+    <div class="col-md-9 col-12 border border-danger">3MB</div>
+    <div class="col-md-12 col-12 border border-info">4MB</div>
+   
+     
+   
+   
+  </div>
+  <b>Case:6</b>
+  <div class="row pb-3">
+    <div class="col border border-primary">
+      1 of 2
+    </div>
+    <div class="col border border-secondary">
+      2 of 2
+    </div>
+  </div>
+  <b>Case:7</b>
+  <div class="row">
+    <div class="col border border-success">
+      1 of 3
+    </div>
+    <div class="col border border-danger">
+      2 of 3
+    </div>
+    <div class="col border border-info">
+      3 of 3
+    </div>
+  </div>
+ 
+    <b>Case:8</b>
+  <div class="row">
+    <div class="col-8 col-md-8 border border-success">
+    <div class="row">
+     <div class="col-md-12 border border-danger">
+     1
+    </div>
+    </div>
+    <div class="row">
+     <div class="col-md-8 border border-info">
+      <div class="row">
+    2
+      </div>
+      <div class="row">
+      <div class="col-md-4 border border-info">
+      <div class="row">
+      <div class="col-md-12 border border-danger">
+      3
+    </div>
+    <div class="col-md-12 border border-info">
+      4
+    </div>
+      </div>
+      </div>
+      <div class="col-md-4 border border-danger">5</div>
+      <div class="col-md-4 border border-success">6</div>
+      </div>
+    </div>
+    <div class="col-md-4 border border-dark">
+      7
+    </div>
+     </div>
+    </div>
+    <div class="col-4 col-md-4 border border-danger">
+    8
+    </div>
+  </div>
+ 
+</div>
+</div>
