@@ -12,7 +12,8 @@
 }
 
 .container {
-	min-height: 450px; background-color : white;
+	min-height: 450px;
+	background-color: white;
 	width: 320px;
 	padding: 20px;
 	height: 420px;
@@ -23,6 +24,17 @@
 .sub {
 	font-size: 0.8rem;
 	color: grey;
+	opacity: 1;
+}
+
+.digit:hover {
+	height: auto;
+	width: auto;
+	border-radius: 50%;
+	opacity: 0.8;
+	display: inline-block;
+	background-color: #edf0f5;
+	/* border:1px solid; */
 }
 
 .rounded-circle {
