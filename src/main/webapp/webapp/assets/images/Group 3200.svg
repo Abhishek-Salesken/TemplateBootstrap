@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="183.66" height="53.837" viewBox="0 0 183.66 53.837">
+    <defs>
+        <style>
+            .cls-1,.cls-3{fill:#040505}.cls-2{fill:#e1203e}.cls-3{font-size:29px;font-family:Roboto-Regular,Roboto}
+        </style>
+    </defs>
+    <g id="Group_3200" data-name="Group 3200" transform="translate(464 -105)">
+        <g id="Icon" transform="translate(-463.999 105)">
+            <g id="Group_3156" data-name="Group 3156">
+                <path id="Path_1088" d="M490.879 499.32v15.212a6.031 6.031 0 0 1-6.031 6.031h-35.082l9.193-9.132h18.68c2.872 0 4.212-2.365 4.212-5.237v-6.874z" class="cls-1" data-name="Path 1088" transform="translate(-436.953 -472.497)"/>
+                <path id="Path_1089" d="M406.3 308.063h-41.86a6.031 6.031 0 0 0-6.031 6.031v17.9h8.978v-10.822a4.081 4.081 0 0 1 4.081-4.081h27.758a4.081 4.081 0 0 1 4.081 4.081V323h9.028v-8.906a6.031 6.031 0 0 0-6.035-6.031z" class="cls-1" data-name="Path 1089" transform="translate(-358.409 -308.063)"/>
+                <path id="Path_1090" d="M398.969 414.937l-38.284 38.455a1.269 1.269 0 0 1-2.178-.938l-.1-25.623h8.938v6.991l18.917-18.884z" class="cls-2" data-name="Path 1090" transform="translate(-358.409 -399.948)"/>
+            </g>
+            <text id="salesken" class="cls-3" transform="translate(68.66 33.282)">
+                <tspan x="0" y="0">sales</tspan><tspan y="0" class="cls-2">ken</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
