@@ -29,9 +29,9 @@
 			<!--  start of left column of row which contains login form  -->
 			<div class="col-md-5 px-3 py-4 shadow-r">
 
-				<div class="text-center">
-					<i class="fas fa-phone-volume"></i>
-					<p class=" f-14 line-height-19 light_gray">Great!
+				<div class="text-center mr-5">
+					<i class="fas fa-check-circle"></i>
+					<p class=" f-14 line-height-19 light_gray mb-0">Great!
 						passsword has been Generated !</p>
 
 					<p class="dark_gray line-height-19  f-14">You can now login
@@ -46,21 +46,21 @@
 				<form>
 					<div class="form-group">
 						<label for="exampleInputEmail1"	class="f-14 line-height-19  h6">Email address</label> <input
-							type="email" class="form-control myh-50 w-287 rounded-0 in-focus"
+							type="email" class="form-control myh-50 w-287 rounded-0 remove_focus"
 							id="exampleInputEmail1" aria-describedby="emailHelp"
 							placeholder="Enter email">
 					</div>
 					<div class="form-group">
 						<label for="exampleInputPassword1" class="f-14 h6 line-height-19 ">Password</label> <input
-							type="password" class="form-control myh-50 w-287  rounded-0 in-focus"
+							type="password" class="form-control myh-50 w-287  rounded-0 remove_focus"
 							id="exampleInputPassword1" placeholder="Password">
 					</div>
 
 					<button type="submit"
-						class="btn mt-4 btn-primary f-14 w-287 myh-40 rounded-0 theme_bg_color theme_border_color in-focus">LOGIN</button>
+						class="btn mb-4 mt-4 btn-primary f-14 w-287 myh-40 rounded-0 theme_bg_color theme_border_color remove_focus">LOGIN</button>
 				</form>
 				
-				<a href="#" class="theme_color f-14 f-b h6 line-height-40">Forgot Password ?</a>
+				<a href="#" class="theme_color f-14 f-b h6 line-height-40 remove_hover">Forgot Password ?</a>
 
 			</div>
 			<!--  end of left column of row which contains login form  -->

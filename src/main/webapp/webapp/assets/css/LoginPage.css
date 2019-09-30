@@ -72,7 +72,15 @@ html,body{
 	box-shadow: none !important;
 }
 
-/* start of focus remove  css  */
+/* end of focus remove  css  */
+
+/* start of hover remove  css  */
+.remove_hover:hover{
+	border-color: #ED4D67 !important;
+	text-decoration: none !important;
+}
+
+/* end of hover remove  css  */
 
 /* start of background color css  */
 .theme_bg_color{
@@ -156,10 +164,3 @@ border-color:#ED4D67 !important;
 }
 /* end of shadow  related css */
 
-/* start of focus related css */
-.in-focus:focus{
-	
-    border-color: #ED4D67 !important;
-    box-shadow:0 0 0 0 ! important;
-}
-/* end of focus  related css */

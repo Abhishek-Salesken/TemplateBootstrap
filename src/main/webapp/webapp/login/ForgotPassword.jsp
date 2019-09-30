@@ -50,7 +50,7 @@
 							class="h6 f-14 blue_black line-height-19">Password</label>
 						<div class="input-group  myh-50 w-287  rounded-0">
 							<input type="password"
-								class="form-control myh-50 w-287  rounded-0 in-focus"
+								class="form-control myh-50 w-287  rounded-0 remove_focus"
 								id="exampleInputPassword1" placeholder="Password">
 							<div class="input-group-prepend">
 								<div class="input-group-text"><i class="far fa-eye"></i></div>
@@ -64,7 +64,7 @@
 							class="h6 f-14 blue_black line-height-19">Confirm
 							Password</label> <div class="input-group  myh-50 w-287  rounded-0">
 							<input type="password"
-								class="form-control myh-50 w-287  rounded-0 in-focus"
+								class="form-control myh-50 w-287  rounded-0 remove_focus"
 								id="exampleInputPassword1" placeholder="Password">
 							<div class="input-group-prepend">
 								<div class="input-group-text"><i class="far fa-eye"></i></div>
@@ -74,7 +74,7 @@
 
 
 					<button type="submit"
-						class="btn mt-4 btn-primary f-14  w-287 myh-40 rounded-0 theme_bg_color theme_border_color font in-focus">GENERATE
+						class="btn mt-4 btn-primary f-14  w-287 myh-40 rounded-0 theme_bg_color theme_border_color font remove_focus">GENERATE
 						PASSWORD</button>
 				</form>
 
