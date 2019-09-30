@@ -27,10 +27,10 @@
 		
 		
 			<!--  start of left column of row which contains login form  -->
-			<div class="col-md-5 px-3 py-4 shadow-r">
+			<div class="col-md-5 pl-5 py-4 shadow-r">
 
 				<div class="text-center mr-5">
-					<i class="fas fa-check-circle"></i>
+					<i class="fas fa-check-circle login_icon_color"></i>
 					<p class=" f-14 line-height-19 light_gray mb-0">Great!
 						passsword has been Generated !</p>
 

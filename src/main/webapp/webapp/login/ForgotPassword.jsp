@@ -27,7 +27,7 @@
 
 
 			<!--  start of left column of row which contains login form  -->
-			<div class="col-md-5 px-3 py-4 shadow-r">
+			<div class="col-md-5 pl-5 pb-5 py-4 shadow-r">
 
 
 
@@ -45,7 +45,7 @@
 							id="exampleInputEmail1" aria-describedby="emailHelp"
 							placeholder="Enter email" disabled>
 					</div>
-					<div class="form-group">
+					<div class="form-group mb-4">
 						<label for="exampleInputPassword1"
 							class="h6 f-14 blue_black line-height-19">Password</label>
 						<div class="input-group  myh-50 w-287  rounded-0">
@@ -59,7 +59,7 @@
 
 					</div>
 
-					<div class="form-group">
+					<div class="form-group mb-4">
 						<label for="exampleInputPassword1"
 							class="h6 f-14 blue_black line-height-19">Confirm
 							Password</label> <div class="input-group  myh-50 w-287  rounded-0">

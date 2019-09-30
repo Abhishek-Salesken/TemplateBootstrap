@@ -63,9 +63,16 @@ html,body{
 	
 }
 
+.login_icon_color{
+	color:#57b280
+}
+
 /* end  of color css  */
 
+/* start of icon   css  */
 
+
+/* end  of icon css  */
 /* start of focus remove  css  */
 .remove_focus:focus{
 	border-color: #ED4D67 !important;
