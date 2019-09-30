@@ -68,7 +68,6 @@ html, body {
 				<jsp:include page="../inc/sections/section3.jsp"></jsp:include>
 				<jsp:include page="../inc/sections/section4.jsp"></jsp:include>
 				<jsp:include page="../inc/sections/section5.jsp"></jsp:include>
-				<jsp:include page="../inc/sections/section6.jsp"></jsp:include>
 			</div>
 		</div>
 	</div>

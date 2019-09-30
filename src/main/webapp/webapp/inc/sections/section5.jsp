@@ -1,4 +1,3 @@
-<hr>
 <div id="section5">
 	<h2>Section Five</h2>
 	<p>Nam eget purus nec est consectetur vehicula. Nullam ultrices
@@ -107,4 +106,127 @@
 		quam nunc. In hac habitasse platea dictumst. Aliquam porta nibh nulla,
 		et mattis turpis placerat eget. Pellentesque dui diam, pellentesque
 		vel gravida id, accumsan eu magna.</p>
+
+	<b>Layout 1.</b>
+	
+	<div class="container"">
+		<div class="row text-center">
+			<div class="col-md-6 col-12 border bg-primary p-0 m-0" >
+			<div class="row p-0 m-0 ">
+			<div class="col-md-12 col-12 border bg-success"">4</div>
+			<div class="col-md-12 col-12 border bg-primary">6</div>
+			</div>
+						</div>
+			
+			<div class="col-md-6 col-12 border bg-secondary">
+			
+			3
+			</div>
+		</div>
+	</div>
+	
+	<div class="container"">
+		<div class="row text-center">
+			<div class="col-md-4 col-12 border bg-primary">1</div>
+			<div class="col-md-4 col-6 border bg-secondary">2</div>
+			<div class="col-md-4 col-6 border bg-success">3</div>
+		</div>
+	</div>
+
+	<b>Layout 2.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-3 col-6 border bg-danger">1</div>
+			<div class="col-md-3 col-6 border bg-secondary">2</div>
+			<div class="col-md-3 col-6 border bg-success">3</div>
+			<div class="col-md-3 col-6 border bg-primary">4</div>
+		</div>
+	</div>
+
+	<b>Layout 3.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-4 col-12 border bg-danger">1</div>
+			<div class="col-md-4 col-12 border bg-primary">2</div>
+		</div>
+	</div>
+
+	<b>Layout 4.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 col-9 border bg-primary">1</div>
+			<div class="col-md-6 col-3 border bg-secondary">2</div>
+			<div class="col-md-6 col-3 border bg-danger">3</div>
+		</div>
+	</div>
+
+	<b>Layout 5.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 col-12">
+				<div class="row">
+					<div class="col-md-9 col-12 border bg-danger">1</div>
+					<div class="col-md-3 col-12 border bg-secondary">2</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<b>Layout 6.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 col-9 border bg-primary">1</div>
+			<div class="col-md-6 col-3 border bg-secondary">2</div>
+			<div class="col-md-6 col-3 border bg-danger">3</div>
+		</div>
+	</div>
+
+	<b>Layout 7.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 col-12">
+				<div class="row">
+					<div class="col-md-9 col-12 border bg-secondary">1</div>
+					<div class="col-md-3 col-12 border bg-danger">2</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<b>Layout 8.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-1 col-12 border bg-secondary">1</div>
+			<div class="col-md-1 col-12 border bg-danger">2</div>
+			<div class="col-md-1 col-12 border bg-secondary">3</div>
+			<div class="col-md-1 col-12 border bg-danger">4</div>
+			<div class="col-md-1 col-12 border bg-secondary">5</div>
+			<div class="col-md-1 col-12 border bg-danger">6</div>
+			<div class="col-md-1 col-12 border bg-secondary">7</div>
+			<div class="col-md-1 col-12 border bg-danger">8</div>
+			<div class="col-md-1 col-12 border bg-secondary">9</div>
+			<div class="col-md-1 col-12 border bg-danger">10</div>
+			<div class="col-md-1 col-12 border bg-secondary">11</div>
+			<div class="col-md-1 col-12 border bg-danger">12</div>
+		</div>
+	</div>
+
+	<b>Layout 9.</b>
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-12 col-12 border bg-primary">1</div>
+			<div class="col-md-12 col-12 border bg-secondary">2</div>
+		</div>
+
+		<div class="row text-center">
+			<div class="col-md-12 col-12 border bg-success">3</div>
+
+			<div class="row text-center">
+				<div class="col-md-6 col-12 border bg-dark">4</div>
+				<div class="col-md-6 col-12 border bg-warning">6</div>
+			</div>	
+			<div class="col-md-12 col-12 border bg-primary">7</div>
+		</div>
+	</div>
+
 </div>
