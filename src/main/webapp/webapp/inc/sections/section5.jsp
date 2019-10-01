@@ -677,44 +677,75 @@
 	<!------------------- Layout 14. ------------------->
 
 	<b>Layout 14.</b> <b>Desktop View</b>
-
+	<div class="row">
+	<div class="col-md-1 col-1"> 
 	<div class="row">
 		<div class="col-md-12 col-1 border bg-warning">1</div>
-	</div>
+	</div></div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-11 col-1 border bg-danger">2</div>
-	</div>
+	</div></div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-10 col-1 border bg-primary">3</div>
-	</div>
+	</div></div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-9 col-1 border bg-secondary">4</div>
 	</div>
+	</div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-8 col-1 border bg-warning">5</div>
-	</div>
+	</div></div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-7 col-1 border bg-primary">6</div>
 	</div>
+	</div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-6 col-1 border bg-secondary">7</div>
 	</div>
+	</div>
+		<div class="col-md-1 col-1"> 
 	<div class="row">
 		<div class="col-md-5 col-1 border bg-warning">8</div>
 	</div>
+	</div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-4 col-1 border bg-danger">9</div>
 	</div>
+	</div>
+	
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-3 col-1 border bg-primary">10</div>
 	</div>
+	</div>
+	
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-2 col-1 border bg-secondary">11</div>
 	</div>
+	</div>
+		<div class="col-md-1 col-1"> 
+	
 	<div class="row">
 		<div class="col-md-1 col-1 border bg-warning">12</div>
 	</div>
-
+</div>
 
 
 	<b>Phone View</b>
@@ -723,7 +754,7 @@
 			src="<%=baseURL%>webapp/assets/images/column_phone_screenshots/l14.png"
 			width="100%">
 	</div>
-
+</div>
 
 	<b>Code for Layout 14.</b>
 	<pre class="border border-dark">
