@@ -1,3 +1,4 @@
+
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -39,7 +40,7 @@
 		</div>
 		</xmp>
 	</div>
-<!-- Layout 1 Ends-->
+	<!-- Layout 1 Ends-->
 	<!-- Layout 2 Begins-->
 	<div class="border border-dark mb-3 shadow ">
 		<div class="display-4 pb-3  ">
@@ -802,7 +803,7 @@
 		</div>
 		</xmp>
 	</div>
-		<!-- Layout 21 Ends-->
+	<!-- Layout 21 Ends-->
 	<!-- Layout 22 Begins-->
 	<div class="border border-dark mb-3 shadow">
 		<div class="display-4 pb-3  ">
@@ -857,6 +858,107 @@
 		</div>
 		</xmp>
 	</div>
-		<!-- Layout 22 Ends-->
+	<!-- Layout 22 Ends-->
+	<!-- Layout 23 Begins-->
+	<div class="border border-dark mb-3 shadow">
+		<div class="display-4 pb-3  ">
+			<u>Layout 23</u>
+		</div>
+		<div class="h-4 pb-2">Layout 23 Desktop</div>
+		<img
+			src="<%=baseURL%>webapp/assets/images/section3-images/layout23-normal.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div class="h-4 pt-3 pb-2">Layout 23 Mobile</div>
+		<img src="<%=baseURL%>webapp/assets/images/section3-images/l23.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div>
+			<b>Code</b>
+		</div>
+		<xmp class="card bg-light text-dark">
+
+		<div class="container pb-3">
+			<div class="row text-white">
+				<div class="col-md-3 col-6  border bg-danger">
+					1
+					<div class="row"></div>
+				</div>
+				<div class="col-md-3 col-6  border bg-dark">2</div>
+				<div class="col-md-6 col-12  border bg-danger">3</div>
+			</div>
+		</div>
+		</xmp>
+	</div>
+	<!-- Layout 23 Ends-->
+	<!-- Layout 24 Begins-->
+	<div class="border border-dark mb-3 shadow">
+		<div class="display-4 pb-3  ">
+			<u>Layout 24</u>
+		</div>
+		<div class="h-4 pb-2">Layout 24 Desktop</div>
+		<img
+			src="<%=baseURL%>webapp/assets/images/section3-images/layout24-normal.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div class="h-4 pt-3 pb-2">Layout 24 Mobile</div>
+		<img src="<%=baseURL%>webapp/assets/images/section3-images/l24.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div>
+			<b>Code</b>
+		</div>
+		<xmp class="card bg-light text-dark">
+
+		<div class="container  pb-3">
+			<div class="row text-white">
+				<div class="col-md-3 col-6  border ">
+					<div class="row">
+						<div class="col-md-3 border bg-danger">1</div>
+						<div class="col-md-9 border bg-info">2</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6  border bg-dark">3</div>
+				<div class="col-md-6 col-12  border bg-danger">4</div>
+			</div>
+		</div>
+
+		</xmp>
+	</div>
+	<!-- Layout 24 Ends-->
+	<!-- Layout 25 Begins-->
+	<div class="border border-dark mb-3 shadow">
+		<div class="display-4 pb-3  ">
+			<u>Layout 25</u>
+		</div>
+		<div class="h-4 pb-2">Layout 25 Desktop</div>
+		<img
+			src="<%=baseURL%>webapp/assets/images/section3-images/layout25-normal.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div class="h-4 pt-3 pb-2">Layout 25 Mobile</div>
+		<img src="<%=baseURL%>webapp/assets/images/section3-images/l25.PNG"
+			class="img-fluid" alt="Responsive image">
+		<div>
+			<b>Code</b>
+		</div>
+		<xmp class="card bg-light text-dark ">
+
+		<div class="container  pb-3">
+			<div class="row text-white">
+				<div class="col-md-3 col-6  ">
+					<div class="row h-100">
+						<div class="col-md-3 border bg-danger">1</div>
+						<div class="col-md-9 border bg-info">2</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-6  border bg-dark">3</div>
+				<div class="col-md-6 col-12  ">
+					<div class="row">
+						<div class="col-md-12 col-12 border bg-danger">4</div>
+						<div class="col-md-4 col-6 border bg-primary">5</div>
+						<div class="col-md-8 col-6bg-secondary">6</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</xmp>
+	</div>
+	<!-- Layout 25 Ends-->
 </div>
 <!-- Section Ends -->
