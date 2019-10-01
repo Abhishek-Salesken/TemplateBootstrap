@@ -1,73 +1,56 @@
-html,body{
-height:100%;
+html, body {
+	height: 100%;
 }
 
-
-
 /*start of font css*/
-.f-14{
-font-size: 2rem;
+.f-14 {
+	font-size: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
- .f-14{
-font-size: 1rem;
-}
-
+	.f-14 {
+		font-size: 1rem;
+	}
 }
 /* end of font css*/
 
-
-
-
 /*start of width css*/
-
-.w-30{
-width: 30px;
+.w-30 {
+	width: 30px;
 }
 
 @media only screen and (max-width: 600px) {
-.w-30{
-width: 15px;
-}
+	.w-30 {
+		width: 15px;
+	}
 }
 /*end of width css*/
-
-
-
-
-
-.cursor_pointer{
-cursor: pointer;
+.cursor_pointer {
+	cursor: pointer;
 }
-
 
 .box_row {
-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
-rgba(0, 0, 0, 0.22);
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
 }
 
-
-
-
-
 .digit, .dig {
-padding: 10px 30px;
+	padding: 10px 30px;
 }
 
 .container {
-background-color: white;
-width: 320px;
-padding: 20px;
-height: 420px;
-text-align: center;
-background-color: white;
+	background-color: white;
+	width: 320px;
+	padding: 20px;
+	height: 420px;
+	text-align: center;
+	background-color: white;
 }
 
 .sub {
-font-size: 0.8rem;
-color: grey;
-opacity: 1;
+	font-size: 0.8rem;
+	color: grey;
+	opacity: 1;
 }
 /*
 .digit:hover {
@@ -79,44 +62,52 @@ display: inline-block;
 background-color: #edf0f5;
 border:1px solid;
 } */
-
-
-.outer:hover{
-
-background: green;
-border-radius: 50%;
-opacity: 0.8;
-display: inline-block;
-background-color: #edf0f5;
-border:1px solid;
-}
-.outer{
-width:50px;
-height:50px;
+.outer:hover {
+	background: green;
+	border-radius: 50%;
+	opacity: 0.8;
+	display: inline-block;
+	background-color: #edf0f5;
+	border: 1px solid;
 }
 
-/* change this css class
+.outer {
+	width: 50px;
+	height: 50px;
+}
+
+/
+* change this css class
 use mx-auto class instead of margin right and left audo
 
 
 * /
+
+/* start of background color for dial button */
+.bg-dial{
+	background-color: #01C853;
+}
+/* end of background color for dial button*/
+
+/* start of  */
+
+
+/*  */
 .rounded-circle {
-background-color: #15ad3d;
-border-radius: 50% !important;
-width: 50px;
-height: 47px;
-margin-left: auto;
-margin-right: auto;
+	
+	border-radius: 50% !important;
+	width: 50px;
+	height: 47px;
 
 }
 
 #call {
-display: inline-block;
-background-color: green;
-padding: 4px 30px;
-margin: 10px;
-color: white;
-border-radius: 4px;
-float: left;
-cursor: pointer;
+	display: inline-block;
+	background-color: green;
+	padding: 4px 30px;
+	margin: 10px;
+	color: white;
+	border-radius: 4px;
+	float: left;
+	cursor: pointer;
 }
