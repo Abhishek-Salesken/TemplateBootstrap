@@ -1,0 +1,75 @@
+.row {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
+		rgba(0, 0, 0, 0.22);
+}
+
+.digit, .dig {
+	float: left;
+	padding: 10px 30px;
+	width: 30px;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.container {
+	min-height: 450px;
+	background-color: white;
+	width: 320px;
+	padding: 20px;
+	height: 420px;
+	text-align: center;
+	background-color: white;
+}
+
+.sub {
+	font-size: 0.8rem;
+	color: grey;
+	opacity: 1;
+}
+
+.digit:hover {
+	height: auto;
+	width: auto;
+	border-radius: 50%;
+	opacity: 0.8;
+	display: inline-block;
+	background-color: #edf0f5;
+	/* border:1px solid; */
+}
+
+.rounded-circle {
+	background-color: #15ad3d;
+	border-radius: 50% !important;
+	width: 50px;
+	height: 47px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#call {
+	display: inline-block;
+	background-color: green;
+	padding: 4px 30px;
+	margin: 10px;
+	color: white;
+	border-radius: 4px;
+	float: left;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+	.container {
+		width: 100% !important;
+	}
+	.row {
+		box-shadow: 0px 0px 0px 0px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.col-md-12 {
+		flex: 0 0 100% !important;
+		max-width: 100% !important;
+	}
+}
