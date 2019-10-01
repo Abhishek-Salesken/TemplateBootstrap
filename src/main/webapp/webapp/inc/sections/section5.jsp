@@ -143,18 +143,15 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-		<div class="row text-center pb-3">
-			<div class="col-md-6 col-12 border bg-primary p-0 m-0">
-				<div class="row p-0 m-0 ">
-					<div class="col-md-12 col-12 border bg-success"">1</div>
-					<div class="col-md-12 col-12 border bg-primary">2</div>
-				</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-6 col-12 border bg-primary p-0 m-0">
+			<div class="row p-0 m-0 ">
+				<div class="col-md-12 col-12 border bg-success">1</div>
+				<div class="col-md-12 col-12 border bg-primary">2</div>
 			</div>
-
-			<div class="col-md-6 col-12 border bg-secondary">3</div>
 		</div>
-		
-	
+		<div class="col-md-6 col-12 border bg-secondary">3</div>
+	</div>
 	</xmp>
 	</pre>
 	<hr>
@@ -183,14 +180,14 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-3 col-6 border bg-danger">1</div>
-				<div class="col-md-3 col-6 border bg-secondary">2</div>
-				<div class="col-md-3 col-6 border bg-success">3</div>
-				<div class="col-md-3 col-6 border bg-primary">4</div>
-			</div>
-		</xmp>
-</pre>
+	<div class="row text-center pb-3">
+		<div class="col-md-3 col-6 border bg-danger">1</div>
+		<div class="col-md-3 col-6 border bg-secondary">2</div>
+		<div class="col-md-3 col-6 border bg-success">3</div>
+		<div class="col-md-3 col-6 border bg-primary">4</div>
+	</div>
+	</xmp>
+	</pre>
 	<hr>
 
 	<!------------------- Layout 3. ------------------->
@@ -215,10 +212,10 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-6 col-12 border bg-danger">1</div>
-				<div class="col-md-6 col-12 border bg-primary">2</div>
-			</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-6 col-12 border bg-danger">1</div>
+		<div class="col-md-6 col-12 border bg-primary">2</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -247,11 +244,15 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-12 col-9 border bg-primary">1</div>
-				<div class="col-md-6 col-3 border bg-secondary">2</div>
-				<div class="col-md-6 col-3 border bg-danger">3</div>
-			</div>
+	<div class="row text-center">
+		<div class="col-md-12 col-9 border bg-primary">1</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-6 col-3 border bg-secondary">2</div>
+		<div class="col-md-6 col-3 border bg-danger">3</div>
+	</div>
+
+
 		</xmp>
 		</pre>
 	<hr>
@@ -282,16 +283,16 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-12 col-12">
-					<div class="row">
-						<div class="col-md-9 col-12 border bg-danger">1</div>
-						<div class="col-md-3 col-12 border bg-secondary">2</div>
-					</div>
-				</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-12 col-12">
+			<div class="row">
+				<div class="col-md-9 col-12 border bg-danger">1</div>
+				<div class="col-md-3 col-12 border bg-secondary">2</div>
 			</div>
-		</xmp>
-		</pre>
+		</div>
+	</div>
+	</xmp>
+	</pre>
 	<hr>
 
 	<!------------------- Layout 6. ------------------->
@@ -317,11 +318,11 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-12 col-9 border bg-primary">1</div>
-				<div class="col-md-6 col-3 border bg-secondary">2</div>
-				<div class="col-md-6 col-3 border bg-danger">3</div>
-			</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-12 col-9 border bg-primary">1</div>
+		<div class="col-md-6 col-3 border bg-secondary">2</div>
+		<div class="col-md-6 col-3 border bg-danger">3</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -352,14 +353,14 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row text-center pb-3">
-				<div class="col-md-12 col-12">
-					<div class="row">
-						<div class="col-md-9 col-12 border bg-secondary">1</div>
-						<div class="col-md-3 col-12 border bg-danger">2</div>
-					</div>
-				</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-12 col-12">
+			<div class="row">
+				<div class="col-md-9 col-12 border bg-secondary">1</div>
+				<div class="col-md-3 col-12 border bg-danger">2</div>
 			</div>
+		</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -396,20 +397,21 @@
 	<pre class="border border-dark">
 			<xmp>
 			
-				<div class="row text-center pb-3">
-					<div class="col-md-1 col-12 border bg-secondary">1</div>
-					<div class="col-md-1 col-12 border bg-danger">2</div>
-					<div class="col-md-1 col-12 border bg-secondary">3</div>
-					<div class="col-md-1 col-12 border bg-danger">4</div>
-					<div class="col-md-1 col-12 border bg-secondary">5</div>
-					<div class="col-md-1 col-12 border bg-danger">6</div>
-					<div class="col-md-1 col-12 border bg-secondary">7</div>
-					<div class="col-md-1 col-12 border bg-danger">8</div>
-					<div class="col-md-1 col-12 border bg-secondary">9</div>
-					<div class="col-md-1 col-12 border bg-danger">10</div>
-					<div class="col-md-1 col-12 border bg-secondary">11</div>
-					<div class="col-md-1 col-12 border bg-danger">12</div>
-				</div>
+	<div class="row text-center pb-3">
+		<div class="col-md-1 col-12 border bg-secondary">1</div>
+		<div class="col-md-1 col-12 border bg-danger">2</div>
+		<div class="col-md-1 col-12 border bg-secondary">3</div>
+		<div class="col-md-1 col-12 border bg-danger">4</div>
+		<div class="col-md-1 col-12 border bg-secondary">5</div>
+		<div class="col-md-1 col-12 border bg-danger">6</div>
+		<div class="col-md-1 col-12 border bg-secondary">7</div>
+		<div class="col-md-1 col-12 border bg-danger">8</div>
+		<div class="col-md-1 col-12 border bg-secondary">9</div>
+		<div class="col-md-1 col-12 border bg-danger">10</div>
+		<div class="col-md-1 col-12 border bg-secondary">11</div>
+		<div class="col-md-1 col-12 border bg-danger">12</div>
+	</div>
+
 		</xmp>
 		</pre>
 	<hr>
@@ -438,11 +440,13 @@
 	<pre class="border border-dark">
 			<xmp>
 			
-				<div class="row text-center pb-3">
-					<div class="col-md-12 col-9 border bg-primary">1</div>
-					<div class="col-md-6 col-6 border bg-secondary">2</div>
-					<div class="col-md-6 col-3 border bg-danger">3</div>
-				</div>
+	<div class="row text-center">
+		<div class="col-md-12 col-9 border bg-primary">1</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-6 col-6 border bg-secondary">2</div>
+		<div class="col-md-6 col-3 border bg-danger">3</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -478,19 +482,19 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row">
-				<div class="col-md-3 col-6 border bg-primary">1</div>
-				<div class="col-md-4 col-6 border bg-secondary">2</div>
-				<div class="col-md-5 col-6 border bg-warning">3</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-6 border bg-warning">4</div>
-				<div class="col-md-6 col-6 border bg-danger">5</div>
-			</div>
-			<div class="row">
-				<div class="col-md-11 col-6 border bg-primary">6</div>
-				<div class="col-md-1 col-6 border bg-secondary">7</div>
-			</div>
+	<div class="row">
+		<div class="col-md-3 col-6 border bg-primary">1</div>
+		<div class="col-md-4 col-6 border bg-secondary">2</div>
+		<div class="col-md-5 col-6 border bg-warning">3</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-6 border bg-warning">4</div>
+		<div class="col-md-6 col-6 border bg-danger">5</div>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-6 border bg-primary">6</div>
+		<div class="col-md-1 col-6 border bg-secondary">7</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -534,25 +538,27 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row">
-				<div class="col-md-6 col-3 border bg-warning">1</div>
-				<div class="col-md-6 col-3 border bg-danger">2</div>
-				<div class="col-md-3 col-3 border bg-primary">3</div>
-				<div class="col-md-4 col-3 border bg-secondary">4</div>
-				<div class="col-md-5 col-3 border bg-warning">5</div>
-			</div>
-			<div class="row">
-				<div class="col-md-11 col-3 border bg-primary">6</div>
-				<div class="col-md-1 col-3 border bg-secondary">7</div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-3 border bg-warning">8</div>
-				<div class="col-md-6 col-3 border bg-danger">9</div>
-			</div>
-			<div class="row">
-				<div class="col-md-11 col-3 border bg-primary">10</div>
-				<div class="col-md-1 col-3 border bg-secondary">11</div>
-			</div>
+	<div class="row">
+		<div class="col-md-6 col-6 border bg-warning">1</div>
+		<div class="col-md-6 col-6 border bg-danger">2</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-4 border bg-primary">3</div>
+		<div class="col-md-4 col-4 border bg-secondary">4</div>
+		<div class="col-md-5 col-4 border bg-warning">5</div>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-1 border bg-primary">6</div>
+		<div class="col-md-1 col-11 border bg-secondary">7</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-6 border bg-warning">8</div>
+		<div class="col-md-6 col-6 border bg-danger">9</div>
+	</div>
+	<div class="row">
+		<div class="col-md-11 col-11 border bg-primary">10</div>
+		<div class="col-md-1 col-1 border bg-secondary">11</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -593,7 +599,7 @@
 	<b>Code for Layout 12.</b>
 	<pre class="border border-dark">
 <xmp>
-		<div class="row">
+<div class="row">
 		<div class="col-md-6 col-3 border bg-warning">1</div>
 		<div class="col-md-6 col-6 border bg-danger">2</div>
 	</div>
@@ -614,6 +620,7 @@
 		<div class="col-md-11 col-9 border bg-primary">10</div>
 		<div class="col-md-1 col-10 border bg-secondary">11</div>
 	</div>
+
 </xmp>
 </pre>
 	<hr>
@@ -653,23 +660,23 @@
 	<pre class="border border-dark">
 			<xmp>
 		
-			<div class="row">
-				<div class="col-md-1 col-5 border bg-warning">1</div>
-				<div class="col-md-2 col-4 border bg-danger">2</div>
-				<div class="col-md-3 col-3 border bg-primary">3</div>
-				<div class="col-md-4 col-3 border bg-secondary">4</div>
-				<div class="col-md-5 col-2 border bg-warning">5</div>
-				<div class="col-md-5 col-1 border bg-primary">6</div>
-				<div class="col-md-7 col-5 border bg-secondary">7</div>
-			</div>
-			<div class="row">
-				<div class="col-md-8 col-8 border bg-warning">8</div>
-				<div class="col-md-9 col-3 border bg-danger">9</div>
-			</div>
-			<div class="row">
-				<div class="col-md-10 col-7 border bg-primary">10</div>
-				<div class="col-md-11 col-6 border bg-secondary">11</div>
-			</div>
+	<div class="row">
+		<div class="col-md-1 col-5 border bg-warning">1</div>
+		<div class="col-md-2 col-4 border bg-danger">2</div>
+		<div class="col-md-3 col-3 border bg-primary">3</div>
+		<div class="col-md-4 col-3 border bg-secondary">4</div>
+		<div class="col-md-5 col-2 border bg-warning">5</div>
+		<div class="col-md-5 col-1 border bg-primary">6</div>
+		<div class="col-md-7 col-5 border bg-secondary">7</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-8 border bg-warning">8</div>
+		<div class="col-md-9 col-3 border bg-danger">9</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-7 border bg-primary">10</div>
+		<div class="col-md-11 col-6 border bg-secondary">11</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -678,74 +685,41 @@
 
 	<b>Layout 14.</b> <b>Desktop View</b>
 	<div class="row">
-	<div class="col-md-1 col-1"> 
-	<div class="row">
 		<div class="col-md-12 col-1 border bg-warning">1</div>
-	</div></div>
-		<div class="col-md-1 col-1"> 
-	
+	</div>
 	<div class="row">
 		<div class="col-md-11 col-1 border bg-danger">2</div>
-	</div></div>
-		<div class="col-md-1 col-1"> 
-	
+	</div>
 	<div class="row">
 		<div class="col-md-10 col-1 border bg-primary">3</div>
-	</div></div>
-		<div class="col-md-1 col-1"> 
-	
+	</div>
 	<div class="row">
 		<div class="col-md-9 col-1 border bg-secondary">4</div>
 	</div>
-	</div>
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-8 col-1 border bg-warning">5</div>
-	</div></div>
-		<div class="col-md-1 col-1"> 
-	
+	</div>
 	<div class="row">
 		<div class="col-md-7 col-1 border bg-primary">6</div>
 	</div>
-	</div>
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-6 col-1 border bg-secondary">7</div>
 	</div>
-	</div>
-		<div class="col-md-1 col-1"> 
 	<div class="row">
 		<div class="col-md-5 col-1 border bg-warning">8</div>
 	</div>
-	</div>
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-4 col-1 border bg-danger">9</div>
 	</div>
-	</div>
-	
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-3 col-1 border bg-primary">10</div>
 	</div>
-	</div>
-	
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-2 col-1 border bg-secondary">11</div>
 	</div>
-	</div>
-		<div class="col-md-1 col-1"> 
-	
 	<div class="row">
 		<div class="col-md-1 col-1 border bg-warning">12</div>
 	</div>
-</div>
 
 
 	<b>Phone View</b>
@@ -754,7 +728,6 @@
 			src="<%=baseURL%>webapp/assets/images/column_phone_screenshots/l14.png"
 			width="100%">
 	</div>
-</div>
 
 	<b>Code for Layout 14.</b>
 	<pre class="border border-dark">
@@ -823,12 +796,12 @@
 	<b>Code for Layout 15.</b>
 	<pre class="border border-dark">
 			<xmp>
-		
-			<div class="row text-center pb-3">
-				<div class="col-md-4 col-12 border bg-primary">1</div>
-				<div class="col-md-4 col-6 border bg-secondary">2</div>
-				<div class="col-md-4 col-6 border bg-success">3</div>
-			</div>
+
+	<div class="row text-center pb-3">
+		<div class="col-md-4 col-12 border bg-primary">1</div>
+		<div class="col-md-4 col-6 border bg-secondary">2</div>
+		<div class="col-md-4 col-6 border bg-success">3</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -887,42 +860,42 @@
 	<pre class="border border-dark">
 		<xmp>
 		
-			<div class="row text-center">
-				<div class="col-md-12 col-1 border bg-primary">1</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-11 col-2 border bg-secondary">2</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-10 col-3 border bg-success">3</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-9 col-4 border bg-danger">4</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-8 col-5 border bg-primary">5</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-7 col-6 border bg-info">6</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-6 col-7 border bg-secondary">7</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-5 col-8 border bg-success">8</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-4 col-9 border bg-danger">9</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-3 col-10 border bg-info">10</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-2 col-11 border bg-primary">11</div>
-			</div>
-			<div class="row text-center">
-				<div class="col-md-2 col-12 border bg-secondary">12</div>
-			</div>
+	<div class="row text-center">
+		<div class="col-md-12 col-1 border bg-primary">1</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-11 col-2 border bg-secondary">2</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-10 col-3 border bg-success">3</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-9 col-4 border bg-danger">4</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-8 col-5 border bg-primary">5</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-7 col-6 border bg-info">6</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-6 col-7 border bg-secondary">7</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-5 col-8 border bg-success">8</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-4 col-9 border bg-danger">9</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-3 col-10 border bg-info">10</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-2 col-11 border bg-primary">11</div>
+	</div>
+	<div class="row text-center">
+		<div class="col-md-2 col-12 border bg-secondary">12</div>
+	</div>
 		</xmp>
 		</pre>
 	<hr>
@@ -1300,8 +1273,8 @@
 				</div>
 				<div class="col-4 col-md-4 border bg-danger">6</div>
 			</div>
-</xmp>
-</pre>
+		</xmp>
+		</pre>
 	<hr>
 
 	<!------------------- Layout 25. ------------------->
