@@ -31,6 +31,18 @@ html, body {
 }
 /*end of width css*/
 
+/* start of popover css */
+#dialer_view .popover-body  {
+padding : 0;
+margin: 0;
+	
+}
+#dialer_view .popover-body .box_row{
+border-style:none;
+
+}
+/* end of popover css */
+
 /* cursor pointer css */
 .cursor_pointer {
 	cursor: pointer;
@@ -49,7 +61,7 @@ html, body {
 .box_container{
 	background-color: white ;
 	width: 320px ;
-	padding: 20px ;
+	
 	height: 420px ;
 	text-align: center ;
 	
@@ -113,3 +125,5 @@ html, body {
 	color:white;
 }
 /* end of callButton css */
+
+
