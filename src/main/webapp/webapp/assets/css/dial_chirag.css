@@ -15,7 +15,6 @@
 	width: 350px;
 	text-align: center;
 	background-color: white;
-	margin-left: 10vh
 }
 
 .sub {
@@ -25,8 +24,9 @@
 }
 
 .subplus {
-	font-size: 0.9rem;
-	color: #596066;
+	font-size: 0.6rem;
+	color: #63696f;
+	line-height: 16px;
 }
 
 .digit:hover {
@@ -83,6 +83,8 @@
 	position: absolute;
 	background-color: white;
 	float: center;
+	padding: 0px !important;
+	margin: 0px !important;
 }
 
 .phone {
@@ -91,6 +93,11 @@
 }
 
 .sp {
+	font-weight: bold;
 	font-size: 35px;
 	line-height: 28px;
+}
+
+.AstHash {
+	font-size: 20px !important;
 }
