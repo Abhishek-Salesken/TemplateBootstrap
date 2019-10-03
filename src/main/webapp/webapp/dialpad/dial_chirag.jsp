@@ -33,107 +33,224 @@
 
 			<div class="container containerDesign">
 
-				<div class="row rowShadow pb-3">
+				<div class="row rowShadow flex-row">
 					<div class="col-md-12 col-12 p-5" id="output"></div>
 
-					<div class=" col-md-4 col-4">
-					<div class="d-flex flex-row w-100">
-					
+					<div
+						class=" col-md-4 col-4 p-0 m-0 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>1</span>
-						</div>
+							<span class="sp">1</span>
 						</div>
 					</div>
 
-					<div class=" col-md-4 col-4">
-										<div class="d-flex flex-row w-100 justify-content-center align-items-center">
-					
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex  justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>2</span>
+							<span class="sp">2</span>
 							<div class="sub">ABC</div>
 						</div>
-						</div>
 					</div>
 
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>3</span>
+							<span class="sp">3</span>
 							<div class="sub    ">DEF</div>
 						</div>
 					</div>
 
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>4</span>
+							<span class="sp">4</span>
 							<div class="sub    ">GHI</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex  justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>5</span>
+							<span class="sp">5</span>
 							<div class="sub">JKL</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>6</span>
+							<span class="sp">6</span>
 							<div class="sub">MNO</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>7</span>
+							<span class="sp">7</span>
 							<div class="sub">PQRS</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>8</span>
+							<span class="sp">8</span>
 							<div class="sub">TUV</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>9</span>
+							<span class="sp">9</span>
 							<div class="sub">WXYZ</div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>*</span>
+							<span class="sp">*</span>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>0</span>
+							<span class="sp">0</span>
 							<div class="sub fa fa-plus"></div>
 						</div>
 					</div>
-					<div class=" col-md-4 col-4">
+					<div
+						class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
-							<span>#</span>
+							<span class="sp">#</span>
 						</div>
 					</div>
 					<div class="col-md-12 col-12">
 						<div
-							class="digit d-flex justify-content-center align-items-center">
+							class="digit mx-auto  d-flex flex-column justify-content-center align-items-center ">
 							<div class="button rounded-circle rounded-circle-num">
-								<i
-									class="fa fa-phone d-flex justify-content-center align-items-center phone"></i>
+								<i class="fa fa-phone phone"></i>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container containerDesign mx-auto">
+
+		<div class="row rowShadow flex-row">
+			<div class="col-md-12 col-12 p-5" id="output"></div>
+
+			<div
+				class=" col-md-4 col-4 p-0 m-0 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">1</span>
+				</div>
+			</div>
+
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex  justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">2</span>
+					<div class="sub">ABC</div>
+				</div>
+			</div>
+
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">3</span>
+					<div class="sub    ">DEF</div>
+				</div>
+			</div>
+
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">4</span>
+					<div class="sub    ">GHI</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex  justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">5</span>
+					<div class="sub">JKL</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">6</span>
+					<div class="sub">MNO</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">7</span>
+					<div class="sub">PQRS</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">8</span>
+					<div class="sub">TUV</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">9</span>
+					<div class="sub">WXYZ</div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">*</span>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">0</span>
+					<div class="sub fa fa-plus"></div>
+				</div>
+			</div>
+			<div
+				class=" col-md-4 col-4 p-0 m-0 d-flex justify-content-center align-items-center d-fle  justify-content-center align-items-center">
+				<div
+					class="digit d-flex flex-column justify-content-center align-items-center">
+					<span class="sp">#</span>
+				</div>
+			</div>
+			<div class="col-md-12 col-12">
+				<div
+					class="digit mx-auto  d-flex flex-column justify-content-center align-items-center ">
+					<div class="button rounded-circle rounded-circle-num">
+						<i class="fa fa-phone phone"></i>
 					</div>
 				</div>
 			</div>

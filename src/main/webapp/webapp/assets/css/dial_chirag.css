@@ -3,17 +3,16 @@
 		rgba(0, 0, 0, 0.22);
 }
 
-.digit, .dig {
+.digit {
+	width: 75px;
+	height: 75px;
 	font-size: 2rem;
 	cursor: pointer;
-	height:65px !important;
-	width:65px !important;
 }
 
 .containerDesign {
-	min-height: 450px;
 	background-color: white;
-	width: 350px; /
+	width: 350px;
 	text-align: center;
 	background-color: white;
 	margin-left: 10vh
@@ -31,7 +30,8 @@
 }
 
 .digit:hover {
-	
+	width: 75px;
+	height: 75px;
 	border-radius: 50%;
 	opacity: 1;
 	display: inline-block;
@@ -87,5 +87,10 @@
 
 .phone {
 	color: white;
-	padding-top: 10px;
+	padding: 12px;
+}
+
+.sp {
+	font-size: 35px;
+	line-height: 28px;
 }
