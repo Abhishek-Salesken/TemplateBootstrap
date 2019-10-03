@@ -1,4 +1,4 @@
-.row {
+.rowShadow {
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
 		rgba(0, 0, 0, 0.22);
 }
@@ -11,14 +11,14 @@
 	cursor: pointer;
 }
 
-.container {
+.containerDesign {
 	min-height: 450px;
 	background-color: white;
 	width: 320px;
-	padding: 20px;
 	height: 420px;
 	text-align: center;
 	background-color: white;
+	margin-left: 10vh
 }
 
 .sub {
@@ -37,7 +37,7 @@
 	/* border:1px solid; */
 }
 
-.rounded-circle {
+.rounded-circle-num {
 	background-color: #15ad3d;
 	border-radius: 50% !important;
 	width: 50px;
@@ -58,18 +58,32 @@
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 576px) {
+/* @media only screen and (max-width: 576px) {
 	.container {
 		width: 100% !important;
 	}
 	.row {
 		box-shadow: 0px 0px 0px 0px;
 	}
-}
+} */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
 	.col-md-12 {
 		flex: 0 0 100% !important;
 		max-width: 100% !important;
 	}
+} */
+.dropdown {
+	position: absolute;
+	float: left;
+}
+
+.dropdownBorder {
+	border-style: none;
+}
+
+.dropdown-menu {
+	position: absolute;
+	background-color: white;
+	float: left;
 }
