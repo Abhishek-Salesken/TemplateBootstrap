@@ -19,8 +19,8 @@
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="<%=baseURL%>webapp/assets/css/dial_chirag.css">
-
 </head>
+
 <body>
 
 	<div class="dropdown">
@@ -32,40 +32,34 @@
 			style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: -70px; will-change: transform;">
 
 			<div class="container containerDesign">
-
 				<div class="row rowShadow flex-row pb-3">
 					<div class="col-md-12 col-12 p-5 border-bottom"></div>
-
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">1</div>
 							<div class="sub">.</div>
-
 						</div>
 					</div>
-
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">2</div>
 							<div class="sub">ABC</div>
 						</div>
 					</div>
-
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">3</div>
 							<div class="sub">DEF</div>
 						</div>
 					</div>
-
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">4</div>
@@ -73,7 +67,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">5</div>
@@ -81,7 +75,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">6</div>
@@ -89,7 +83,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">7</div>
@@ -97,7 +91,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">8</div>
@@ -105,7 +99,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">9</div>
@@ -113,14 +107,14 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="fa fa-asterisk AstHash"></div>
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="sp">0</div>
@@ -128,7 +122,7 @@
 						</div>
 					</div>
 					<div
-						class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<div class="fa fa-hashtag AstHash"></div>
@@ -138,7 +132,7 @@
 						<div
 							class="digit mx-auto d-flex flex-column justify-content-center align-items-center ">
 							<div class="button rounded-circle rounded-circle-num">
-								<i class="fa fa-phone phone"></i>
+								<div class="fa fa-phone phone"></div>
 							</div>
 						</div>
 					</div>
@@ -147,41 +141,35 @@
 		</div>
 	</div>
 
-	<div class="container containerDesign">
-
+	<div class="container containerDesign mx-auto">
 		<div class="row rowShadow flex-row pb-3">
 			<div class="col-md-12 col-12 p-5 border-bottom"></div>
-
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">1</div>
 					<div class="sub">.</div>
-
 				</div>
 			</div>
-
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">2</div>
 					<div class="sub">ABC</div>
 				</div>
 			</div>
-
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center pt-4">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">3</div>
 					<div class="sub">DEF</div>
 				</div>
 			</div>
-
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">4</div>
@@ -189,7 +177,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">5</div>
@@ -197,7 +185,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">6</div>
@@ -205,7 +193,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">7</div>
@@ -213,7 +201,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">8</div>
@@ -221,7 +209,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">9</div>
@@ -229,14 +217,14 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="fa fa-asterisk AstHash"></div>
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="sp">0</div>
@@ -244,7 +232,7 @@
 				</div>
 			</div>
 			<div
-				class=" col-md-4 col-4 d-flex justify-content-center align-items-center">
+				class="col-md-4 col-4 d-flex justify-content-center align-items-center">
 				<div
 					class="digit d-flex flex-column justify-content-center align-items-center">
 					<div class="fa fa-hashtag AstHash"></div>
@@ -261,11 +249,10 @@
 		</div>
 	</div>
 
-
-
 	<script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 
