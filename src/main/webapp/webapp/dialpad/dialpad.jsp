@@ -17,15 +17,23 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/dialpad.css">
+<style>
+#dialer_view .popover-body{
+height:1000px;}
+
+</style>
 </head>
 <body>
-	<button type="button" id="element" class="btn btn-secondary"
-		data-container="body" data-toggle="popover" data-placement="top"
-		data-html="true">Popover</button>
+	
 	<div
 		class="container d-flex justify-content-center align-items-center h-100 box_container"
 		id="dialer_view">
-		<div class="row box_row py-3">
+		<div class="row">
+		<div class="col"><button type="button" id="element" class="btn btn-secondary"
+		data-container="body" data-toggle="popover" data-placement="top"
+		data-html="true">Popover</button></div>
+		</div>
+		<div class="row box_row py-3 p-0 m-0">
 			<div class="col-md-12 col-12" id="output"></div>
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
@@ -125,8 +133,9 @@
 	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
 	<script>
 		$("[data-toggle=popover]").popover({
+		      container: '#dialer_view',
 			html : true,
-			trigger : 'focus',
+			trigger : 'click',
 			content : function() {
 				return $('#dialer_view').html();
 			}
