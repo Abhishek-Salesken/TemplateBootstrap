@@ -37,17 +37,23 @@
 					<div class="col-md-12 col-12 p-5" id="output"></div>
 
 					<div class=" col-md-4 col-4">
+					<div class="d-flex flex-row w-100">
+					
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<span>1</span>
 						</div>
+						</div>
 					</div>
 
 					<div class=" col-md-4 col-4">
+										<div class="d-flex flex-row w-100 justify-content-center align-items-center">
+					
 						<div
 							class="digit d-flex flex-column justify-content-center align-items-center">
 							<span>2</span>
 							<div class="sub">ABC</div>
+						</div>
 						</div>
 					</div>
 

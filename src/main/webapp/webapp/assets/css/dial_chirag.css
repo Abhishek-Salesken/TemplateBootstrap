@@ -6,6 +6,8 @@
 .digit, .dig {
 	font-size: 2rem;
 	cursor: pointer;
+	height:65px !important;
+	width:65px !important;
 }
 
 .containerDesign {
@@ -29,8 +31,7 @@
 }
 
 .digit:hover {
-	width: 75px;
-	height: 75px;
+	
 	border-radius: 50%;
 	opacity: 1;
 	display: inline-block;
