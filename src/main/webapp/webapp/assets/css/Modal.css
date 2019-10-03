@@ -3,7 +3,14 @@ html,body{
 	height:100%;
 	
 }
+/* start of icon related css */
+.calender_clock_icon {
+position: absolute;
+right: 11px;
+top: 59%;
+}
 
+/* end of icon related css */
 
 /* start of font related css */
 

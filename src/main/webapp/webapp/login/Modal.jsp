@@ -24,7 +24,7 @@
 	<div class="container h-100">
 
 		<!--  start of main row of page  -->
-		<div class="row align-items-center h-100">
+		<div class="row justify-content-center ">
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
   Launch modal
@@ -33,19 +33,19 @@
 <!-- start of Modal -->
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0">
+    <div class="modal-content ">
       <div class="modal-header">
         <h5 class="modal-title f-18" id="exampleModalCenterTitle">Scheduled task</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body ">
+      <div class="modal-body">
 			<form>
-  <div class="form-row">
-    <div class="form-group col-md-12">
-      <label for="" class="h5 f-14 ">Lead Name</label>
-            <select id="inputState" class="form-control rounded-0">
+ 
+    <div class="form-group">
+      <label for="lead_name" class="h5 f-14 ">Lead Name</label>
+            <select id="lead_name" class="form-control rounded-0" name="lead_name" >
         <option selected>Choose...</option>
                <option value="AL">Alabama</option>
        <option value="WY">Wyoming</option>
@@ -53,20 +53,20 @@
       </select>
     </div>
 
-  </div>
+
 
   <div class="form-row">
     <div class="form-group col-md-6">
       <label for="" class="h5 f-14">Task Type</label>
-      <select id="inputState" class="form-control rounded-0">
+      <select id="task_type" class="form-control rounded-0" name="task_type">
         <option selected>Choose...</option>
        <option value="AL">Alabama</option>
        <option value="WY">Wyoming</option>
       </select>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputState" class="h5 f-14">Task By</label>
-      <select id="inputState" class="form-control rounded-0">
+      <label for="task_by" class="h5 f-14">Task By</label>
+      <select id="task_type" class="form-control rounded-0" name="task_by">
         <option selected>Choose...</option>
        <option value="AL">Alabama</option>
        <option value="WY">Wyoming</option>
@@ -75,21 +75,15 @@
   </div>
   
     <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputState" class="h5 f-14">Date</label>
-      <select id="inputState" class="form-control rounded-0">
-        <option selected>Choose...</option>
-       <option value="AL">Alabama</option>
-       <option value="WY">Wyoming</option>
-      </select>
+    <div class="form-group position-relative col-md-6">
+      <label for="task_date" class="h5 f-14" >Date</label>
+     <input type="text" class="form-control rounded-0 pr-4" id="formGroupExampleInput" placeholder="Select here">
+     <i class="fas fa-calendar-week calender_clock_icon"></i>
     </div>
     <div class="form-group col-md-6">
-      <label for="inputState" class="h5 f-14">Time</label>
-      <select id="inputState" class="form-control rounded-0">
-        <option selected>Choose...</option>
-       <option value="AL">Alabama</option>
-       <option value="WY">Wyoming</option>
-      </select>
+      <label for="task_time" class="h5 f-14">Time</label>
+		 <input type="text" class="form-control rounded-0 pr-4" id="formGroupExampleInput" placeholder="Select here">
+     <i class="far fa-clock calender_clock_icon"></i>
     </div>
   </div>
   

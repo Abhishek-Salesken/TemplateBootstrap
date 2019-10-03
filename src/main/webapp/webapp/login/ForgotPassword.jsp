@@ -53,7 +53,9 @@
 								class="form-control myh-50 w-287  rounded-0 remove_focus"
 								id="exampleInputPassword1" placeholder="Password">
 							<div class="input-group-prepend">
-								<div class="input-group-text"><i class="far fa-eye"></i></div>
+								<div class="input-group-text">
+									<i class="far fa-eye"></i>
+								</div>
 							</div>
 						</div>
 
@@ -62,12 +64,15 @@
 					<div class="form-group mb-4">
 						<label for="exampleInputPassword1"
 							class="h6 f-14 blue_black line-height-19">Confirm
-							Password</label> <div class="input-group  myh-50 w-287  rounded-0">
+							Password</label>
+						<div class="input-group  myh-50 w-287  rounded-0">
 							<input type="password"
 								class="form-control myh-50 w-287  rounded-0 remove_focus"
 								id="exampleInputPassword1" placeholder="Password">
 							<div class="input-group-prepend">
-								<div class="input-group-text"><i class="far fa-eye"></i></div>
+								<div class="input-group-text">
+									<i class="far fa-eye"></i>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -85,15 +90,15 @@
 
 			<!--  start of right column of row which contains login background image and heading  -->
 			<div class="col-md-7  px-3 py-4 ">
-					<div class="pl-5">
-				<h5 class="black f-24 line-height-45 mb-0">See What Works, What
-					Doesn't</h5>
-				<h2 class="black f-38 line-height-45 font-weight-bold mb-4">Help
-					your Reps Sell Better</h2>
-				<p class="light_gray f-16 line-height-22 mw-436">Lorem ipsum
-					dolor sit amet, consectetur adipiscing elit. Nulla sit amet nibh
-					loborrtis, vehicula lorem at.</p>
-					</div>
+				<div class="pl-5">
+					<h5 class="black f-24 line-height-45 mb-0">See What Works,
+						What Doesn't</h5>
+					<h2 class="black f-38 line-height-45 font-weight-bold mb-4">Help
+						your Reps Sell Better</h2>
+					<p class="light_gray f-16 line-height-22 mw-436">Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit. Nulla sit amet nibh
+						loborrtis, vehicula lorem at.</p>
+				</div>
 				<img src="<%=baseURL%>webapp/assets/images/Group 3179.svg"
 					class="img-fluid mt-5" alt="Responsive image">
 			</div>

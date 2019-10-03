@@ -1,80 +1,77 @@
 /* standard html css*/
-html,body{
-	height:100%;
+html, body {
+	height: 100%;
 }
 
+.f-14 {
+	font-size: 0.875rem !important;
+}
 
+.f-24 {
+	font-size: 1.5rem !important;
+}
 
-.f-14{
-    font-size: 0.875rem !important;
+.f-38 {
+	font-size: 2.375rem !important;
 }
-.f-24{
-    font-size: 1.5rem !important;
-}
-.f-38{
-    font-size: 2.375rem !important;
-}
-.f-16{
-    font-size: 1rem !important;
+
+.f-16 {
+	font-size: 1rem !important;
 }
 /*end of font css  */
-
-.f-b{
-	font-weight:bold !important;
+.f-b {
+	font-weight: bold !important;
 }
-
 
 /* font sizes for mobile css */
 @media only screen and (max-width: 600px) {
-.f-14{
-    font-size: 0.625rem !important;
-}
-.f-24{
-    font-size: 1.25rem !important;
-}
-.f-38{
-    font-size: 2.125rem !important;
-}
-.f-16{
-    font-size: 0.75rem !important;
-}
-	
+	.f-14 {
+		font-size: 0.625rem !important;
+	}
+	.f-24 {
+		font-size: 1.25rem !important;
+	}
+	.f-38 {
+		font-size: 2.125rem !important;
+	}
+	.f-16 {
+		font-size: 0.75rem !important;
+	}
 }
 /* end of font sizes for mobile css */
 
 /* start of color css  */
-.black{
-	color:#222222;	
+.black {
+	color: #222222;
 }
 
-.light_gray{
-	color:#666666;
-}
-.dark_gray{
-	color:#999999
+.light_gray {
+	color: #666666;
 }
 
-.blue_black{
-	color:#262626;
-	
-}
-.theme_color{
-	color:#ED4D67
-	
+.dark_gray {
+	color: #999999
 }
 
-.login_icon_color{
-	color:#57b280
+.blue_black {
+	color: #262626;
+}
+
+.theme_color {
+	color: #ED4D67
+}
+
+.login_icon_color {
+	color: #57b280
 }
 
 /* end  of color css  */
 
 /* start of icon   css  */
 
-
 /* end  of icon css  */
 /* start of focus remove  css  */
-.remove_focus:focus{
+.remove_focus:focus {
 	border-color: #ED4D67 !important;
 	box-shadow: none !important;
 }
@@ -82,7 +79,7 @@ html,body{
 /* end of focus remove  css  */
 
 /* start of hover remove  css  */
-.remove_hover:hover{
+.remove_hover:hover {
 	border-color: #ED4D67 !important;
 	text-decoration: none !important;
 }
@@ -90,84 +87,77 @@ html,body{
 /* end of hover remove  css  */
 
 /* start of background color css  */
-.theme_bg_color{
-	background:#ED4D67 !important;
-	
-}
-/* end of background color css  */
-
-
-
-
-/* start of border color css  */
-.theme_color{
-	color:#ED4D67 !important;
-	
+.theme_bg_color {
+	background: #ED4D67 !important;
 }
 /* end of background color css  */
 
 /* start of border color css  */
+.theme_color {
+	color: #ED4D67 !important;
+}
+/* end of background color css  */
 
-.theme_border_color{
-border-color:#ED4D67 !important;
-	
+/* start of border color css  */
+.theme_border_color {
+	border-color: #ED4D67 !important;
 }
 /* end of border color css  */
 
-
 /* start of line-height css  */
-.line-height-19{
+.line-height-19 {
 	line-height: 19px;
 }
-.line-height-40{
+
+.line-height-40 {
 	line-height: 40px;
 }
 
-.line-height-22{
+.line-height-22 {
 	line-height: 22px;
 }
-.line-height-45{
+
+.line-height-45 {
 	line-height: 45px;
 }
 
 /* end of line-height css  */
 
 /* start of width related css */
-	.mw-436{
-		max-width:436px;
-	}
+.mw-436 {
+	max-width: 436px;
+}
 /* end of width related css */
 
 /* start of height related css */
-	.myh-50{
-		height:50px;
-	}
-	.myh-40{
-		height:40px;
-	}
-	
-	.w-287{
-		width:287.5px;
-	}
+.myh-50 {
+	height: 50px;
+}
+
+.myh-40 {
+	height: 40px;
+}
+
+.w-287 {
+	width: 287.5px;
+}
 /* end of height related css */
 
 /* start of image height related css */
-.image-height-53{
-	height:53.8px;
+.image-height-53 {
+	height: 53.8px;
 }
 
 /* end of height related css */
 
 /* start of image width related css */
-
-.image-width-182{
-	width:182.7px;
+.image-width-182 {
+	width: 182.7px;
 }
 /* end of image width related css */
 
 /* start of shadow  related css */
-.shadow-r{
-	 box-shadow:48px 0 24px -21px #eeeeee;
+.shadow-r {
+	box-shadow: 48px 0 24px -21px #eeeeee;
 }
 /* end of shadow  related css */
-
