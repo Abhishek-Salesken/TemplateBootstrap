@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="ISO-8859-1">
 <title>Dial Pad</title>
 <%
@@ -20,104 +21,104 @@
 
 </head>
 <body>
-	
-		<button type="button" id="element" class="btn btn-secondary"
-			data-container="body" data-toggle="popover" data-placement="top"
-			data-html="true">Popover</button>
-	
+
+	<button type="button" id="element" class="btn btn-secondary"
+		data-container="body" data-toggle="popover" data-placement="top"
+		data-html="true">Popover</button>
+
 	<div
 		class="container d-flex justify-content-center align-items-center h-100 box_container"
 		id="dialer_view">
-		
-		<div class="row box_row ">
+
+		<div class="row box_row m-0 p-0">
 			<div class="col-md-12 col-12" id="output"></div>
-			<div class="col-md-4 col-4   pt-2 cursor_pointer">
+			<div class="col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column align-items-center justify-content-center  ">
 					<span class="inner f-14">1</span>
-					<div class=" sub inner f-13">.</div>
+					<div class=" sub  f-13">.</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-4   pt-2 cursor_pointer">
+			<div class="col-md-4 col-4    cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">2</span>
-					<div class=" sub inner f-13">ABC</div>
+					<div class=" sub f-13">ABC</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4   pt-2 cursor_pointer">
+			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">3</span>
-					<div class="sub inner f-13">DEF</div>
+					<div class="sub  f-13">DEF</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4   pt-2 cursor_pointer">
+			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">4</span>
-					<div class="sub inner f-13">GHI</div>
+					<div class="sub  f-13">GHI</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4   pt-2 cursor_pointer">
+			<div class=" col-md-4 col-4  cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">5</span>
-					<div class="sub inner f-13">JKL</div>
+					<div class="sub  f-13">JKL</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4   pt-2 cursor_pointer">
+			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">6</span>
-					<div class="sub inner f-13">MNO</div>
+					<div class="sub  f-13">MNO</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">7</span>
-					<div class="sub inner f-13">PQRS</div>
+					<div class="sub  f-13">PQRS</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4   pt-2 cursor_pointer">
+			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">8</span>
-					<div class="sub inner f-13">TUV</div>
+					<div class="sub  f-13">TUV</div>
 				</div>
 			</div>
-			<div class=" col-md-4 col-4  pt-2  cursor_pointer">
+			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">9</span>
-					<div class="sub inner f-13">WXYZ</div>
+					<div class="sub  f-13">WXYZ</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-4   pt-2 cursor_pointer">
+			<div class="col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex   align-items-center justify-content-center ">
-					<span class="inner f-14">*</span>
+					<span class=" f-14">*</span>
 				</div>
 			</div>
-			<div class="col-md-4 col-4  pt-2  cursor_pointer">
+			<div class="col-md-4 col-4    cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
 					<span class="inner f-14">0</span>
-					<div class="sub inner f-13">+</div>
+					<div class="sub f-13">+</div>
 				</div>
 			</div>
-			<div class="col-md-4 col-4   pt-2 cursor_pointer">
+			<div class="col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center ">
-					<span class="inner f-14">#</span>
+					<span class=" f-14">#</span>
 				</div>
 			</div>
-			<div class="col-md-12  col-12 pt-2  pb-1 cursor_pointer">
+			<div class="col-md-12  col-12   pb-1 cursor_pointer">
 				<div
 					class="button rounded-circle roundButton bg-dial inner mx-auto ">
 					<i
-						class=" callButton d-flex align-items-center justify-content-center fa fa-phone p-3 callButtonColor"></i>
+						class=" callButton d-flex align-items-center justify-content-center fa fa-phone f-12 p-3 callButtonColor"></i>
 				</div>
 			</div>
 

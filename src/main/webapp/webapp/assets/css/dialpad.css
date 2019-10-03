@@ -9,14 +9,26 @@ html, body {
 
 @media only screen and (max-width: 600px) {
 	.f-14 {
-		font-size: 1rem;
+		font-size: 1.8rem;
 	}
 }
 
-.f-13{
+.f-13 {
 	font-size: 0.8rem;
 }
 
+@media only screen and (max-width: 600px) {
+	.f-13 {
+		font-size: 0.7rem;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+.f-12 {
+	font-size: 1.7rem;
+}
 /* end of font css*/
 
 /*start of width css*/
@@ -32,14 +44,13 @@ html, body {
 /*end of width css*/
 
 /* start of popover css */
-#dialer_view .popover-body  {
-padding : 0;
-margin: 0;
-	
+#dialer_view .popover-body {
+	padding: 0;
+	margin: 0;
 }
-#dialer_view .popover-body .box_row{
-border-style:none;
 
+#dialer_view .popover-body .box_row {
+	border-style: none;
 }
 /* end of popover css */
 
@@ -55,75 +66,82 @@ border-style:none;
 }
 /* end of box_row css */
 
-
-
 /* start of box_container css */
-.box_container{
-	background-color: white ;
-	width: 320px ;
-	
-	height: 420px ;
-	text-align: center ;
-	
+.box_container {
+	background-color: white;
+	width: 320px;
+	height: 420px;
+	text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
 	.box_container {
-		min-width: 100% !important;
-		border-style:none;
-		
+		max-width: 100% !important;
+		border-style: none;
 	}
-
 }
 
 /* end of box_container css */
 
 /* start of sub css */
 .sub {
-	
+	margin-top: -8px;
 	color: grey;
 	opacity: 1;
 }
+
+@media only screen and (max-width: 600px) {
+	.sub {
+		margin-top: -3px;
+	}
+}
+
 /* end of sub css */
 
 /* start of outer css */
 .outer {
-	width: 68px;
-	height: 68px;
+	margin-top: 8px;
+	width: 60px;
+	height: 60px;
 }
+
 .outer:hover {
-	
 	border-radius: 50%;
 	opacity: 0.8;
 	display: inline-block;
 	background-color: #edf0f5;
-	
 }
 /* end of outer css */
 
 /* start of callButton css */
-.callButton{
-	width:50px;
-	height: 48px;
+.callButton {
+	margin-top: 15px;
+	width: 60px;
+	height: 60px;
 }
-.callButton:hover{
-	opacity: 0.7;
+
+.callButton:hover {
+	border-radius: 50%;
+	background-color: #dc3545;
 }
 /* end of callButton css */
 
 /* start of roundButton css */
-.roundButton{
+.roundButton {
 	background-color: #15ad3d;
-
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
 /* end of roundButton css */
 
 /* start of callButton css */
-.callButtonColor{
-	color:white;
+.callButtonColor {
+	color: white;
 }
 /* end of callButton css */
 
-
+/* start of inner css */
+.inner {
+	margin-top: -8px;
+}
+/* end of inner css */
