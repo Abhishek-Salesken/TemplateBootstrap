@@ -40,7 +40,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body ">
 			<form>
   <div class="form-row">
     <div class="form-group col-md-12">
