@@ -12,6 +12,11 @@ html, body {
 		font-size: 1rem;
 	}
 }
+
+.f-13{
+	font-size: 0.8rem;
+}
+
 /* end of font css*/
 
 /*start of width css*/
@@ -26,77 +31,99 @@ html, body {
 }
 /*end of width css*/
 
+/* start of popover css */
+#dialer_view .popover-body  {
+padding : 0;
+margin: 0;
+	
+}
+#dialer_view .popover-body .box_row{
+border-style:none;
+
+}
+/* end of popover css */
+
+/* cursor pointer css */
 .cursor_pointer {
 	cursor: pointer;
 }
 
-
+/* start of box_row css */
 .box_row {
-	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px
-		rgba(0, 0, 0, 0.22);
+	border-style: solid;
+	border-width: thin;
+}
+/* end of box_row css */
+
+
+
+/* start of box_container css */
+.box_container{
+	background-color: white ;
+	width: 320px ;
+	
+	height: 420px ;
+	text-align: center ;
+	
 }
 
-.digit, .dig {
-	padding: 10px 30px;
+@media only screen and (max-width: 600px) {
+	.box_container {
+		min-width: 100% !important;
+		border-style:none;
+		
+	}
+
 }
 
-.container {
-	background-color: white;
-	width: 320px;
-	padding: 20px;
-	height: 420px;
-	text-align: center;
-	background-color: white;
-}
+/* end of box_container css */
 
+/* start of sub css */
 .sub {
-	font-size: 0.8rem;
+	
 	color: grey;
 	opacity: 1;
 }
-/*
-.digit:hover {
-height: auto;
-width: auto;
-border-radius: 50%;
-opacity: 0.8;
-display: inline-block;
-background-color: #edf0f5;
-border:1px solid;
-} */
+/* end of sub css */
+
+/* start of outer css */
+.outer {
+	width: 68px;
+	height: 68px;
+}
 .outer:hover {
-	background: green;
+	
 	border-radius: 50%;
 	opacity: 0.8;
 	display: inline-block;
 	background-color: #edf0f5;
-	border: 1px solid;
+	
 }
+/* end of outer css */
 
-.outer {
+/* start of callButton css */
+.callButton{
+	width:50px;
+	height: 48px;
+}
+.callButton:hover{
+	opacity: 0.7;
+}
+/* end of callButton css */
+
+/* start of roundButton css */
+.roundButton{
+	background-color: #15ad3d;
+
 	width: 50px;
 	height: 50px;
 }
+/* end of roundButton css */
 
-/* change this css class
-use mx-auto class instead of margin right and left auto
-*/
-.rounded-circle {
-	background-color: #15ad3d;
-	border-radius: 50% !important;
-	width: 50px;
-	height: 47px;
-	margin-left: auto;
-	margin-right: auto;
+/* start of callButton css */
+.callButtonColor{
+	color:white;
 }
+/* end of callButton css */
 
-#call {
-	display: inline-block;
-	background-color: green;
-	padding: 4px 30px;
-	margin: 10px;
-	color: white;
-	border-radius: 4px;
-	float: left;
-	cursor: pointer;
-}
+

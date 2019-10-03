@@ -26,7 +26,7 @@
 	<div class="dropdown">
 		<button class="btn btn-secondary dropdown-toggle" type="button"
 			id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-			aria-expanded="false">Drop down button</button>
+			aria-expanded="false">Drop down dial pad</button>
 		<div class="dropdown-menu dropdownBorder"
 			aria-labelledby="dropdownMenuButton" x-placement="bottom-start"
 			style="position: absolute; transform: translate3d(0px, 38px, 0px); top: 0px; left: 0px; will-change: transform;">
@@ -34,54 +34,58 @@
 			<div class="container containerDesign">
 
 				<div class="row rowShadow">
-					<div class="col-md-12 col-12" id="output"></div>
-					<div class="col-md-4 col-4 digit">
-						<span class="inner">1</span>
+					<div class="col-md-12 col-12 p-5" id="output"></div>
+					<div class=" col-md-4 col-4 digit">
+						<div class="inner text-center">1</div>
 					</div>
-					<div class="col-md-4 col-4 digit">
-						<span class="inner">2</span>
-						<div class="sub inner">ABC</div>
+
+					<div class=" col-md-4 col-4 digit">
+						<div class="inner text-center">2</div>
+						<div class="sub inner text-center">ABC</div>
+					</div>
+
+					<div class=" col-md-4 col-4 digit">
+						<div class="inner text-center">3</div>
+						<div class="sub inner text-center">DEF</div>
+					</div>
+
+					<div class=" col-md-4 col-4 digit">
+						<div class="inner text-center">4</div>
+						<div class="sub inner text-center">GHI</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">3</span>
-						<div class="sub inner">DEF</div>
+						<div class="inner text-center">5</div>
+						<div class="sub inner text-center">JKL</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">4</span>
-						<div class="sub inner">GHI</div>
+						<div class="inner text-center">6</div>
+						<div class="sub inner text-center">MNO</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">5</span>
-						<div class="sub inner">JKL</div>
+						<div class="inner text-center">7</div>
+						<div class="sub inner text-center">PQRS</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">6</span>
-						<div class="sub inner">MNO</div>
+						<div class="inner text-center">8</div>
+						<div class="sub inner text-center">TUV</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">7</span>
-						<div class="sub inner">PQRS</div>
+						<div class="inner text-center">9</div>
+						<div class="sub inner text-center">WXYZ</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">8</span>
-						<div class="sub inner">TUV</div>
+						<div class="inner text-center">*</div>
 					</div>
 					<div class=" col-md-4 col-4 digit">
-						<span class="inner">9</span>
-						<div class="sub inner">WXYZ</div>
+						<div class="inner text-center">0</div>
+						<div class="subplus inner text-center">+</div>
 					</div>
-					<div class="col-md-4 col-4 digit">
-						<span class="inner">*</span>
+					<div class=" col-md-4 col-4 digit">
+						<div class="inner text-center">#</div>
 					</div>
-					<div class="col-md-4 col-4 digit">
-						<span class="inner">0</span>
-						<div class="sub inner">+</div>
-					</div>
-					<div class="col-md-4 col-4 digit">
-						<span class="inner">#</span>
-					</div>
-					<div class="col-md-12  col-12 digit ">
-						<div class="button rounded-circle rounded-circle-num inner">
+					<div class="col-md-12 col-12 py-3 digit">
+						<div
+							class="button rounded-circle rounded-circle-num text-center inner">
 							<i class="fa fa-phone" style="color: white;"></i>
 						</div>
 					</div>

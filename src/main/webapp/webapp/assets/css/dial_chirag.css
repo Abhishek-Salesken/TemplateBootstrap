@@ -4,18 +4,14 @@
 }
 
 .digit, .dig {
-	float: left;
-	padding: 10px 30px;
-	width: 30px;
 	font-size: 2rem;
 	cursor: pointer;
 }
 
 .containerDesign {
-	min-height: 450px;
+	/*min-height: 450px;*/
 	background-color: white;
-	width: 320px;
-	height: 420px;
+	width: 220px; /
 	text-align: center;
 	background-color: white;
 	margin-left: 10vh
@@ -23,25 +19,30 @@
 
 .sub {
 	font-size: 0.8rem;
-	color: grey;
+	color: #596066;
 	opacity: 1;
+}
+
+.subplus {
+	font-size: 1.2rem;
+	color: #596066;
 }
 
 .digit:hover {
 	height: auto;
 	width: auto;
 	border-radius: 50%;
-	opacity: 0.8;
+	opacity: 0.9;
 	display: inline-block;
 	background-color: #edf0f5;
-	/* border:1px solid; */
+	/* border: 1px solid; */
 }
 
 .rounded-circle-num {
 	background-color: #15ad3d;
-	border-radius: 50% !important;
+	border-radius: 50%;
 	width: 50px;
-	height: 47px;
+	height: 50px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -73,11 +74,6 @@
 		max-width: 100% !important;
 	}
 } */
-.dropdown {
-	position: absolute;
-	float: left;
-}
-
 .dropdownBorder {
 	border-style: none;
 }
@@ -85,5 +81,5 @@
 .dropdown-menu {
 	position: absolute;
 	background-color: white;
-	float: left;
+	float: center;
 }
