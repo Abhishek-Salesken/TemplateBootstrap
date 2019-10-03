@@ -50,7 +50,7 @@
                            </div>
                            <div class="form-row">
                               <div class="form-group col-md-6">
-                                 <label for="" class="h5 f-14">Task Type</label>
+                                 <label for="task_type" class="h5 f-14">Task Type</label>
                                  <select id="task_type" class="form-control rounded-0" name="task_type">
                                     <option selected>Choose...</option>
                                     <option value="AL">Alabama</option>
