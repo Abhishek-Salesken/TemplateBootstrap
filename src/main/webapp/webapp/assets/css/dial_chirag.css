@@ -101,3 +101,7 @@
 .AstHash {
 	font-size: 20px !important;
 }
+
+#output {
+	background-color: black;
+}
