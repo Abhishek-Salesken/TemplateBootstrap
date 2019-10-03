@@ -9,9 +9,9 @@
 }
 
 .containerDesign {
-	/*min-height: 450px;*/
+	min-height: 450px;
 	background-color: white;
-	width: 220px; /
+	width: 350px; /
 	text-align: center;
 	background-color: white;
 	margin-left: 10vh
@@ -24,15 +24,15 @@
 }
 
 .subplus {
-	font-size: 1.2rem;
+	font-size: 0.9rem;
 	color: #596066;
 }
 
 .digit:hover {
-	height: auto;
-	width: auto;
+	width: 75px;
+	height: 75px;
 	border-radius: 50%;
-	opacity: 0.9;
+	opacity: 1;
 	display: inline-block;
 	background-color: #edf0f5;
 	/* border: 1px solid; */
@@ -82,4 +82,9 @@
 	position: absolute;
 	background-color: white;
 	float: center;
+}
+
+.phone {
+	color: white;
+	padding-top: 10px;
 }

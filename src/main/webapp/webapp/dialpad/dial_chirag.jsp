@@ -33,60 +33,100 @@
 
 			<div class="container containerDesign">
 
-				<div class="row rowShadow">
+				<div class="row rowShadow pb-3">
 					<div class="col-md-12 col-12 p-5" id="output"></div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">1</div>
-					</div>
 
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">2</div>
-						<div class="sub inner text-center">ABC</div>
-					</div>
-
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">3</div>
-						<div class="sub inner text-center">DEF</div>
-					</div>
-
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">4</div>
-						<div class="sub inner text-center">GHI</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">5</div>
-						<div class="sub inner text-center">JKL</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">6</div>
-						<div class="sub inner text-center">MNO</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">7</div>
-						<div class="sub inner text-center">PQRS</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">8</div>
-						<div class="sub inner text-center">TUV</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">9</div>
-						<div class="sub inner text-center">WXYZ</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">*</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">0</div>
-						<div class="subplus inner text-center">+</div>
-					</div>
-					<div class=" col-md-4 col-4 digit">
-						<div class="inner text-center">#</div>
-					</div>
-					<div class="col-md-12 col-12 py-3 digit">
+					<div class=" col-md-4 col-4">
 						<div
-							class="button rounded-circle rounded-circle-num text-center inner">
-							<i class="fa fa-phone" style="color: white;"></i>
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>1</span>
+						</div>
+					</div>
+
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>2</span>
+							<div class="sub">ABC</div>
+						</div>
+					</div>
+
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>3</span>
+							<div class="sub    ">DEF</div>
+						</div>
+					</div>
+
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>4</span>
+							<div class="sub    ">GHI</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>5</span>
+							<div class="sub">JKL</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>6</span>
+							<div class="sub">MNO</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>7</span>
+							<div class="sub">PQRS</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>8</span>
+							<div class="sub">TUV</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>9</span>
+							<div class="sub">WXYZ</div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>*</span>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>0</span>
+							<div class="sub fa fa-plus"></div>
+						</div>
+					</div>
+					<div class=" col-md-4 col-4">
+						<div
+							class="digit d-flex flex-column justify-content-center align-items-center">
+							<span>#</span>
+						</div>
+					</div>
+					<div class="col-md-12 col-12">
+						<div
+							class="digit d-flex justify-content-center align-items-center">
+							<div class="button rounded-circle rounded-circle-num">
+								<i
+									class="fa fa-phone d-flex justify-content-center align-items-center phone"></i>
+							</div>
 						</div>
 					</div>
 				</div>
