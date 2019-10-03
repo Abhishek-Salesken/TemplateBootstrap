@@ -1,0 +1,60 @@
+/* standard html css*/
+html,body{
+	height:100%;
+	
+}
+
+
+/* start of font related css */
+
+.f-18{
+	font-size:18px;
+}
+.f-14{
+	font-size:14px;
+}
+
+/* end of font related css */
+
+/* start of border color css  */
+.theme_color{
+	color:#ED4D67 !important;
+}
+.border_color{
+	border-color:#ED4D67 !important;
+}
+.border_shadow_color:focus
+{
+	 box-shadow:0 0 0 0.2rem rgba(225,83,97,.5) !important;
+	 border-color:#ED4D67 !important;
+}
+/* end of background color css  */
+
+
+
+/* start of background color css  */
+.theme_bg_color{
+	background:#ED4D67 !important;
+	
+}
+
+bg_transparent{
+	
+}
+/* end of background color css  */
+
+
+/* start of width related CSS */
+.modal_width_650{
+	width:650px;
+	
+}
+
+/* end of width related CSS */
+
+/* start of height related CSS */
+.modal_height_418{
+	height:650px;
+	
+}
+/* end of height related CSS */
