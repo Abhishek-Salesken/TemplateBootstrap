@@ -44,7 +44,7 @@
 			<form>
  
     <div class="form-group">
-      <label for="lead_name" class="h5 f-14 ">Lead Name</label>
+      <label for="lead_name" class="h5 f-14">Lead Name</label>
             <select id="lead_name" class="form-control rounded-0" name="lead_name" >
         <option selected>Choose...</option>
                <option value="AL">Alabama</option>
