@@ -79,7 +79,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="modal-footer">
+						<div class="modal-footer" >
 							<button type="button" class="btn btn-secondary bg-transparent theme_color font-weight-bold border-0"
 								data-dismiss="modal ">Reset</button>
 							<button type="button" class="btn theme_bg_color btn-primary border_shadow_color rounded-0 border_color font-weight-bold">Scheduled
