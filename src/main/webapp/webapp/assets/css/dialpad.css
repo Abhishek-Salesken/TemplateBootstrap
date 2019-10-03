@@ -17,6 +17,9 @@ html, body {
 	font-size: 0.8rem;
 }
 
+.f-12{
+	font-size: 1.5rem;
+}
 /* end of font css*/
 
 /*start of width css*/
@@ -80,7 +83,7 @@ border-style:none;
 
 /* start of sub css */
 .sub {
-	
+	margin-top: -7px;
 	color: grey;
 	opacity: 1;
 }
@@ -88,8 +91,9 @@ border-style:none;
 
 /* start of outer css */
 .outer {
-	width: 68px;
-	height: 68px;
+	margin-top: 8px;
+	width: 60px;
+	height: 60px;
 }
 .outer:hover {
 	
@@ -103,11 +107,13 @@ border-style:none;
 
 /* start of callButton css */
 .callButton{
-	width:50px;
-	height: 48px;
+	margin-top: 8px;
+	width:60px;
+	height: 60px;
 }
 .callButton:hover{
-	opacity: 0.7;
+border-radius: 50%;
+	background-color: #dc3545;
 }
 /* end of callButton css */
 
@@ -115,8 +121,8 @@ border-style:none;
 .roundButton{
 	background-color: #15ad3d;
 
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: 60px;
 }
 /* end of roundButton css */
 
