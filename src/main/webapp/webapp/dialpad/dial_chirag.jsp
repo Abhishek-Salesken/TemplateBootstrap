@@ -17,13 +17,9 @@
 	href="<%=baseURL%>webapp/assets/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/dial.css">
-<script type="text/javascript">
-	function f() {
-		var e = document.getElementsByClassName('inner');
+<link rel="stylesheet"
+	href="<%=baseURL%>webapp/assets/css/dial_chirag.css">
 
-	}
-</script>
 </head>
 <body>
 
