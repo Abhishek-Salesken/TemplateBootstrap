@@ -121,7 +121,7 @@
                               <div class="form-group col-md-6">
                                  <label for="task_by" class="h5 f-14">Task By</label>
                                  <select name="select_taskby" multiple="multiple" id="select_taskby">
-                                    <option value="AL">Alabama <img src="https://avatars2.githubusercontent.com/u/8127015?v=4" alt="" height="42" width="42"> </option>
+                                    <option value="AL">Alabama </option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
                                     <option value="AR">Arkansas</option>
