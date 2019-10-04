@@ -12,12 +12,12 @@
 			+ request.getContextPath() + "/";
 %>
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/bootstrap.min.css">
+	href="<%=baseURL%>assets/css/bootstrap.min.css">
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/font-awesome.min.css">
+	href="<%=baseURL%>assets/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/dialpad.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/dialpad.css">
 
 </head>
 <body>
@@ -146,10 +146,10 @@
 		</div>
 
 	</div>
-	<script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/dialpad.js"></script>
+	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
+	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+	<script src="<%=baseURL%>assets/js/dialpad.js"></script>
 	<script>
 		$("[data-toggle=popover]").popover({
 			container : '#dialer_view',
