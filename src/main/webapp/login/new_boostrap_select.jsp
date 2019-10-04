@@ -21,71 +21,9 @@
          href="<%=baseURL%>assets/css/select2.min.css">
       <link rel="stylesheet"
          href="<%=baseURL%>assets/css/jquery.multiselect.css">
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
          
-         <style type="text/css">
-         .chosen-drop>.chosen-results>li:nth-child(even) 
-         {background-color: 	 #f9f9f9;}
-         
-
-.myselectchoosen+.chosen-container-single .chosen-single {
-    height: 40px;
-    border-radius: 3px;
-    border: 1px solid #CCCCCC;
-    background:white;
-    background-image: none !important;
-   
-}
-
-.myselectchoosen+.chosen-container-single  .chosen-search{
- padding: 0px 25px 13px 25px;
- }
-
-
-.myselectchoosen+.chosen-container-single  .chosen-search-input{
-padding-left:20px !important;
-   padding-right:20px !important;
-   min-height: 42px;
-   margin: 1px -34px 0px 0px !important;
-}
-.myselectchoosen+.chosen-container-single .chosen-single span {
-    padding-top: 7px;
-}
-.myselectchoosen+.chosen-container-single .chosen-single div b {
-    margin-top: 2px;
-}
-       .myselectchoosen+.chosen-container-single .chosen-results>li{
-       min-height:60px;
-       border-bottom: 1px solid #cccccc;
-       }  
-       
-       
-       
-       
-       
-       .myselectchoosen+.chosen-container-multi .chosen-choices {
-    min-height: 40px;
-    border-radius: 3px;
-    border: 1px solid #CCCCCC;
-    background:white;
-    background-image: none !important;
-   
-}
-
-.myselectchoosen+.chosen-container-multi  .chosen-search-input{
-padding-left:20px !important;
-   padding-right:20px !important;
-}
-.myselectchoosen+.chosen-container-multi .search-field {
-    padding-top: 7px !important;
-}
-.myselectchoosen+.chosen-container-multi .chosen-single div b {
-    margin-top: 2px;
-}
-       .myselectchoosen+.chosen-container-multi .chosen-results>li{
-       min-height:60px;
-       }  
-         
-         </style>
+         <!-- https://developer.snapappointments.com/bootstrap-select/options/#sanitizer -->
    </head>
    <body>
       <!--------------------------------------------- Opening of container ------------------------------------------------------>
@@ -115,7 +53,7 @@ padding-left:20px !important;
                            <div class="form-group">
                               <label for="lead_name" class="h5 f-14">Lead Name</label> 
                               <select data-placeholder="Choose a Country..." class=" myselectchoosen chosen-select"  tabindex="4">
-                                 <option value=""></option>
+                                 <!-- <option value=""></option>
                                  <option value="United States">United States &nbsp; Miriam Franklin &nbsp;+91 445 546 6456</option>
                                  <option value="United Kingdom">United Kingdom</option>
                                  <option value="Afghanistan">Afghanistan</option>
@@ -215,10 +153,13 @@ padding-left:20px !important;
                                  <option value="Mauritius">Mauritius</option>
                                  <option value="Mayotte">Mayotte</option>
                                  <option value="Mexico">Mexico</option>
-                                 <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                 <option value="Micronesia, Federated States of">Micronesia, Federated States of</option> -->
 
 
-                                 <option value="Zimbabwe">Zimbabwe</option>
+                                 <option data-content="<div class='row'> <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div> </div>">Miriam Franklin</option>
+<option data-content="<span class='badge badge-danger label-important'>Ketchup</span>">Ketchup</option>
+<option data-content="<span class='badge badge-success'>Relish</span>">Relish</option>
+<option data-content="<span class='badge badge-info'>Mayonnaise</span>">Mayonnaise</option>
                               </select>
                            </div>
                            <div class="form-group">
@@ -262,11 +203,18 @@ padding-left:20px !important;
       <script src="<%=baseURL%>assets/js/select2.min.js"></script>
       <script src="<%=baseURL%>assets/js/chosen.jquery.js"></script>
       <script src="<%=baseURL%>assets/js/chosen.jquery.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
       <script>
-         $(".chosen-select1").chosen({width:'100%',no_results_text: "Oops, nothing found!"}); 
-         
-            $(".chosen-select").chosen({width:'100%'});
-            $(".chosen-select2").chosen({max_selected_options: 5});
+      $( document ).ready(function() {
+    	  $('.chosen-select').selectpicker({
+          width:'100%',
+          sanitize:false,
+          showContent:false,
+          liveSearch:true
+          });
+    	});
+       
       </script>
    </body>
 </html>
