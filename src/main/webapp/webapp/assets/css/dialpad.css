@@ -110,6 +110,11 @@ html, body {
 	display: inline-block;
 	background-color: #edf0f5;
 }
+
+.outer:active {
+	color: #dc3545;
+}
+
 /* end of outer css */
 
 /* start of callButton css */
@@ -145,6 +150,8 @@ html, body {
 	line-height: 30px;
 }
 /* end of inner css */
+
+/* start of inner and outer spinner css */
 input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button
 	{
 	-webkit-appearance: none;
@@ -156,7 +163,5 @@ input[type=number]::-moz-outer-spin-button, input[type=number]::-moz-inner-spin-
 	-moz-appearance: none;
 	margin: 0;
 }
+/* end of inner and outer spinner css */
 
-.outer:active {
-	color: #dc3545;
-}
