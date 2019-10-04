@@ -12,15 +12,15 @@
          String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
          		+ request.getContextPath() + "/";
          %>
-      <link href="<%=baseURL%>webapp/assets/css/chosen.css" rel="stylesheet" />
+      <link href="<%=baseURL%>assets/css/chosen.css" rel="stylesheet" />
       <link rel="stylesheet"
-         href="<%=baseURL%>webapp/assets/css/bootstrap.min.css">
-      <link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/Modal.css">
-      <link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/all.css">
+         href="<%=baseURL%>assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="<%=baseURL%>assets/css/Modal.css">
+      <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
       <link rel="stylesheet"
-         href="<%=baseURL%>webapp/assets/css/select2.min.css">
+         href="<%=baseURL%>assets/css/select2.min.css">
       <link rel="stylesheet"
-         href="<%=baseURL%>webapp/assets/css/jquery.multiselect.css">
+         href="<%=baseURL%>assets/css/jquery.multiselect.css">
          
          <style type="text/css">
          .chosen-drop>.chosen-results>li:nth-child(even) 
@@ -199,12 +199,12 @@
          <!--  end of main row of page  -->
       </div>
       <!--------------------------------------------- closing of container ------------------------------------------------------>
-      <script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
-      <script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
-      <script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
-      <script src="<%=baseURL%>webapp/assets/js/select2.min.js"></script>
-      <script src="<%=baseURL%>webapp/assets/js/chosen.jquery.js"></script>
-      <script src="<%=baseURL%>webapp/assets/js/jquery.multiselect.css"></script>
+      <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+      <script src="<%=baseURL%>assets/js/popper.min.js"></script>
+      <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+      <script src="<%=baseURL%>assets/js/select2.min.js"></script>
+      <script src="<%=baseURL%>assets/js/chosen.jquery.js"></script>
+      <script src="<%=baseURL%>assets/js/chosen.jquery.js"></script>
       <script>
          $(".chosen-select1").chosen({width:'100%',no_results_text: "Oops, nothing found!"}); 
          
