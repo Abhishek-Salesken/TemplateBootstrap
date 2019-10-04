@@ -30,18 +30,24 @@
 		class="container d-flex justify-content-center align-items-center h-100 box_container"
 		id="dialer_view">
 
-		<div class="row box_row m-0 p-0">
-			<div class="col-md-12 col-12 pt-2" id="output">
-				<div class="input-group">
 
-					<input type="number" class="form-control" id="phone"
-						placeholder="Enter Number" maxLength="10">
+		<div class="row box_row m-0 p-0">
+
+			<div class="col-md-12 col-12 pt-2" id="output">
+
+				<div class="input-group border border-dark">
+
+					<input type="text" class="form-control border-0 remove-shadow right-border"
+						id="phone" placeholder="Enter Number" pattern="^[0-9]+$"
+						maxlength="14">
 					<div class="input-group-append">
-						<button class="btn border btnclick ">
+						<button class="btn  btnclick remove-shadow left-border">
 							<i class="fa fa-caret-left"></i>
 						</button>
 					</div>
 				</div>
+
+				<!-- <button type="submit">Submit</button> -->
 
 			</div>
 
@@ -112,7 +118,7 @@
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex   align-items-center justify-content-center myclick ">
-					<span class=" f-14">*</span>
+					<span class=" f-14 inner">*</span>
 				</div>
 			</div>
 			<div class="col-md-4 col-4    cursor_pointer">
@@ -125,12 +131,12 @@
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
 					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
-					<span class=" f-14">#</span>
+					<span class=" f-14 inner">#</span>
 				</div>
 			</div>
 			<div class="col-md-12  col-12   pb-1 cursor_pointer">
 				<div
-					class="button rounded-circle roundButton bg-dial inner mx-auto  ">
+					class="button rounded-circle roundButton bg-dial inner mx-auto dial-btn ">
 					<i
 						class=" callButton d-flex align-items-center justify-content-center fa fa-phone f-12 p-3 callButtonColor"></i>
 				</div>
@@ -138,46 +144,17 @@
 
 
 		</div>
+
 	</div>
 	<script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
+	<script src="<%=baseURL%>webapp/assets/js/dialpad.js"></script>
 	<script>
-		$("#phone").on("input", function() {
-			if ($('#phone').val().length == 10) {
-				alert("input exceeded!");
-			}
-		});
-		$(".myclick").on("click", function() {
-			if ($('#phone').val().length == 10) {
-				alert("input exceeded!");
-			}
-		});
-		$('body').on('shown', '.modal', function() {
-			$(document).off('focusin.modal')
-		});
-
-		$(document).ready(function() {
-			var x = document.getElementById("phone").maxLength;
-			console.log(x);
-		
-		});
-
-		$(".myclick").click(function() {
-			var num = $(this).find('.inner').html();
-			/* console.log(num); */
-			$('#phone').val($('#phone').val() + num)
-
-		});
-
-		$(".btnclick").click(function() {
-			/* console.log('button clicked'); */
-			$('#phone').val($("#phone").val().slice(0, -1));
-		});
-
 		$("[data-toggle=popover]").popover({
 			container : '#dialer_view',
 			html : true,
+			sanitize : false,
 			trigger : 'click',
 			content : function() {
 				return $('#dialer_view').html();
