@@ -1,7 +1,12 @@
-
+$("[data-toggle='popover']").on('show.bs.popover', function(){
+    alert('Dial Pad is about to be shown.');
+  });
 $("[data-toggle=popover]").on('shown.bs.popover', function() {
 	attachClick();
 });
+$("[data-toggle='popover']").on('hidden.bs.popover', function(){
+    alert('Dial Pad is now hidden.');
+  });
 //----------------- attachClick function for popover -----------------
 function attachClick() {
 	$("#phone1").on("input", function() {

@@ -150,19 +150,6 @@ html, body {
 }
 /* end of inner css */
 
-/* start of inner and outer spinner css */
-input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button
-	{
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-input[type=number]::-moz-outer-spin-button, input[type=number]::-moz-inner-spin-button
-	{
-	-moz-appearance: none;
-	margin: 0;
-}
-/* end of inner and outer spinner css */
 
 
 .remove-shadow{
