@@ -122,7 +122,7 @@ $(document).ready(function() {
 $(".myclick").click(function() {
 	var num = $(this).find('.inner').html();
 	console.log(num);
-	$.fn.check(num);
+	
 	if ($('#phone').val().length < 14) {
 
 		$('#phone').val($('#phone').val() + num)
@@ -136,7 +136,7 @@ $(".btnclick").click(function() {
 });
 
 
-$("#phone").on("keypress keyup blur",function (e) {  
+$("#phone").on("keypress keyup blur click",function (e) {  
 	
     $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
         if ((e.which < 48 || e.which > 57)) {
