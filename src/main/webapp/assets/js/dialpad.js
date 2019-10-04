@@ -136,7 +136,7 @@ $(".btnclick").click(function() {
 });
 
 
-$("#phone").on("keypress keyup blur click",function (e) {  
+$("#phone").on("keypress keyup blur",function (e) {  
 	
     $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
         if ((e.which < 48 || e.which > 57)) {
