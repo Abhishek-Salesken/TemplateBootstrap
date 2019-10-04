@@ -12,13 +12,15 @@
 			+ request.getContextPath() + "/";
 %>
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/bootstrap.min.css">
+	href="<%=baseURL%>assets/css/bootstrap.min.css">
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/font-awesome.min.css">
+	href="<%=baseURL%>assets/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/call_screen_chirag.css">
+	href="<%=baseURL%>assets/css/call_screen_chirag.css">
+	      <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+	
 </head>
 
 <body>
@@ -182,7 +184,7 @@
 				<div
 					class="imageMargin d-flex flex-column justify-content-center align-items-center">
 					<img alt=""
-						src="<%=baseURL%>webapp/assets/images/call_screen/call.png">
+						src="<%=baseURL%>assets/images/call_screen/call.png">
 					<h3>Start the process</h3>
 					<p>lorem lopsum is simply dummy text of the printing and
 						typesetting industry.</p>
