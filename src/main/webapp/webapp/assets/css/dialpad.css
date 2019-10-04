@@ -146,7 +146,6 @@ html, body {
 
 /* start of inner css */
 .inner {
-	
 	line-height: 30px;
 }
 /* end of inner css */
@@ -165,3 +164,16 @@ input[type=number]::-moz-outer-spin-button, input[type=number]::-moz-inner-spin-
 }
 /* end of inner and outer spinner css */
 
+
+.remove-shadow{
+	box-shadow: none !important;
+}
+
+.left-border{
+	border-left-style: solid;
+	border-left-color:  #343a40;
+}
+.right-border{
+	border-right: 1px solid !important;
+	border-right-color:  #343a40 !important;
+}
