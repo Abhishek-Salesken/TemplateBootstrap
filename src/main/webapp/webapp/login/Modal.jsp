@@ -26,26 +26,10 @@
          <!--  start of main row of page  -->
          <div class="row">
             <div class="col">
-               <div class="d-flex">
-                  <div class="mr-3">Hello</div>
-                  <button type="button" class="close" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
+
             </div>
          </div>
-         <div class="row align-items-center">
-            <div class="col-md-1 p-0 m-0">
-               <img alt=""
-                  src="https://s3.amazonaws.com/uifaces/faces/twitter/juamperro/128.jpg	"
-                  width="100" height="100">
-            </div>
-            <div class="col-md-11">
-               <p class="mb-0">id</p>
-               <h3 class="mb-0">First Name</h3>
-               <p class="mb-0">Last Name</p>
-            </div>
-         </div>
+
          <div class="row justify-content-center ">
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal"
@@ -77,6 +61,17 @@
                                  <option value="WY">Wyoming</option>
                               </select>
                            </div>
+                                                      <div class="form-group">
+                              <label for="lead_name" class="h5 f-14">To Do Task</label> 
+                              <select
+                                 id="to_do_task" class="form-control to_do_task rounded-0 w-100"
+                                 name="to_do_task">
+                                 <option selected>Choose...</option>
+                                 <option value="AL">Alabama</option>
+                                 <option value="WY">Wyoming</option>
+                              </select>
+                           </div>
+                           
                            <div class="form-row">
                               <div class="form-group col-md-6">
                                  <label for="task_type" class="h5 f-14">Task Type</label> 
@@ -121,7 +116,7 @@
                               <div class="form-group col-md-6">
                                  <label for="task_by" class="h5 f-14">Task By</label>
                                  <select name="select_taskby" multiple="multiple" id="select_taskby">
-                                    <option value="AL">Alabama </option>
+                                    <option value="AL" >Alabama </option>
                                     <option value="AK">Alaska</option>
                                     <option value="AZ">Arizona</option>
                                     <option value="AR">Arkansas</option>
@@ -332,10 +327,18 @@
          }
          
          $(function () {
-             $('#select_taskby').multiselect( );
+             
+             $('#select_taskby').multiselect({
+            	    search   : true,
+            	    selectAll: true,
+            	    showCheckbox: false,
+            	    texts    : {
+            	        placeholder: 'Select country',
+            	    }
+            	});
          }); 
          
-         
+       
       </script>
    </body>
 </html>
