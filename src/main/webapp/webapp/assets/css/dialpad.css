@@ -85,7 +85,6 @@ html, body {
 
 /* start of sub css */
 .sub {
-	margin-top: -8px;
 	color: grey;
 	opacity: 1;
 }
@@ -142,6 +141,22 @@ html, body {
 
 /* start of inner css */
 .inner {
-	margin-top: -8px;
+	
+	line-height: 30px;
 }
 /* end of inner css */
+input[type=number]::-webkit-outer-spin-button, input[type=number]::-webkit-inner-spin-button
+	{
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number]::-moz-outer-spin-button, input[type=number]::-moz-inner-spin-button
+	{
+	-moz-appearance: none;
+	margin: 0;
+}
+
+.outer:active {
+	color: #dc3545;
+}

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="ISO-8859-1">
 <title>Dial Pad</title>
 <%
@@ -31,92 +31,106 @@
 		id="dialer_view">
 
 		<div class="row box_row m-0 p-0">
-			<div class="col-md-12 col-12" id="output"></div>
+			<div class="col-md-12 col-12 pt-2" id="output">
+				<div class="input-group">
+
+					<input type="number" class="form-control" id="phone"
+						placeholder="Enter Number" maxLength="10">
+					<div class="input-group-append">
+						<button class="btn border btnclick ">
+							<i class="fa fa-caret-left"></i>
+						</button>
+					</div>
+				</div>
+
+			</div>
+
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex flex-column align-items-center justify-content-center  ">
+					class="outer  d-flex flex-column align-items-center justify-content-center myclick ">
+
 					<span class="inner f-14">1</span>
 					<div class=" sub  f-13">.</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-4    cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
-					<span class="inner f-14">2</span>
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
+					<span class="inner f-14 ">2</span>
 					<div class=" sub f-13">ABC</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">3</span>
 					<div class="sub  f-13">DEF</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">4</span>
 					<div class="sub  f-13">GHI</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4  cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">5</span>
 					<div class="sub  f-13">JKL</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">6</span>
 					<div class="sub  f-13">MNO</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">7</span>
 					<div class="sub  f-13">PQRS</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">8</span>
 					<div class="sub  f-13">TUV</div>
 				</div>
 			</div>
 			<div class=" col-md-4 col-4    cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">9</span>
 					<div class="sub  f-13">WXYZ</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex   align-items-center justify-content-center ">
+					class="outer  d-flex   align-items-center justify-content-center myclick ">
 					<span class=" f-14">*</span>
 				</div>
 			</div>
 			<div class="col-md-4 col-4    cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class="inner f-14">0</span>
 					<div class="sub f-13">+</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-4   cursor_pointer">
 				<div
-					class="outer  d-flex flex-column  align-items-center justify-content-center ">
+					class="outer  d-flex flex-column  align-items-center justify-content-center myclick">
 					<span class=" f-14">#</span>
 				</div>
 			</div>
 			<div class="col-md-12  col-12   pb-1 cursor_pointer">
 				<div
-					class="button rounded-circle roundButton bg-dial inner mx-auto ">
+					class="button rounded-circle roundButton bg-dial inner mx-auto  ">
 					<i
 						class=" callButton d-flex align-items-center justify-content-center fa fa-phone f-12 p-3 callButtonColor"></i>
 				</div>
@@ -129,6 +143,38 @@
 	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
 	<script>
+		$("#phone").on("input", function() {
+			if ($('#phone').val().length == 10) {
+				alert("input exceeded!");
+			}
+		});
+		$(".myclick").on("click", function() {
+			if ($('#phone').val().length == 10) {
+				alert("input exceeded!");
+			}
+		});
+		$('body').on('shown', '.modal', function() {
+			$(document).off('focusin.modal')
+		});
+
+		$(document).ready(function() {
+			var x = document.getElementById("phone").maxLength;
+			console.log(x);
+		
+		});
+
+		$(".myclick").click(function() {
+			var num = $(this).find('.inner').html();
+			/* console.log(num); */
+			$('#phone').val($('#phone').val() + num)
+
+		});
+
+		$(".btnclick").click(function() {
+			/* console.log('button clicked'); */
+			$('#phone').val($("#phone").val().slice(0, -1));
+		});
+
 		$("[data-toggle=popover]").popover({
 			container : '#dialer_view',
 			html : true,
@@ -139,6 +185,5 @@
 
 		});
 	</script>
-</body>
 </body>
 </html>
