@@ -23,15 +23,6 @@ function attachClick() {
 	$(document).ready(function() {
 		$('.popover').children().children().children().find('#phone').attr('id','phone1');
 		var x = document.getElementById("phone1").maxLength;
-		$.fn.check = function(value){
-			
-			if ((value >=48 && value <= 57)){
-				console.log("digit found");
-			}
-			else if(value != 8){
-				$('#phone1').val($("#phone1").val().slice(0, -1));
-			}
-		}
 		/* console.log(x); */
 		$.fn.validator = function(value) {
 			var pattern = /^[0-9]+$/;
@@ -71,11 +62,12 @@ function attachClick() {
 		$('#phone1').val($("#phone1").val().slice(0, -1));
 	});
 	
-	$("#phone1").keyup(function(event){
-		var num = event.which;
-		console.log(num);
-		$.fn.check(num);
+	$("#phone1").on("keypress keyup blur",function (e) {  
 		
+	    $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
+	        if ((e.which < 48 || e.which > 57)) {
+	            e.preventDefault();
+	    }
 	});
 }
 
@@ -100,15 +92,7 @@ $(".myclick").on("click", function() {
 
 $(document).ready(function() {
 	var x = document.getElementById("phone").maxLength;
-	$.fn.check = function(value){
-
-		if ((value >=48 && value <= 57)){
-			console.log("digit found");
-		}
-		else if(value != 8){
-			$('#phone').val($("#phone").val().slice(0, -1));
-		}
-	}
+	
 	/* console.log(x); */
 	$.fn.validator = function(value) {
 		var pattern = /^[0-9]+$/;
@@ -150,9 +134,11 @@ $(".btnclick").click(function() {
 	$('#phone').val($("#phone").val().slice(0, -1));
 });
 
-$("#phone").keyup(function(event){
-	var num = event.which;
-	console.log(num);
-	$.fn.check(num);
+
+$("#phone").on("keypress keyup blur",function (e) {  
 	
+    $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
+        if ((e.which < 48 || e.which > 57)) {
+            e.preventDefault();
+    }
 });
