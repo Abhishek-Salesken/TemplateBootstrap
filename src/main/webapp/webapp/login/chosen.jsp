@@ -21,6 +21,14 @@
          href="<%=baseURL%>webapp/assets/css/select2.min.css">
       <link rel="stylesheet"
          href="<%=baseURL%>webapp/assets/css/jquery.multiselect.css">
+         
+         <style type="text/css">
+         .chosen-drop>.chosen-results>li:nth-child(even) 
+         {background-color: 	 #e6ffe6;}
+         
+         
+         
+         </style>
    </head>
    <body>
       <!--------------------------------------------- Opening of container ------------------------------------------------------>
@@ -49,7 +57,7 @@
                         <form>
                            <div class="form-group">
                               <label for="lead_name" class="h5 f-14">Lead Name</label> 
-                              <select data-placeholder="Choose a Country..." class="chosen-select" multiple tabindex="4">
+                              <select data-placeholder="Choose a Country..." class="chosen-select"  tabindex="4">
                                  <option value=""></option>
                                  <option value="United States">United States</option>
                                  <option value="United Kingdom">United Kingdom</option>
@@ -172,21 +180,7 @@
                               </select>
                            </div>
                            
-                         <div class="form-group">
-                              <label for="lead_name" class="h5 f-14">Limited Select</label> 
-                              <select data-placeholder="Choose a Country..." class="chosen-select2" multiple tabindex="4">
-                                 <option value=""></option>
-                                 <option value="AL">Alabama</option>
-                                 <option value="WY">Wyoming</option>
-                                <option value="Virgin Islands, British">Virgin Islands, British</option>
-                                 <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
-                                 <option value="Wallis and Futuna">Wallis and Futuna</option>
-                                 <option value="Western Sahara">Western Sahara</option>
-                                 <option value="Yemen">Yemen</option>
-                                 <option value="Zambia">Zambia</option>
-                                 <option value="Zimbabwe">Zimbabwe</option>
-                              </select>
-                           </div>
+                         
                         </form>
                      </div>
                      <div class="modal-footer">
