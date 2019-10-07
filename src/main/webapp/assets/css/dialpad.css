@@ -152,18 +152,24 @@ html, body {
 
 
 /* start of remove-shadow css */
-.remove-shadow{
-	box-shadow: none !important;
+.removeShadow:focus{
+	
+	box-shadow: none;
 }
 /* end of remove-shadow css */
 
-/* start of border css */
-.left-border{
-	border-left-style: solid;
-	border-left-color:  #343a40;
+.showFocus{
+	
+	border: 1px solid;
+	border-color: black !important;
 }
-.right-border{
-	border-right: 1px solid !important;
-	border-right-color:  #343a40 !important;
+
+.btn-active:active{
+	color: #dc3545;
 }
-/* end of border css */
+
+.showFocus:focus{
+	outline:0 !important;
+	border-color: #dc3545 !important; 
+	box-shadow: 0 0 0 0.2rem rgba(216, 7, 7, 0.30) !important;
+}
