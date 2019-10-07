@@ -67,10 +67,11 @@
 						<div class="row p-0 m-0 border-bottom">
 							<div class="col-md-12 m-0 p-3">
 								<div class="input-group  d-flex align-items-center">
-									<input type="number" pattern="\d*" maxLength="14"
-										class="form-control removeShadow border-0  f-size p-0 m-0 background-color">
+									<input
+										class="form-control removeShadow border-0  f-size p-0 m-0 background-color"
+										type="tel" maxLength="14" onblur="isValid(this);" id="num" />
 									<div class="input-group-append">
-										<button class="btn p-0 " type="button">
+										<button class="btn p-0 " onclick="del();">
 											<i class="fa fa-backspace py-2"></i>
 										</button>
 									</div>
@@ -205,5 +206,20 @@
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 
+
+	<script type="text/javascript">
+		function del() {
+			var num = document.getElementById('num').value;
+			num = num.substr(0, num.length - 1);
+			document.getElementById('num').value = num;
+		}
+		function isValid(a) {
+			if (!(/^[0-9]+$/.test(a.value))) {
+				a.focus();
+				console.clear();
+				console.log("Please enter number");
+			}
+		}
+	</script>
 </body>
 </html>
