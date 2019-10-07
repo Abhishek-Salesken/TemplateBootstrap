@@ -69,7 +69,9 @@ p {
 .small {
 	font-size: 15px;
 }
-<<<<<<< HEAD
+
+<<<<<<<
+HEAD
 .dropdown-menu {
 	position: absolute;
 	background-color: white;
@@ -78,14 +80,9 @@ p {
 	margin: 0px !important;
 }
 
-
 .phone {
 	color: white;
-	padding: 12px;
-=======
-
-.btn {
-	font-weight: bold;
+	padding: 12px; ======= . btn { font-weight : bold;
 	-webkit-transition: .1s ease-in background-color;
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 1px;
@@ -96,7 +93,8 @@ p {
 	-moz-transition: background-color .2s linear 0s;
 	-webkit-transition: background-color .2s linear 0s;
 	-o-transition: background-color .2s linear 0s;
->>>>>>> f322731a88c416c278bcab5960a06fe61d43c45f
+	>>>>>>>
+	f322731a88c416c278bcab5960a06fe61d43c45f
 }
 
 .spanicons {
@@ -119,4 +117,9 @@ p {
 
 .active {
 	color: #3498db;
+}
+
+.containerDesign {
+	height: 1000px;
+	width: 1000px;
 }
