@@ -69,7 +69,8 @@
 								<div class="input-group  d-flex align-items-center">
 									<input
 										class="form-control removeShadow border-0  f-size p-0 m-0 background-color"
-										type="tel" maxLength="14" onblur="isValid(this);" id="num" />
+										type="text" oninput="numberOnly(this.id)" maxLength="14"
+										onblur="isValid(this);" id="num" />
 									<div class="input-group-append">
 										<button class="btn p-0 " onclick="del();">
 											<i class="fa fa-backspace py-2"></i>
@@ -208,6 +209,7 @@
 
 
 	<script type="text/javascript">
+		/* The below code is to remove number one by one on clicking backspace button. */
 		function del() {
 			var num = document.getElementById('num').value;
 			num = num.substr(0, num.length - 1);
@@ -219,6 +221,13 @@
 				console.clear();
 				console.log("Please enter number");
 			}
+		}
+
+		/* Below code is to enter only numbers in input group and limit to 14 */
+		function numberOnly(id) {
+			var element = document.getElementById(id);
+			var regex = /[^0-9]/gi;
+			element.value = element.value.replace(regex, "");
 		}
 	</script>
 </body>
