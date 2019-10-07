@@ -157,7 +157,11 @@
 			sanitize : false,
 			trigger : 'click',
 			content : function() {
-				return $('#dialer_view').html();
+				
+			//$('#dialer_view').appendTo($('#dialer_view').clone().find('input').attr('id','phone1'))
+				var a = $('#dialer_view').clone()
+				a.find('#phone').attr('id','phone1')
+				return a.html();
 			}
 
 		});

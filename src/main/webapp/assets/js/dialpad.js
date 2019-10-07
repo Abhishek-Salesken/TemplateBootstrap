@@ -26,7 +26,7 @@ function attachClick() {
 	});
 
 	$(document).ready(function() {
-		$('.popover').children().children().children().find('#phone').attr('id','phone1');
+	/*	$('.popover').children().children().children().find('#phone').attr('id','phone1');*/
 		$("#phone1").on("keypress keyup blur",function (e) {  
 			
 		    $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
@@ -34,7 +34,7 @@ function attachClick() {
 		            e.preventDefault();
 		    }
 		});
-		var x = document.getElementById("phone1").maxLength;
+		
 		/* console.log(x); */
 		$.fn.validator = function(value) {
 			var pattern = /^[0-9]+$/;
