@@ -13,9 +13,9 @@
 			+ request.getContextPath() + "/";
 %>
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/bootstrap.min.css">
+	href="<%=baseURL%>assets/css/bootstrap.min.css">
 <link rel="stylesheet"
-	href="<%=baseURL%>webapp/assets/css/ForgotPassword.css">
+	href="<%=baseURL%>assets/css/ForgotPassword.css">
 <link rel="stylesheet" href="<%=baseURL%>webapp/assets/css/all.css">
 </head>
 <body>
@@ -99,7 +99,7 @@
 						dolor sit amet, consectetur adipiscing elit. Nulla sit amet nibh
 						loborrtis, vehicula lorem at.</p>
 				</div>
-				<img src="<%=baseURL%>webapp/assets/images/Group 3179.svg"
+				<img src="<%=baseURL%>assets/images/Group 3179.svg"
 					class="img-fluid mt-5" alt="Responsive image">
 			</div>
 			<!--  end of right column of row which contains login background image and heading  -->
@@ -110,8 +110,8 @@
 	</div>
 	<!--------------------------------------------- closing of container ------------------------------------------------------>
 
-	<script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
+	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
+	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 </body>
 </html>

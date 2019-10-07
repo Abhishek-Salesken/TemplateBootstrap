@@ -33,14 +33,16 @@
 
 		<div class="row box_row m-0 p-0">
 
-			<div class="col-md-12 col-12 pt-2" id="output">
+			<div class="col-md-12 col-12 p-2 col-height" id="output">
 
-				<div class="input-group showFocus ">
+				<div class="group">
 
-					<input type="text" class="form-control border-0 shadow-none " id="phone"
+					<input type="text"
+						class="form-control rounded-0 showFocus inp-width" id="phone"
 						placeholder="Enter Number" pattern="^[0-9]+$" maxlength="14">
 					<div class="input-group-append">
-						<button class="btn  btnclick btn-active border-0 shadow-none">
+						<button
+							class="btn  btnclick btn-active border-0 shadow-none positioning">
 							<i class="fa fa-backspace"></i>
 						</button>
 					</div>
@@ -162,10 +164,11 @@
 				a.find('.myClick').removeClass('myClick').addClass('popoverClick')
 				a.find('.dial-btn').removeClass('dial-btn').addClass('dial-btnClick')
 				a.find('.btnclick').removeClass('btnclick').addClass('deleteClick')
+				a.find('.positioning').css("left" ,"13.3rem");
 	$(document).ready(function() {
 		$("#phone1").on("keyup", function() {
 			if ($('#phone1').val().length == 14) {
-				alert("input exceeded!");
+				alert("Limit Reached!");
 			}
 		});
 		$("#phone1").on("keypress keyup blur",function (e) {  
@@ -189,7 +192,7 @@
 		$(".popoverClick").click(function() {
 			var num = $(this).find('.inner').html();
 			if ($('#phone1').val().length == 14) {
-				alert("input exceeded!");
+				alert("Limit Reached!");
 			}
 			else  { if($('#phone1').val().length < 14) {
 				$('#phone1').val($('#phone1').val() + num)
@@ -203,7 +206,7 @@
 		
 		
 	});
-
+				
 				return a.html();
 			}
 		});

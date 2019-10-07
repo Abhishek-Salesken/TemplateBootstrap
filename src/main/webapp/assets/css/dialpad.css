@@ -150,26 +150,39 @@ html, body {
 }
 /* end of inner css */
 
-
 /* start of remove-shadow css */
-.removeShadow:focus{
-	
+.removeShadow:focus {
 	box-shadow: none;
 }
 /* end of remove-shadow css */
-
-.showFocus{
-	
-	border: 1px solid;
-	border-color: black !important;
-}
-
-.btn-active:active{
+.btn-active:active {
 	color: #dc3545;
 }
 
-.showFocus:focus{
-	outline:0 !important;
-	border-color: #dc3545 !important; 
+.positioning {
+	top: -2.3rem;
+	left: 14.3rem;
+	z-index: 1;
+}
+
+.inp-width{
+	width: 100%;
+}
+
+.col-height{
+	height: 4rem;
+}
+
+.showFocus {
+	border-color: black;
+}
+
+.group{
+	 position: relative;
+}
+
+.showFocus:focus {
+	outline: 0 !important;
+	border-color: #dc3545 !important;
 	box-shadow: 0 0 0 0.2rem rgba(216, 7, 7, 0.30) !important;
 }

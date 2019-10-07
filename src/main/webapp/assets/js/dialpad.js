@@ -13,7 +13,7 @@ $(document).ready(function() {
 	
 	$("#phone").on("keyup", function() {
 		if ($('#phone').val().length == 14) {
-			alert("Input exceeded!");
+			alert("Limit Reached!");
 		}
 	});
 	$(".myClick").on("click", function() {
@@ -29,7 +29,7 @@ $(document).ready(function() {
 	$.fn.validator = function(value) {
 
 		if (value.val().length == 0) {
-			alert('No Input!');
+			alert('Limit Reached!');
 		}
 	}
 	$.fn.format = function(value) {
