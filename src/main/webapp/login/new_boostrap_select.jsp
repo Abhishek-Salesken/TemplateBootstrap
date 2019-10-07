@@ -49,7 +49,10 @@ border-radius: 0px !important;
 border-radius: 0px !important;
 border: 1px solid #cccccc;
 }
+.text{
 
+width:100%;
+}
 @media screen and (min-width: 768px) {
  .bootstrap-select .dropdown-menu li a {
  
@@ -118,93 +121,93 @@ border: 1px solid #cccccc;
 
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Dersa
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Swerat
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">gerwea
 											fgfd</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ftdref
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
 <option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
 											<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Dersa
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Swerat
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">gerwea
 											fgfd</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ftdref
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
 									</select>
@@ -217,87 +220,87 @@ border: 1px solid #cccccc;
 
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
 										
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Dersa
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Swerat
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">gerwea
 											fgfd</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ftdref
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
 											<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Dersa
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Swerat
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">gerwea
 											fgfd</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ftdref
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
-											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
 
