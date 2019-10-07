@@ -28,38 +28,56 @@
 <style type="text/css">
 .inner>.dropdown-menu>li:nth-child(even) {
 	background-color: #f9f9f9;
-
 }
+
 .bs-searchbox {
+	background-color: #f9f9f9;
+	padding: 22px 22px;
+}
 
-	background-color: #f9f9f9; 
-	 padding: 22px 22px;
+.bs-searchbox>input {
+	border-radius: 0px !important;
 }
-.bs-searchbox>input{
-border-radius: 0px !important;
-}
- .inner>.dropdown-menu>li {
-	
+
+.inner>.dropdown-menu>li {
 	border-bottom: 1px solid #cccccc;
-} 
+}
+
 .dropdown-menu {
 	padding-top: 0px;
 }
+
 .dropdown>.btn {
-border-radius: 0px !important;
-border: 1px solid #cccccc;
+	border-radius: 0px !important;
+	border: 1px solid #cccccc;
 }
-.text{
 
-width:100%;
+.text {
+	width: 100%;
 }
+
 @media screen and (min-width: 768px) {
- .bootstrap-select .dropdown-menu li a {
- 
-    height: 40px;
+	.bootstrap-select .dropdown-menu li a {
+		height: 40px;
+	}
 }
-  }
+/* Start of task type drop0-down css */
 
+.task_type ~ .dropdown-menu a{
+
+}
+
+.task_type ~ .dropdown-menu li{
+border-bottom: none !important;
+background-color:white !important;
+}
+
+.task_type ~ .dropdown-menu >.dropdown-item: {
+    color: black;
+    text-decoration: none;
+    background-color: #eeeeee !important;
+}
+/*end of task type drop0-down css */
 /* .dropdown-item {
 	height: 100%;
 } */
@@ -161,14 +179,14 @@ width:100%;
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
-<option
+										<option
 											data-content="<div class='row'>
 											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
-											<option
+										<option
 											data-content="<div class='row'>
 											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
@@ -225,7 +243,7 @@ width:100%;
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
-										
+
 										<option
 											data-content="<div class='row'>
 											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
@@ -261,7 +279,7 @@ width:100%;
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
-											<option
+										<option
 											data-content="<div class='row'>
 											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
@@ -308,6 +326,46 @@ width:100%;
 								</div>
 
 
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="task_type">Task Type</label> 
+										<div>
+										<select class="selectpicker w-100 task_type" title="Select here" >
+											<option data-icon="fas fa-phone-volume">Call Task</option>
+											<option data-icon="fas fa-envelope-square">Email Task</option>
+											<option data-icon="fas fa-desktop">Webinar Task</option>
+											<option data-icon="fas fa-signal">Presentation</option>
+										</select>
+										</div>
+									</div>
+									<div class="form-group col-md-6">
+										<label for="inputPassword4">Password</label> <div>
+										<select class="selectpicker w-100" title="Select here" >
+											<option data-icon="fas fa-phone-volume">Call Task</option>
+											<option data-icon="fas fa-envelope-square">Email Task</option>
+											<option data-icon="fas fa-desktop">Webinar Task</option>
+											<option data-icon="fas fa-signal">Presentation</option>
+										</select>
+										</div>
+									</div>
+								</div>
+								<!-- <div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="task_name" class="h5 f-14">Task Name</label> 
+										<select class="selectpicker" title="Select here">
+											<option data-icon="fas fa-phone-volume">Call Task</option>
+											<option data-icon="fas fa-envelope-square">Email Task</option>
+											<option data-icon="fas fa-desktop">Webinar Task</option>
+											<option data-icon="fas fa-signal">Presentation</option>
+										</select>
+									</div>
+									<div class="form-group col-md-6">
+										<select class="selectpicker">
+											<option data-icon="fa-heart">Ketchup</option>
+										</select>
+									</div>
+								</div> -->
+
 							</form>
 						</div>
 						<div class="modal-footer">
@@ -342,7 +400,7 @@ width:100%;
 				sanitize : false,
 				showContent : false,
 				liveSearch : true,
-				virtualScroll:'600'
+				virtualScroll : '600'
 			});
 		});
 	</script>
