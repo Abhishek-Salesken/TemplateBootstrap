@@ -65,8 +65,8 @@
 					<div class="tab-pane fade show active" id="dialer" role="tabpanel"
 						aria-labelledby="dialer-tab">
 						<div class="row p-0 m-0 border-bottom">
-							<div class="col-md-12 m-0 p-3">
-								<div class="input-group  d-flex align-items-center">
+							<div class="col-md-12 m-0 p-1">
+								<div class="input-group d-flex align-items-center">
 									<input
 										class="form-control removeShadow border-0  f-size p-0 m-0 background-color"
 										type="text" oninput="numberOnly(this.id)" maxLength="14"

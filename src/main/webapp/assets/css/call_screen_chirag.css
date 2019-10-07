@@ -1,5 +1,5 @@
 .verticalBorder {
-	border-right-style: dotted;
+	border-right-style: dashed;
 	border-color: #D0D0D0;
 	border-width: thin;
 }
@@ -175,7 +175,7 @@
 }
 
 .f-size {
-	font-size: 28px;
+	font-size: 22px;
 }
 
 .removeShadow:focus {
