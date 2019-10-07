@@ -28,27 +28,45 @@
 <style type="text/css">
 .inner>.dropdown-menu>li:nth-child(even) {
 	background-color: #f9f9f9;
-}
 
-.dropdown-menu>li {
-	height: 40px;
+}
+.bs-searchbox {
+
+	background-color: #f9f9f9; 
+	 padding: 22px 22px;
+}
+.bs-searchbox>input{
+border-radius: 0px !important;
+}
+ .inner>.dropdown-menu>li {
+	
 	border-bottom: 1px solid #cccccc;
+} 
+.dropdown-menu {
+	padding-top: 0px;
+}
+.dropdown>.btn {
+border-radius: 0px !important;
+border: 1px solid #cccccc;
 }
 
-.dropdown-item {
+@media screen and (min-width: 768px) {
+ .bootstrap-select .dropdown-menu li a {
+ 
+    height: 40px;
+}
+  }
+
+/* .dropdown-item {
 	height: 100%;
-}
+} */
 
-.form-control {
+/* .form-control {
 	margin: 6px 9px 12px 0px !important;
 	padding: 13px 28px !important;
-	border-radius: 0px !important;
+	
 }
 
-.bs-searchbox {
-	padding: 22px 28px 7px 28px !important;
-	background-color: #f9f9f9;
-}
 
 .dropdown-item:active {
 	color: #fff;
@@ -64,10 +82,7 @@
 	background-color: #007bff;
 }
 
-.dropdown-menu {
-	padding-top: 0px;
-	overflow: none !important;
-}
+  */
 </style>
 </head>
 <body>
@@ -97,11 +112,60 @@
 							<form>
 								<div class="form-group">
 									<label for="lead_name" class="h5 f-14">Lead Name</label> <select
-										data-placeholder="Choose a Country..."
-										class=" myselectchoosen chosen-select" tabindex="4" title="Choose Lead Name">
+										class=" myselectchoosen chosen-select" tabindex="4"
+										title="Choose Lead Name">
 
 
 										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Miriam
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Dersa
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Swerat
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">gerwea
+											fgfd</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ftdref
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ddgry
+											Franklin</option>
+<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ddgry
+											Franklin</option>
+											<option
 											data-content="<div class='row'>
 											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
@@ -146,12 +210,55 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<label for="lead_name" class="h5 f-14">Task Name</label> <select
-										data-placeholder="Choose a Country..."
-										class=" myselectchoosen chosen-select" tabindex="4" multiple title="Choose Task Name">
+									<label for="task_name" class="h5 f-14">Task Name</label> <select
+										class=" myselectchoosen chosen-select" tabindex="4"
+										title="Choose Task Name" multiple>
 
 
 										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Miriam
+											Franklin</option>
+										
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Dersa
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Swerat
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">gerwea
+											fgfd</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ftdref
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-5 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ddgry
+											Franklin</option>
+											<option
 											data-content="<div class='row'>
 											 <div class='col-md-5 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
@@ -193,6 +300,7 @@
 											 <div class='col-md-3 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
+
 									</select>
 								</div>
 
@@ -231,7 +339,7 @@
 				sanitize : false,
 				showContent : false,
 				liveSearch : true,
-				virtualScroll : '600'
+				virtualScroll:'600'
 			});
 		});
 	</script>
