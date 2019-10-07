@@ -23,9 +23,9 @@
 </head>
 
 <body>
-	<div class="container rowShadow">
+	<div class="container border">
 		<header>
-			<div class="row p-2 border-bottom">
+			<div class="row p-2 border-bottom background-color">
 				<div class="col-md-2 p-0 d-flex align-items-center">
 					<button class="btn pt-2" type="submit">
 						<i class="fa fa-arrow-left left-arrow d-flex align-items-center"></i>
@@ -45,34 +45,45 @@
 			</div>
 		</header>
 		<div class="row">
-			<div class="col-md-3 border-right pt-2">
+			<div class="col-md-3 pt-2 background-color">
+				<ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
+					<li class="nav-item p-0 m-0"><a
+						class="nav-link active tabText" id="dialer-tab" data-toggle="tab"
+						href="#dialer" role="tab" aria-controls="dialer"
+						aria-selected="true">Dialer</a></li>
 
-				<ul class="nav nav-tabs " id="myTab" role="tablist">
-
-					<li class="nav-item"><a class="nav-link active tabText"
-						id="dialer-tab" data-toggle="tab" href="#dialer" role="tab"
-						aria-controls="dialer" aria-selected="true">Dialer</a></li>
-
-					<li class="nav-item"><a class="nav-link tabText"
+					<li class="nav-item p-0 m-0"><a class="nav-link tabText"
 						id="recent-tab" data-toggle="tab" href="#recent" role="tab"
 						aria-controls="recent" aria-selected="false">Recent</a></li>
 
-					<li class="nav-item"><a class="nav-link tabText"
+					<li class="nav-item p-0 m-0"><a class="nav-link tabText"
 						id="leads-tab" data-toggle="tab" href="#leads" role="tab"
 						aria-controls="leads" aria-selected="false">Leads</a></li>
 				</ul>
 
-				<div class="row p-0 m-0 ">
-					<div class="row border-bottom m-0">
-						<div class="input-group d-flex align-items-center p-3">
-							<input type="text" class="form-control p-0 m-0">
-							<div class="input-group-append">
-								<button class="btn p-0 " type="submit">
-									<i class="fa fa-backspace"></i>
-								</button>
-							</div>
+				<div class="tab-content pt-3" id="myTabContent">
+					<div class="tab-pane fade show active" id="dialer" role="tabpanel"
+						aria-labelledby="dialer-tab">This is dialer tab</div>
+					<div class="tab-pane fade" id="recent" role="tabpanel"
+						aria-labelledby="recent-tab">This is recent tab</div>
+					<div class="tab-pane fade" id="leads" role="tabpanel"
+						aria-labelledby="leads-tab">This is leads tab</div>
+				</div>
+				<hr>
+				<div class="row p-0 m-0 border-bottom">
+					<div class="col-md-10  m-0 p-3">
+						<div class="input-group d-flex align-items-center">
+							<input type="text" pattern="\d*" maxlength="14"
+								class="form-control p-0 m-0 background-color">
 						</div>
 					</div>
+
+					<div class="col-md-2 d-flex align-items-center">
+						<button class="btn p-0 " type="submit">
+							<i class="fa fa-backspace py-2"></i>
+						</button>
+					</div>
+
 				</div>
 				<div class="row pt-4 marginBottom">
 					<div class="col-md-4 col-4 d-flex justify-content-center">
@@ -168,16 +179,17 @@
 					</div>
 					<div class="col-md-12 col-12">
 						<div
-							class="digit mx-auto d-flex flex-column justify-content-center align-items-center ">
+							class="digit mx-auto d-flex flex-column justify-content-center align-items-center">
 							<div class="button rowShadow rounded-circle rounded-circle-num">
-								<i class="fa fa-phone phone" aria-hidden="true"></i>
+								<i
+									class="fa fa-phone phone mt-1 d-flex flex-column justify-content-center align-items-center"
+									aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-9 imgShadow">
 				<div
 					class="imageMargin d-flex flex-column justify-content-center align-items-center">
 					<img alt="" src="<%=baseURL%>assets/images/call_screen/call.png">
