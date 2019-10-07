@@ -23,7 +23,7 @@
 </head>
 
 <body>
-	<div class="container border rowShadow">
+	<div class="container rowShadow">
 		<header>
 			<div class="row p-2 border-bottom">
 				<div class="col-md-2 p-0 d-flex align-items-center">
@@ -38,16 +38,16 @@
 						class="breadcrumb breadcrumbBg d-flex align-items-center m-0 p-0">
 						<li><a class="breadcrumbText" href="#">Task Details</a></li>
 						<li><i
-							class="fa fa-chevron-circle-right chevron-color px-2 d-flex align-items-center"></i></li>
+							class="fa fa-chevron-circle-right chevron-color pt-1 px-2 d-flex align-items-center"></i></li>
 						<li><a class="breadcrumbText" href="#">Call Task</a></li>
 					</ol>
 				</div>
 			</div>
 		</header>
 		<div class="row">
-			<div class="col-md-3 border-right pt-4">
+			<div class="col-md-3 border-right pt-2">
 
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<ul class="nav nav-tabs " id="myTab" role="tablist">
 
 					<li class="nav-item"><a class="nav-link active tabText"
 						id="dialer-tab" data-toggle="tab" href="#dialer" role="tab"
@@ -63,12 +63,11 @@
 				</ul>
 
 				<div class="row p-0 m-0 ">
-					<div class="row border-bottom pt-2">
-						<div class="input-group d-flex align-items-center mb-3">
-							<input type="text" class="form-control"
-								placeholder="Enter the number">
+					<div class="row border-bottom m-0">
+						<div class="input-group d-flex align-items-center p-3">
+							<input type="text" class="form-control p-0 m-0">
 							<div class="input-group-append">
-								<button class="btn mr-3 pt-2" type="submit">
+								<button class="btn p-0 " type="submit">
 									<i class="fa fa-backspace"></i>
 								</button>
 							</div>
@@ -192,8 +191,8 @@
 
 
 
-	<script src="<%=baseURL%>webapp/assets/js/jquery-3.4.1.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/popper.min.js"></script>
-	<script src="<%=baseURL%>webapp/assets/js/bootstrap.min.js"></script>
+	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
+	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 </body>
 </html>
