@@ -48,6 +48,7 @@
 			<div class="col-md-3 border-right pt-4">
 
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
+
 					<li class="nav-item"><a class="nav-link active tabText"
 						id="dialer-tab" data-toggle="tab" href="#dialer" role="tab"
 						aria-controls="dialer" aria-selected="true">Dialer</a></li>
@@ -77,7 +78,7 @@
 				<div class="row pt-4 marginBottom">
 					<div class="col-md-4 col-4 d-flex justify-content-center">
 						<div class="digit d-flex flex-column align-items-center">
-							<div class="sp mt-3">1</div>
+							<div class="sp mt-2 pt-1">1</div>
 						</div>
 					</div>
 					<div

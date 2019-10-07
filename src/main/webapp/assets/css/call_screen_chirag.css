@@ -32,6 +32,7 @@
 	color: gray;
 	text-decoration: none;
 	background-color: transparent;
+	font-size: 15px;
 }
 
 .tabText:hover {
