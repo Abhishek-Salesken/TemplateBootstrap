@@ -1,5 +1,5 @@
 .verticalBorder {
-	border-left-style: dotted;
+	border-right-style: dotted;
 	border-color: #D0D0D0;
 	border-width: thin;
 }
@@ -11,13 +11,21 @@
 
 .chevron-color {
 	color: #D0D0D0;
+	font-size: 9px;
 }
 
 .breadcrumbText {
 	color: gray;
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 15px;
+	font-size: 12px;
+}
+
+.breadcrumbText:hover {
+	color: gray;
+	text-decoration: none;
+	background-color: transparent;
+	font-size: 13px;
 }
 
 .tabText {
@@ -34,7 +42,8 @@
 	background-color: white;
 }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+.nav-tabs .nav-item .nav-item.show .nav-link, .nav-tabs .nav-link.active
+	{
 	color: #495057;
 	font-weight: bold;
 	background-color: #fff;
@@ -107,6 +116,8 @@
 .phone {
 	color: white;
 	padding: 12px;
+	font-size: 25px;
+	transform: rotate(90deg);
 }
 
 .sp {
@@ -129,4 +140,39 @@
 
 .form-control {
 	border: none;
+}
+
+.btn {
+	color: gray;
+}
+
+.btn:hover {
+	color: gray;
+}
+
+.nav-tabs .nav-link {
+	border: white;
+}
+
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #80bdff;
+	outline: 0;
+	box-shadow: none;
+}
+
+.left-arrow {
+	color: black;
+	font-size: 17px;
+}
+
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow: none;
+}
+
+.text-color {
+	color: gray;
+	font-size: 12px;
 }

@@ -11,16 +11,15 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
-<link rel="stylesheet"
-	href="<%=baseURL%>assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/call_screen_chirag.css">
-	      <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
-	
+<link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+
 </head>
 
 <body>
@@ -28,11 +27,13 @@
 		<header>
 			<div class="row p-2 border-bottom">
 				<div class="col-md-2 p-0 d-flex align-items-center">
-					<div class="fa fa-arrow-left d-flex align-items-center"></div>
-
-					<h3 class="d-flex align-items-center m-0 pl-4">Call Task</h3>
+					<button class="btn pt-2" type="submit">
+						<i class="fa fa-arrow-left left-arrow d-flex align-items-center"></i>
+					</button>
+					<h5 class="d-flex align-items-center verticalBorder m-0 px-4">Call
+						Task</h5>
 				</div>
-				<div class="col-md-7 d-flex align-items-center verticalBorder">
+				<div class="col-md-8 d-flex align-items-center">
 					<ol
 						class="breadcrumb breadcrumbBg d-flex align-items-center m-0 p-0">
 						<li><a class="breadcrumbText" href="#">Task Details</a></li>
@@ -43,8 +44,8 @@
 				</div>
 			</div>
 		</header>
-		<div class="row p-2">
-			<div class="col-md-3 border-right">
+		<div class="row">
+			<div class="col-md-3 border-right pt-4">
 
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item"><a class="nav-link active tabText"
@@ -60,27 +61,23 @@
 						aria-controls="leads" aria-selected="false">Leads</a></li>
 				</ul>
 
-				<div class="row p-0 m-0 border-bottom "></div>
-				<div class="row border-bottom pt-2">
-					<div class="input-group d-flex align-items-center mb-3">
-						<input type="text" class="form-control"
-							placeholder="Enter the number">
-						<div class="input-group-append">
-							<button class="btn mr-3" type="submit">
-								<i class="far fa-clock"></i>
-							</button>
-
-
+				<div class="row p-0 m-0 ">
+					<div class="row border-bottom pt-2">
+						<div class="input-group d-flex align-items-center mb-3">
+							<input type="text" class="form-control"
+								placeholder="Enter the number">
+							<div class="input-group-append">
+								<button class="btn mr-3 pt-2" type="submit">
+									<i class="fa fa-backspace"></i>
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row pt-4 marginBottom">
-					<div
-						class="col-md-4 col-4 d-flex justify-content-center align-items-center">
-						<div
-							class="digit d-flex flex-column justify-content-center align-items-center">
-							<div class="sp">1</div>
-							<div class="sub">.</div>
+					<div class="col-md-4 col-4 d-flex justify-content-center">
+						<div class="digit d-flex flex-column align-items-center">
+							<div class="sp mt-3">1</div>
 						</div>
 					</div>
 					<div
@@ -173,7 +170,7 @@
 						<div
 							class="digit mx-auto d-flex flex-column justify-content-center align-items-center ">
 							<div class="button rowShadow rounded-circle rounded-circle-num">
-								<i class="fa fa-phone phone"></i>
+								<i class="fa fa-phone phone" aria-hidden="true"></i>
 							</div>
 						</div>
 					</div>
@@ -183,13 +180,11 @@
 			<div class="col-md-9">
 				<div
 					class="imageMargin d-flex flex-column justify-content-center align-items-center">
-					<img alt=""
-						src="<%=baseURL%>assets/images/call_screen/call.png">
-					<h3>Start the process</h3>
-					<p>lorem lopsum is simply dummy text of the printing and
-						typesetting industry.</p>
+					<img alt="" src="<%=baseURL%>assets/images/call_screen/call.png">
+					<h5>Start the process</h5>
+					<p class="text-color">lorem lopsum is simply dummy text of the
+						printing and typesetting industry.</p>
 				</div>
-
 			</div>
 		</div>
 	</div>
