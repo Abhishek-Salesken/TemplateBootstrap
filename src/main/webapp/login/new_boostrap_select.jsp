@@ -31,7 +31,6 @@
 }
 
 .bs-searchbox {
-	background-color: #f9f9f9;
 	padding: 22px 22px;
 }
 
@@ -62,48 +61,76 @@
 	}
 }
 /* Start of task type drop0-down css */
-
-.task_type ~ .dropdown-menu a{
-
+.task_type ~ .dropdown-menu li {
+	border-bottom: none !important;
 }
 
-.task_type ~ .dropdown-menu li{
-border-bottom: none !important;
-background-color:white !important;
+.task_type ~ .dropdown-menu .dropdown-item.active, .dropdown-item:active
+	{
+	color: black;
+	font-weight: bold;
+	font-size: 14px;
+	background-color: #eeeeee;
 }
 
-.task_type ~ .dropdown-menu >.dropdown-item: {
-    color: black;
-    text-decoration: none;
-    background-color: #eeeeee !important;
+.task_type ~ .dropdown-menu .dropdown-item>.fas {
+	display: inline-block;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	box-shadow: 0px 0px 2px #888;
+	padding: 6px 6px;
+	color: white;
+	margin-right: 5px;
 }
+
+.task_type ~ .dropdown-menu .dropdown-item>.text {
+	width: 90%;
+}
+
+.task_type ~ .dropdown-menu a:hover {
+	color: black;
+	background-color: #eeeeee !important;
+}
+
+.task_type ~ .dropdown-menu a {
+	padding-top: 9px;
+	height: 50px !important;
+	color: #999999;
+	height: 50px !important;
+	font-size: 14px;
+	outline: none;
+}
+
+.task_type ~ .dropdown-menu a:focus {
+	border: none !important;
+}
+
+.task_type .inner>.dropdown-menu>li:nth-child(even) {
+	background-color: white;
+}
+
+/* start of color related css */
+.tea_color {
+	background-color: #57b280 !important;
+}
+
+.tangerine_color {
+	background-color: #f79c0d !important;
+}
+
+.soft_blue_color {
+	background-color: #6297f6 !important;
+}
+
+.lighter_purple_color {
+	background-color: #8665eb !important;
+}
+
+/* end of related css */
 /*end of task type drop0-down css */
-/* .dropdown-item {
-	height: 100%;
-} */
-
-/* .form-control {
-	margin: 6px 9px 12px 0px !important;
-	padding: 13px 28px !important;
-	
-}
 
 
-.dropdown-item:active {
-	color: #fff;
-	text-decoration: none;
-	height: 100% !important;
-	background-color: #007bff;
-}
-
-.dropdown-item:focus {
-	color: #fff;
-	text-decoration: none;
-	height: 100% !important;
-	background-color: #007bff;
-}
-
-  */
 </style>
 </head>
 <body>
@@ -328,24 +355,29 @@ background-color:white !important;
 
 								<div class="form-row">
 									<div class="form-group col-md-6">
-										<label for="task_type">Task Type</label> 
+										<label for="task_type">Task Type</label>
 										<div>
-										<select class="selectpicker w-100 task_type" title="Select here" >
-											<option data-icon="fas fa-phone-volume">Call Task</option>
-											<option data-icon="fas fa-envelope-square">Email Task</option>
-											<option data-icon="fas fa-desktop">Webinar Task</option>
-											<option data-icon="fas fa-signal">Presentation</option>
-										</select>
+											<select class="selectpicker w-100 task_type"
+												title="Select here">
+												<option data-icon="fas fa-phone-square-alt tea_color"
+													class="">Call Task</option>
+												<option data-icon="fas fa-envelope-square tangerine_color">Email
+													Task</option>
+												<option data-icon="fas fa-desktop soft_blue_color">Webinar
+													Task</option>
+												<option
+													data-icon="fas fa-file-powerpoint lighter_purple_color">Presentation</option>
+											</select>
 										</div>
 									</div>
 									<div class="form-group col-md-6">
-										<label for="inputPassword4">Password</label> <div>
-										<select class="selectpicker w-100" title="Select here" >
-											<option data-icon="fas fa-phone-volume">Call Task</option>
-											<option data-icon="fas fa-envelope-square">Email Task</option>
-											<option data-icon="fas fa-desktop">Webinar Task</option>
-											<option data-icon="fas fa-signal">Presentation</option>
-										</select>
+										<label for="task_by">Task By</label>
+										<div class="form-group">
+											<select class="selectpicker form-control">
+												<option>Mustard</option>
+												<option>Ketchup</option>
+												<option>Relish</option>
+											</select>
 										</div>
 									</div>
 								</div>
