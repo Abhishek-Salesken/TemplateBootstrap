@@ -32,7 +32,7 @@
 	color: gray;
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .tabText:hover {
@@ -51,7 +51,7 @@
 
 .nav-link {
 	display: block;
-	padding: 0.3rem 0.6rem 0.3rem 0.3rem !important;
+	padding: 0.3rem 0.3rem !important;
 }
 
 .imgShadow {
@@ -135,7 +135,7 @@
 }
 
 .marginBottom {
-	margin-bottom: 17rem;
+	margin-bottom: 15rem;
 }
 
 .imageMargin {

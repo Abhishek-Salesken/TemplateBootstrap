@@ -61,7 +61,7 @@
 						aria-controls="leads" aria-selected="false">Leads</a></li>
 				</ul>
 
-				<div class="tab-content pt-3" id="myTabContent">
+				<div class="tab-content p-3" id="myTabContent">
 					<div class="tab-pane fade show active" id="dialer" role="tabpanel"
 						aria-labelledby="dialer-tab">
 						<div class="row p-0 m-0 border-bottom">
@@ -81,92 +81,82 @@
 						</div>
 						<!-- =======================================DIALER PAD======================================= -->
 						<div class="row pt-4 marginBottom">
-							<div class="col-md-4 col-4 d-flex justify-content-center">
-								<div class="digit d-flex flex-column align-items-center">
-									<div class="sp mt-2 pt-1">1</div>
+							<div class="col-md-4 col-4 m-0 p-0">
+								<div
+									class="digit d-flex flex-column justify-content-center align-items-center ">
+									<div class="sp">1</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">2</div>
 									<div class="sub">ABC</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">3</div>
 									<div class="sub">DEF</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">4</div>
 									<div class="sub">GHI</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">5</div>
 									<div class="sub">JKL</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">6</div>
 									<div class="sub">MNO</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">7</div>
 									<div class="sub">PQRS</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">8</div>
 									<div class="sub">TUV</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">9</div>
 									<div class="sub">WXYZ</div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="fa fa-asterisk AstHash"></div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="sp">0</div>
 									<div class="subplus fa fa-plus"></div>
 								</div>
 							</div>
-							<div
-								class="col-md-4 col-4 d-flex justify-content-center align-items-center">
+							<div class="col-md-4 col-4 m-0 p-0">
 								<div
 									class="digit d-flex flex-column justify-content-center align-items-center">
 									<div class="fa fa-hashtag AstHash"></div>
@@ -201,7 +191,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									+91 989 898 8789
@@ -210,11 +200,11 @@
 							</div>
 							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
 								<button class="btn">
-									<i class="fa fa-phone"></i>
+									<i class="fa fa-volume-control-phone"></i>
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									ACME Corporation Inc.
@@ -223,11 +213,11 @@
 							</div>
 							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
 								<button class="btn">
-									<i class="fa fa-phone"></i>
+									<i class="fa fa-volume-control-phone"></i>
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11 p-0">
 								<div class="outgoingCall fontRecentNum">
 									+91 989 898 8789
@@ -236,11 +226,11 @@
 							</div>
 							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
 								<button class="btn">
-									<i class="fa fa-phone"></i>
+									<i class="fa fa-volume-control-phone"></i>
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									+91 989 898 8789
@@ -249,11 +239,11 @@
 							</div>
 							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
 								<button class="btn">
-									<i class="fa fa-phone"></i>
+									<i class="fa fa-volume-control-phone"></i>
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									+91 989 898 8789
@@ -262,7 +252,7 @@
 							</div>
 							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
 								<button class="btn">
-									<i class="fa fa-phone"></i>
+									<i class="fa fa-volume-control-phone"></i>
 								</button>
 							</div>
 						</div>
@@ -285,7 +275,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									Global Corporation Inc.
@@ -298,7 +288,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									ACME Corporation Inc.
@@ -311,7 +301,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									TEK System Pvt. Ltd.
@@ -324,7 +314,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									Infotech System Ltd.
@@ -337,7 +327,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									Siskotech Ficto Ltd.
@@ -350,7 +340,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									Umbrella Corporation Inc.
@@ -363,7 +353,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="row p-3 dashedBorder">
+						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
 									Vehement Capital Partners
