@@ -123,7 +123,7 @@
 	background-color: #6297f6 !important;
 }
 
-.lighter_purple_color {
+.lighter_purple_color  {
 	background-color: #8665eb !important;
 }
 
