@@ -370,7 +370,7 @@
 												<option data-icon="fas fa-desktop soft_blue_color">Webinar
 													Task</option>
 												<option
-													data-icon="fas fa-file-powerpoint lighter_purple_color">Presentation</option>
+													data-icon="fas fa-file-powerpoint lighter_purple_color">Presentation Tasks</option>
 											</select>
 										</div>
 									</div>
