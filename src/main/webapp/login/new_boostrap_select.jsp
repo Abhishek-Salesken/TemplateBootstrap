@@ -127,6 +127,10 @@
 	background-color: #8665eb !important;
 }
 
+.task_type ~ .dropdown-toggle .fas{
+	
+    background-color: #dae0e5 !important;
+}
 /* end of related css */
 /*end of task type drop0-down css */
 
