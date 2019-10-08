@@ -25,7 +25,7 @@
 <body>
 	<div class="container border">
 		<header>
-			<div class="row px-4 py-2 border-bottom background-color">
+			<div class="row px-4 py-2 border-bottom backgroundColor">
 				<div class="col-md-2 p-1 d-flex align-items-center">
 					<button class="btn p-0" type="submit">
 						<i class="fa fa-arrow-left left-arrow d-flex align-items-center"></i>
@@ -45,30 +45,35 @@
 			</div>
 		</header>
 		<div class="row">
-			<div class="col-md-3 pt-2 background-color  px-4">
-				<ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
-					<li class="nav-item p-0 m-0"><a
-						class="nav-link active tabText" id="dialer-tab" data-toggle="tab"
-						href="#dialer" role="tab" aria-controls="dialer"
-						aria-selected="true">Dialer</a></li>
+			<div class="col-md-3 pt-2 backgroundColor px-4">
+				<div class="row border-bottom pt-3 px-3">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item p-0 m-0"><a
+							class="nav-link active tabText" id="dialer-tab" data-toggle="tab"
+							href="#dialer" role="tab" aria-controls="dialer"
+							aria-selected="true">Dialer</a></li>
 
-					<li class="nav-item p-0 m-0"><a class="nav-link tabText"
-						id="recent-tab" data-toggle="tab" href="#recent" role="tab"
-						aria-controls="recent" aria-selected="false">Recent</a></li>
+						<li class="nav-item p-0 m-0"><a class="nav-link tabText"
+							id="recent-tab" data-toggle="tab" href="#recent" role="tab"
+							aria-controls="recent" aria-selected="false">Recent</a></li>
 
-					<li class="nav-item p-0 m-0"><a class="nav-link tabText"
-						id="leads-tab" data-toggle="tab" href="#leads" role="tab"
-						aria-controls="leads" aria-selected="false">Leads</a></li>
-				</ul>
+						<li class="nav-item p-0 m-0"><a class="nav-link tabText"
+							id="leads-tab" data-toggle="tab" href="#leads" role="tab"
+							aria-controls="leads" aria-selected="false">Leads</a></li>
+					</ul>
+				</div>
 
-				<div class="tab-content p-3" id="myTabContent">
+				<!-- =======================================DIALER TAB======================================= -->
+
+				<div class="tab-content m-3" id="myTabContent">
 					<div class="tab-pane fade show active" id="dialer" role="tabpanel"
 						aria-labelledby="dialer-tab">
+
 						<div class="row p-0 m-0 border-bottom">
-							<div class="col-md-12 m-0 p-1">
+							<div class="col-md-12 m-0 p-0">
 								<div class="input-group d-flex align-items-center">
 									<input
-										class="form-control removeShadow border-0  f-size p-0 m-0 background-color"
+										class="form-control removeShadow border-0  f-size p-0 m-0 backgroundColor"
 										type="text" oninput="numberOnly(this.id)" maxLength="14"
 										onblur="isValid(this);" id="num" />
 									<div class="input-group-append">
@@ -79,7 +84,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- =======================================DIALER PAD======================================= -->
+
 						<div class="row pt-4 marginBottom">
 							<div class="col-md-4 col-4 m-0 p-0">
 								<div
@@ -177,11 +182,12 @@
 					<!-- =======================================RECENT TAB======================================= -->
 					<div class="tab-pane fade" id="recent" role="tabpanel"
 						aria-labelledby="recent-tab">
+
 						<div class="row pb-3">
-							<div class="col-md-12 background-color border p-0">
+							<div class="col-md-12 backgroundColor border p-0">
 								<div class="input-group d-flex align-items-center">
 									<input
-										class="form-control removeShadow border-0 calendar-font px-4 m-0 background-color"
+										class="form-control removeShadow border-0 calendar-font px-4 m-0 backgroundColor"
 										placeholder="Calendar">
 									<div class="input-group-append">
 										<button class="btn p-0">
@@ -191,6 +197,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
@@ -259,13 +266,15 @@
 					</div>
 
 					<!-- =======================================LEADS TAB======================================= -->
+
 					<div class="tab-pane fade" id="leads" role="tabpanel"
 						aria-labelledby="leads-tab">
+
 						<div class="row pb-3">
-							<div class="col-md-12 background-color border p-0">
+							<div class="col-md-12 backgroundColor border p-0">
 								<div class="input-group d-flex align-items-center">
 									<input
-										class="form-control removeShadow border-0 calendar-font px-4 m-0 background-color"
+										class="form-control removeShadow border-0 calendar-font px-4 m-0 backgroundColor"
 										placeholder="Search">
 									<div class="input-group-append">
 										<button class="btn p-0">
@@ -275,6 +284,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="row py-3 pr-3 dashedBorder">
 							<div class="col-md-11 col-11  p-0">
 								<div class="outgoingCall fontRecentNum">
