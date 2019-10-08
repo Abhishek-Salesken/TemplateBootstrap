@@ -144,7 +144,7 @@
 		<div class="row justify-content-center ">
 			<!-- Button trigger modal -->
 			<button type="button" class="btn btn-primary" data-toggle="modal"
-				data-target="#exampleModalCenter">Chosen plug In</button>
+				data-target="#exampleModalCenter">Choosen plug In</button>
 			<!-- start of Modal -->
 			<div class="modal fade" id="exampleModalCenter" tabindex="-1"
 				role="dialog" aria-labelledby="exampleModalCenterTitle"
