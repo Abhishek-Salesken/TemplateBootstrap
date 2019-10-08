@@ -25,9 +25,9 @@
 <body>
 	<div class="container border">
 		<header>
-			<div class="row p-2 border-bottom background-color">
-				<div class="col-md-2 p-0 d-flex align-items-center">
-					<button class="btn pt-2" type="submit">
+			<div class="row px-4 py-2 border-bottom background-color">
+				<div class="col-md-2 p-1 d-flex align-items-center">
+					<button class="btn p-0" type="submit">
 						<i class="fa fa-arrow-left left-arrow d-flex align-items-center"></i>
 					</button>
 					<h5 class="d-flex align-items-center verticalBorder m-0 px-4">Call
@@ -45,7 +45,7 @@
 			</div>
 		</header>
 		<div class="row">
-			<div class="col-md-3 pt-2 background-color">
+			<div class="col-md-3 pt-2 background-color  px-4">
 				<ul class="nav nav-tabs pt-3" id="myTab" role="tablist">
 					<li class="nav-item p-0 m-0"><a
 						class="nav-link active tabText" id="dialer-tab" data-toggle="tab"
@@ -79,6 +79,7 @@
 								</div>
 							</div>
 						</div>
+						<!-- =======================================DIALER PAD======================================= -->
 						<div class="row pt-4 marginBottom">
 							<div class="col-md-4 col-4 d-flex justify-content-center">
 								<div class="digit d-flex flex-column align-items-center">
@@ -183,12 +184,204 @@
 							</div>
 						</div>
 					</div>
+					<!-- =======================================RECENT TAB======================================= -->
 					<div class="tab-pane fade" id="recent" role="tabpanel"
-						aria-labelledby="recent-tab">This is recent tab</div>
+						aria-labelledby="recent-tab">
+						<div class="row pb-3">
+							<div class="col-md-12 background-color border p-0">
+								<div class="input-group d-flex align-items-center">
+									<input
+										class="form-control removeShadow border-0 calendar-font px-4 m-0 background-color"
+										placeholder="Calendar">
+									<div class="input-group-append">
+										<button class="btn p-0">
+											<i class="fa fa-calendar-alt px-2"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									+91 989 898 8789
+									<p class="fontRecentTime p-0 m-0">05:10 Mins</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									ACME Corporation Inc.
+									<p class="fontRecentTime p-0 m-0">Not responded</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11 p-0">
+								<div class="outgoingCall fontRecentNum">
+									+91 989 898 8789
+									<p class="fontRecentTime p-0 m-0">Not responded</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									+91 989 898 8789
+									<p class="fontRecentTime p-0 m-0">07:10 Mins</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									+91 989 898 8789
+									<p class="fontRecentTime p-0 m-0">05:10 Mins</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- =======================================LEADS TAB======================================= -->
 					<div class="tab-pane fade" id="leads" role="tabpanel"
-						aria-labelledby="leads-tab">This is leads tab</div>
+						aria-labelledby="leads-tab">
+						<div class="row pb-3">
+							<div class="col-md-12 background-color border p-0">
+								<div class="input-group d-flex align-items-center">
+									<input
+										class="form-control removeShadow border-0 calendar-font px-4 m-0 background-color"
+										placeholder="Search">
+									<div class="input-group-append">
+										<button class="btn p-0">
+											<i class="fa fa-search px-2"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									Global Corporation Inc.
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									ACME Corporation Inc.
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									TEK System Pvt. Ltd.
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									Infotech System Ltd.
+									<p class="fontRecentTime p-0 m-0">07:10 Mins</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									Siskotech Ficto Ltd.
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									Umbrella Corporation Inc.
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+						<div class="row p-3 dashedBorder">
+							<div class="col-md-11 col-11  p-0">
+								<div class="outgoingCall fontRecentNum">
+									Vehement Capital Partners
+									<p class="fontRecentTime p-0 m-0">+91 989 898 8789</p>
+								</div>
+							</div>
+							<div class="col-md-1 col-1 p-0 d-flex align-items-center">
+								<button class="btn">
+									<i class="fa fa-phone"></i>
+								</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+
+
+
 			<div class="col-md-9 imgShadow">
 				<div
 					class="imageMargin marginBottom d-flex flex-column justify-content-center align-items-center">
@@ -200,6 +393,8 @@
 			</div>
 		</div>
 	</div>
+
+
 
 
 

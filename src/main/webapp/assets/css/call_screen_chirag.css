@@ -32,15 +32,13 @@
 	color: gray;
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .tabText:hover {
 	color: gray;
-}
-
-.breadcrumbBg {
-	background-color: white;
+	/* 	font-weight: bold;
+ */
 }
 
 .nav-tabs .nav-item .nav-item.show .nav-link, .nav-tabs .nav-link.active
@@ -48,11 +46,12 @@
 	color: #495057;
 	font-weight: bold;
 	border-bottom: 3px solid #ff1a75;
+	background-color: #f9f9f9;
 }
 
 .nav-link {
 	display: block;
-	padding: 0.3rem 0.5rem !important;
+	padding: 0.3rem 0.6rem 0.3rem 0.3rem !important;
 }
 
 .imgShadow {
@@ -143,10 +142,6 @@
 	margin-top: 12rem;
 }
 
-/* .form-control {
-	border: none;
-}
- */
 .btn {
 	color: gray;
 }
@@ -201,4 +196,40 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 	{
 	-webkit-appearance: none;
 	margin: 0;
+}
+
+.calendar-font {
+	font-size: 0.8rem;
+	color: #63696f;
+}
+
+.dashedBorder {
+	border-width: 1px;
+	border-bottom-style: dashed;
+	border-color: #D0D0D0
+}
+
+.outgoingCall {
+	position: relative;
+}
+
+.fontRecentNum {
+	font-size: 14px;
+	color: #585656;
+	opacity: 1;
+}
+
+.fontRecentTime {
+	font-size: 11px;
+	color: #b8bbbe;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+	.marginBottom {
+		margin-bottom: 3rem;
+	}
+	.imageMargin {
+		margin-top: 3rem;
+	}
 }
