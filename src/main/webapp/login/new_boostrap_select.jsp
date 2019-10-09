@@ -26,10 +26,12 @@
 
 
 <style type="text/css">
+
+
+/* start of searchbox related css */
 .inner>.dropdown-menu>li:nth-child(even) {
 	background-color: #f9f9f9;
 }
-
 .bs-searchbox {
 	padding: 22px 22px;
 }
@@ -37,11 +39,13 @@
 .bs-searchbox>input {
 	border-radius: 0px !important;
 }
+/* end of searchbox related css */
 
 .inner>.dropdown-menu>li {
 	border-bottom: 1px solid #cccccc;
 }
 
+/* start of dropdown related css */
 .dropdown-menu {
 	padding-top: 0px;
 }
@@ -51,16 +55,18 @@
 	border: 1px solid #cccccc;
 }
 
-.text {
-	width: 100%;
-}
-
 @media screen and (min-width: 768px) {
 	.bootstrap-select .dropdown-menu li a {
 		height: 40px;
 	}
 }
-/* Start of task type drop0-down css */
+/* end of dropdown related css */
+.text {
+	width: 100%;
+}
+
+
+/* Start of task_type drop-down css */
 .task_type ~ .dropdown-menu li {
 	border-bottom: none !important;
 }
@@ -94,7 +100,7 @@
 }
 
 .task_type ~ .dropdown-menu a {
-	padding-top: 9px;
+	padding-top: 11px;
 	height: 50px !important;
 	color: #999999;
 	height: 50px !important;
@@ -131,8 +137,8 @@
 	
     background-color: #dae0e5 !important;
 }
-/* end of related css */
-/*end of task type drop0-down css */
+
+/*end of task type drop-down css */
 
 
 </style>
@@ -385,23 +391,7 @@
 										</div>
 									</div>
 								</div>
-								<!-- <div class="form-row">
-									<div class="form-group col-md-6">
-										<label for="task_name" class="h5 f-14">Task Name</label> 
-										<select class="selectpicker" title="Select here">
-											<option data-icon="fas fa-phone-volume">Call Task</option>
-											<option data-icon="fas fa-envelope-square">Email Task</option>
-											<option data-icon="fas fa-desktop">Webinar Task</option>
-											<option data-icon="fas fa-signal">Presentation</option>
-										</select>
-									</div>
-									<div class="form-group col-md-6">
-										<select class="selectpicker">
-											<option data-icon="fa-heart">Ketchup</option>
-										</select>
-									</div>
-								</div> -->
-
+								
 							</form>
 						</div>
 						<div class="modal-footer">
