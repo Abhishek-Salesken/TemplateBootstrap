@@ -24,14 +24,14 @@
 
 	<button type="button" id="element" class="btn btn-secondary"
 		data-container="body" data-toggle="popover" data-placement="top"
-		data-html="true">Popover</button>
+		data-html="true">Dial Pad</button>
 
 	<div
 		class="container d-flex justify-content-center align-items-center h-100 box_container"
 		id="dialer_view">
 
 
-		<div class="row box_row m-0 p-0">
+		<div class="row box_row m-0 p-0 shadow">
 
 			<div class="col-md-12 col-12 p-2 col-height" id="output">
 
@@ -181,6 +181,9 @@
 				$.fn.validator = function(value) {
 			if (value.val().length == 0){
 				alert('No Input!');
+			}
+			else{
+				alert('Dialing: '+ value.val());
 			}
 		}
 		$.fn.format = function(value) {

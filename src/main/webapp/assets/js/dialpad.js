@@ -31,6 +31,9 @@ $(document).ready(function() {
 		if (value.val().length == 0) {
 			alert('Limit Reached!');
 		}
+		else{
+			alert('Dialing: '+ value.val());
+		}
 	}
 	$.fn.format = function(value) {
 		return value.slice(0, 14);
