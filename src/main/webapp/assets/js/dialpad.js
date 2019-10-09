@@ -27,9 +27,9 @@ $(document).ready(function() {
 		}
 	});
 	$.fn.validator = function(value) {
-
+		
 		if (value.val().length == 0) {
-			alert('Limit Reached!');
+			alert('No Input!');
 		}
 		else{
 			alertify.confirm('Dialing', ''+value.val(), function(e){ alertify.success('Connecting...') }
