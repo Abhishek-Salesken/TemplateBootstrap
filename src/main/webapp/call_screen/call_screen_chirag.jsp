@@ -46,7 +46,8 @@
 						<li><a class="breadcrumbText" href="#">Task Details</a></li>
 						<li><i
 							class="fa fa-chevron-circle-right chevron-color py-1 px-2 d-flex align-items-center"></i></li>
-						<li><a class="breadcrumbText" href="#">Call Task</a></li>
+						<li><a class="breadcrumbText callTaskBold" href="#">Call
+								Task</a></li>
 					</ol>
 				</div>
 			</div>
@@ -93,7 +94,7 @@
 						</div>
 
 						<div class="row pt-4 marginBottom">
-							<div class="col-md-12 col-12">
+							<div class="col-md-12 col-12 p-0">
 								<div class="row">
 									<div class="col-md-4 col-4 m-0 p-0">
 										<div name="1"
@@ -424,46 +425,7 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+	<script src="<%=baseURL%>assets/js/call_screen_chirag.js"></script>
 
-
-	<script type="text/javascript">
-		/* The below code is to remove number one by one on clicking backspace button. */
-		function del() {
-			var num = document.getElementById('num').value;
-			num = num.substr(0, num.length - 1);
-			document.getElementById('num').value = num;
-		}
-		function isValid(a) {
-			console.log(a.value)
-			if (!(/^[0-9]+$/.test(a.value))) {
-				a.focus();
-				console.clear();
-				console.log("Please enter number");
-			}
-		}
-
-		/* Below code is to enter only numbers in input group and limit to 14 */
-		function numberOnly(id) {
-			var element = document.getElementById(id);
-			var regex = /[^0-9\*\#]+/gi;
-			element.value = element.value.replace(regex, "");
-		}
-
-		/* Calendar */
-		$('.datepicker').datepicker({
-			todayHighlight : true
-		});
-
-		/* Digits on click */
-		$(document).ready(function() {
-			$('.digit').click(function() {
-
-				var currentValue = $('input').val();
-				var valueToAppend = $(this).attr('name');
-				$('input').val(currentValue + valueToAppend);
-
-			});
-		})
-	</script>
 </body>
 </html>

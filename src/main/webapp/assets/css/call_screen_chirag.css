@@ -106,7 +106,11 @@
 	width: 60px;
 }
 
-.rounded-circle-num  {
+.callTaskBold {
+	font-weight: bold;
+}
+
+.rounded-circle-num {
 	background: linear-gradient(to bottom, #79ac7b 0%, #0b8910 100%);
 	border-radius: 50%;
 	width: 50px;
