@@ -158,6 +158,7 @@
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/alertify.min.js"></script>
+	
 	<script src="<%=baseURL%>assets/js/dialpad.js"></script>
 	
 	<script>
