@@ -10,7 +10,7 @@ $("[data-toggle='popover']").on('hidden.bs.popover', function() {
 
 $(document).ready(function() {
 
-	
+
 	$("#phone").on("keyup", function() {
 		if ($('#phone').val().length == 14) {
 			alert("Limit Reached!");
@@ -32,7 +32,8 @@ $(document).ready(function() {
 			alert('Limit Reached!');
 		}
 		else{
-			alert('Dialing: '+ value.val());
+			alertify.confirm('Dialing', ''+value.val(), function(e){ alertify.success('Connecting...') }
+		    , function(){ alertify.error('Hang up!')});
 		}
 	}
 	$.fn.format = function(value) {
