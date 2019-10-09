@@ -19,6 +19,9 @@
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/call_screen_chirag.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
+	rel="stylesheet">
 
 </head>
 
@@ -38,7 +41,7 @@
 						class="breadcrumb breadcrumbBg d-flex align-items-center m-0 p-0">
 						<li><a class="breadcrumbText" href="#">Task Details</a></li>
 						<li><i
-							class="fa fa-chevron-circle-right chevron-color pt-1 px-2 d-flex align-items-center"></i></li>
+							class="fa fa-chevron-circle-right chevron-color py-1 px-2 d-flex align-items-center"></i></li>
 						<li><a class="breadcrumbText" href="#">Call Task</a></li>
 					</ol>
 				</div>
@@ -46,7 +49,7 @@
 		</header>
 		<div class="row">
 			<div class="col-md-3 pt-2 backgroundColor px-4">
-				<div class="row border-bottom pt-3 px-3">
+				<div class="row border-bottom pt-2 px-3">
 					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item p-0 m-0"><a
 							class="nav-link active tabText" id="dialer-tab" data-toggle="tab"
@@ -86,94 +89,108 @@
 						</div>
 
 						<div class="row pt-4 marginBottom">
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center ">
-									<div class="sp">1</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">2</div>
-									<div class="sub">ABC</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">3</div>
-									<div class="sub">DEF</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">4</div>
-									<div class="sub">GHI</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">5</div>
-									<div class="sub">JKL</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">6</div>
-									<div class="sub">MNO</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">7</div>
-									<div class="sub">PQRS</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">8</div>
-									<div class="sub">TUV</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">9</div>
-									<div class="sub">WXYZ</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="fa fa-asterisk AstHash"></div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="sp">0</div>
-									<div class="subplus fa fa-plus"></div>
-								</div>
-							</div>
-							<div class="col-md-4 col-4 m-0 p-0">
-								<div
-									class="digit d-flex flex-column justify-content-center align-items-center">
-									<div class="fa fa-hashtag AstHash"></div>
-								</div>
-							</div>
 							<div class="col-md-12 col-12">
-								<div
-									class="digit mx-auto d-flex flex-column justify-content-center align-items-center">
-									<div class="button rowShadow rounded-circle rounded-circle-num">
-										<i
-											class="fa fa-phone phone mt-1 d-flex flex-column justify-content-center align-items-center"
-											aria-hidden="true"></i>
+								<div class="row">
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<p class="sp">1</p>
+
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">2</div>
+											<div class="sub">ABC</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">3</div>
+											<div class="sub">DEF</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">4</div>
+											<div class="sub">GHI</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">5</div>
+											<div class="sub">JKL</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">6</div>
+											<div class="sub">MNO</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">7</div>
+											<div class="sub">PQRS</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">8</div>
+											<div class="sub">TUV</div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">9</div>
+											<div class="sub">WXYZ</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="fa fa-asterisk AstHash"></div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="sp">0</div>
+											<div class="subplus fa fa-plus"></div>
+										</div>
+									</div>
+									<div class="col-md-4 col-4 m-0 p-0">
+										<div
+											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
+											<div class="fa fa-hashtag AstHash"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 col-12 m-0 p-0">
+										<div
+											class="digit  mx-auto d-flex flex-column justify-content-center align-items-center">
+											<div
+												class="button rowShadow rounded-circle rounded-circle-num">
+												<i
+													class="fa fa-phone phone mt-1 d-flex flex-column justify-content-center align-items-center"
+													aria-hidden="true"></i>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -187,10 +204,10 @@
 							<div class="col-md-12 backgroundColor border p-0">
 								<div class="input-group d-flex align-items-center">
 									<input
-										class="form-control removeShadow border-0 calendar-font px-4 m-0 backgroundColor"
+										class="form-control removeShadow border-0 calendar-font px-2 m-0 backgroundColor"
 										placeholder="Calendar">
 									<div class="input-group-append">
-										<button class="btn p-0">
+										<button class="btn p-0  datepicker" data-provide="datepicker">
 											<i class="fa fa-calendar-alt px-2"></i>
 										</button>
 									</div>
@@ -274,7 +291,7 @@
 							<div class="col-md-12 backgroundColor border p-0">
 								<div class="input-group d-flex align-items-center">
 									<input
-										class="form-control removeShadow border-0 calendar-font px-4 m-0 backgroundColor"
+										class="form-control removeShadow border-0 calendar-font px-2 m-0 backgroundColor"
 										placeholder="Search">
 									<div class="input-group-append">
 										<button class="btn p-0">
@@ -401,6 +418,8 @@
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
 
 
 	<script type="text/javascript">
@@ -410,7 +429,7 @@
 			num = num.substr(0, num.length - 1);
 			document.getElementById('num').value = num;
 		}
-		function isValid(a) {
+		function isValid(a) {console.log(a.value)
 			if (!(/^[0-9]+$/.test(a.value))) {
 				a.focus();
 				console.clear();
@@ -424,6 +443,11 @@
 			var regex = /[^0-9]/gi;
 			element.value = element.value.replace(regex, "");
 		}
+
+		/* Calendar */
+		$('.datepicker').datepicker(
+				{todayHighlight: true
+				});
 	</script>
 </body>
 </html>
