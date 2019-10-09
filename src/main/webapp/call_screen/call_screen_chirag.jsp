@@ -22,6 +22,10 @@
 <link
 	href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.css"
 	rel="stylesheet">
+<link rel="shortcut icon"
+	href="<%=baseURL%>assets/images/call_screen/favicon.ico"
+	type="image/x-icon">
+
 
 </head>
 
@@ -77,7 +81,7 @@
 								<div class="input-group d-flex align-items-center">
 									<input
 										class="form-control removeShadow border-0  f-size p-0 m-0 backgroundColor"
-										type="text" oninput="numberOnly(this.id)" maxLength="14"
+										type="text" oninput="numberOnly(this.id)" maxlength="14"
 										onblur="isValid(this);" id="num" />
 									<div class="input-group-append">
 										<button class="btn p-0 " onclick="del();">
@@ -92,21 +96,20 @@
 							<div class="col-md-12 col-12">
 								<div class="row">
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="1"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<p class="sp">1</p>
-
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="2"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">2</div>
 											<div class="sub">ABC</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="3"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">3</div>
 											<div class="sub">DEF</div>
@@ -115,21 +118,21 @@
 								</div>
 								<div class="row">
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="4"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">4</div>
 											<div class="sub">GHI</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="5"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">5</div>
 											<div class="sub">JKL</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="6"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">6</div>
 											<div class="sub">MNO</div>
@@ -138,21 +141,21 @@
 								</div>
 								<div class="row">
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="7"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">7</div>
 											<div class="sub">PQRS</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="8"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">8</div>
 											<div class="sub">TUV</div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="9"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">9</div>
 											<div class="sub">WXYZ</div>
@@ -161,20 +164,20 @@
 								</div>
 								<div class="row">
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="*"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="fa fa-asterisk AstHash"></div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="0"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="sp">0</div>
 											<div class="subplus fa fa-plus"></div>
 										</div>
 									</div>
 									<div class="col-md-4 col-4 m-0 p-0">
-										<div
+										<div name="#"
 											class="digit d-flex flex-column justify-content-center align-items-center mx-auto">
 											<div class="fa fa-hashtag AstHash"></div>
 										</div>
@@ -183,9 +186,9 @@
 								<div class="row">
 									<div class="col-md-12 col-12 m-0 p-0">
 										<div
-											class="digit  mx-auto d-flex flex-column justify-content-center align-items-center">
+											class=" mx-auto d-flex flex-column justify-content-center align-items-center">
 											<div
-												class="button rowShadow rounded-circle rounded-circle-num">
+												class=" callBtn button callShadow rounded-circle rounded-circle-num">
 												<i
 													class="fa fa-phone phone mt-1 d-flex flex-column justify-content-center align-items-center"
 													aria-hidden="true"></i>
@@ -402,7 +405,8 @@
 			<div class="col-md-9 imgShadow">
 				<div
 					class="imageMargin marginBottom d-flex flex-column justify-content-center align-items-center">
-					<img alt="" src="<%=baseURL%>assets/images/call_screen/call.png">
+					<img alt="" class="img-fluid"
+						src="<%=baseURL%>assets/images/call_screen/call.png">
 					<h5>Start the process</h5>
 					<p class="text-color">lorem lopsum is simply dummy text of the
 						printing and typesetting industry.</p>
@@ -429,7 +433,8 @@
 			num = num.substr(0, num.length - 1);
 			document.getElementById('num').value = num;
 		}
-		function isValid(a) {console.log(a.value)
+		function isValid(a) {
+			console.log(a.value)
 			if (!(/^[0-9]+$/.test(a.value))) {
 				a.focus();
 				console.clear();
@@ -440,14 +445,25 @@
 		/* Below code is to enter only numbers in input group and limit to 14 */
 		function numberOnly(id) {
 			var element = document.getElementById(id);
-			var regex = /[^0-9]/gi;
+			var regex = /[^0-9\*\#]+/gi;
 			element.value = element.value.replace(regex, "");
 		}
 
 		/* Calendar */
-		$('.datepicker').datepicker(
-				{todayHighlight: true
-				});
+		$('.datepicker').datepicker({
+			todayHighlight : true
+		});
+
+		/* Digits on click */
+		$(document).ready(function() {
+			$('.digit').click(function() {
+
+				var currentValue = $('input').val();
+				var valueToAppend = $(this).attr('name');
+				$('input').val(currentValue + valueToAppend);
+
+			});
+		})
 	</script>
 </body>
 </html>

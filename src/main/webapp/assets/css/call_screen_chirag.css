@@ -70,6 +70,13 @@
 	cursor: pointer;
 }
 
+.callBtn {
+	height: 60px;
+	width: 60px;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
 .containerDesign {
 	background-color: white;
 	width: 350px;
@@ -95,13 +102,12 @@
 	border-radius: 50%;
 	opacity: 1;
 	display: inline-block;
-	background-color: #edf0f5;
+	background-color: #FFEDEE;
 	width: 60px;
-	/* border: 1px solid; */
 }
 
-.rounded-circle-num {
-	background-color: #15ad3d;
+.rounded-circle-num  {
+	background: linear-gradient(to bottom, #79ac7b 0%, #0b8910 100%);
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
@@ -143,7 +149,7 @@
 }
 
 .imageMargin {
-	margin-top: 12rem;
+	margin-top: 8rem;
 }
 
 .btn {
@@ -236,4 +242,8 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
 	.imageMargin {
 		margin-top: 3rem;
 	}
+}
+
+.callShadow {
+	box-shadow: -1px 4px 9px 0px grey;
 }
