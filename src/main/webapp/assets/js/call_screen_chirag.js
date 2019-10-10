@@ -16,8 +16,11 @@ function isValid(a) {
 /* Below code is to enter only numbers in input group and limit to 14 */
 function numberOnly(id) {
 	var element = document.getElementById(id);
-	var regex = /[^0-9\*\#]+/gi;
-	element.value = element.value.replace(regex, "");
+	var newRegex = /^[\d\+\*\#]+$/gi;
+	if (newRegex.test(element.value) == false) {
+		console.log('digit not found')
+		element.value = element.value.replace(/[^\d\+\*\#]+/gi, "");
+	}
 }
 
 /* Calendar */
@@ -25,7 +28,7 @@ $('.datepicker').datepicker({
 	todayHighlight : true
 });
 
-/* Digits on click */
+/* numbers on click */
 $(document).ready(function() {
 	$('.digit').click(function() {
 
