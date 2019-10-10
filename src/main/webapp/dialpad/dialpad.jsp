@@ -173,15 +173,17 @@
 			sanitize : false,
 			trigger : 'click',
 			content : function() {
+				/* finding and removing classes */
 				var a = $('#dialer_view').clone()
 				a.find('#phone').attr('id','phone1')
 				a.find('.myClick').removeClass('myClick').addClass('popoverClick')
 				a.find('.dial-btn').removeClass('dial-btn').addClass('dial-btnClick')
 				a.find('.btnclick').removeClass('btnclick').addClass('deleteClick')
 				a.find('.positioning').css("left" ,"13.3rem");
+				
 	$(document).ready(function() {
 		var caret = 0;
-
+//		checking for length of input on key press
 		$("#phone1").on("keyup", function() {
 			if ($('#phone1').val().length == 14) {
 				alert("Limit Reached!");
@@ -189,15 +191,15 @@
 		});
 		
 
-		
+//		checking for length of input on button click
 		$(".popoverClick").on("click", function() {
 			if ($('#phone1').val().length == 14) {
 				alert("Limit Reached!");
 				var formattedText = $.fn.format($('#phone1').val())
-				console.log("value here : ", formattedText);
 				$('#phone1').val(formattedText);
 			}
 		});
+//		function for validating calls
 		$.fn.validator = function(value) {
 			
 			if (value.val().length == 0) {
@@ -211,33 +213,26 @@
 		$.fn.format = function(value) {
 			return value.slice(0, 14);
 		}
-
+//		calling button
 		$(".dial-btnClick").click(function() {
 			$.fn.validator($('#phone1').val($("#phone1").val()));
 		});
-		
+//		updating caret value on input 
 		$("#phone1").on('click input'  , function(e){
 			caret = e.target.selectionStart;
-			console.log("caret",caret);
 			var input = document.getElementById('phone1')
-			
 			input.setSelectionRange(caret, caret);
-			console.log(input.selectionStart, input.selectionEnd)
 		});
+//		updating caret value on backspace button click
 		$(".deleteClick").on('click' , function(e){
-			console.log("caret",caret);
 			var input = document.getElementById('phone1')
-			
 			input.setSelectionRange(caret, caret);
-			console.log(input.selectionStart, input.selectionEnd)
 		});
+//		button click
 		$(".popoverClick").click(function(e) {
 			var input = document.getElementById('phone1')
-			
 			input.focus();
-		
 			var num = $(this).find('.inner').html();
-			console.log(num);
 			
 			if ($('#phone1').val().length < 14) {
 				if (caret != 0){
@@ -247,7 +242,7 @@
 					var s2 = text.substring(caret);
 					input.value = s1 + num + s2;
 					input.value = input.value.slice(0,-1)
-					caret += 1
+					caret += 1;
 					input.setSelectionRange(caret, caret)
 				}
 				else{
@@ -257,7 +252,7 @@
 			}
 
 		});
-
+//		backspace button
 		$(".deleteClick").click(function() {
 			if (caret != 0){
 				var input = document.getElementById('phone1')
@@ -273,7 +268,7 @@
 			else{
 			$('#phone1').val($("#phone1").val().slice(0, -1));}
 		});
-
+//		checking for digits
 		$("#phone1").on("keypress keyup blur", function(e) {
 			$(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
 			if ((e.which < 48 || e.which > 57) && (e.key != '+' && e.key != '*' && e.key != '#' )) {

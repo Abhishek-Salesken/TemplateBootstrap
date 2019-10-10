@@ -10,22 +10,22 @@ $("[data-toggle='popover']").on('hidden.bs.popover', function() {
 
 $(document).ready(function() {
 	var caret = 0;
-
+//	checking for length of input on key press
 	$("#phone").on("keyup", function() {
 		if ($('#phone').val().length == 14) {
 			alert("Limit Reached!");
 		}
 	});
-
+//	checking for length of input on button click
 	$(".myClick").on("click", function() {
 		if ($('#phone').val().length == 14) {
 			alert("Limit Reached!");
 			var formattedText = $.fn.format($('#phone').val())
-			console.log("value here : ", formattedText);
 			$('#phone').val(formattedText);
 
 		}
 	});
+//	function for validating calls
 	$.fn.validator = function(value) {
 
 		if (value.val().length == 0) {
@@ -41,34 +41,26 @@ $(document).ready(function() {
 	$.fn.format = function(value) {
 		return value.slice(0, 14);
 	}
-
+//	calling button
 	$(".dial-btn").click(function() {
 		$.fn.validator($('#phone').val($("#phone").val()));
 	});
-
+//	updating caret value on input 
 	$("#phone").on('click input', function(e) {
 		caret = e.target.selectionStart;
-		console.log("caret", caret);
 		var input = document.getElementById('phone')
-
 		input.setSelectionRange(caret, caret);
-		console.log(input.selectionStart, input.selectionEnd)
 	});
+//	updating caret value on backspace button click
 	$(".btnclick").on('click', function(e) {
-		console.log("caret", caret);
 		var input = document.getElementById('phone')
-
 		input.setSelectionRange(caret, caret);
-		console.log(input.selectionStart, input.selectionEnd)
 	});
+//	button click
 	$(".myClick").click(function(e) {
 		var input = document.getElementById('phone')
-
 		input.focus();
-
 		var num = $(this).find('.inner').html();
-		console.log(num);
-
 		if ($('#phone').val().length < 14) {
 			if (caret != 0) {
 				input.value += num;
@@ -86,7 +78,7 @@ $(document).ready(function() {
 		}
 
 	});
-
+//	backspace button
 	$(".btnclick").click(function() {
 
 		if (caret != 0) {
@@ -104,7 +96,7 @@ $(document).ready(function() {
 			$('#phone').val($("#phone").val().slice(0, -1));
 		}
 	});
-
+//	checking for digits
 	$("#phone").on("keypress keyup blur", function(e) {
 		$(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
 		if ((e.which < 48 || e.which > 57) && (e.key != '+' && e.key != '*' && e.key != '#' )) {
