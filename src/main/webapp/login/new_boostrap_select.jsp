@@ -79,7 +79,7 @@
 	background-color: #eeeeee;
 }
 
-.task_type ~ .dropdown-menu .dropdown-item>.fas {
+ .task_type  ~ .dropdown-menu .dropdown-item>.fas {
 	display: inline-block;
 	border-radius: 50%;
 	width: 25px;
@@ -170,7 +170,7 @@
 							<form>
 								<div class="form-group">
 									<label for="lead_name" class="h5 f-14">Lead Name</label> <select
-										class=" myselectchoosen chosen-select" tabindex="4"
+										class=" myselectchoosen chosen-select " tabindex="4"
 										title="Choose Lead Name">
 
 
@@ -399,7 +399,7 @@
 								class="btn f-14 g-transparent theme_color  border-0"
 								data-dismiss="modal">Reset</button>
 							<button type="button"
-								class="btn theme_bg_color btn-primary border_shadow_color rounded-0 border_color f-14 savechanges">Save
+								class="btn theme_bg_color btn-primary border_shadow_color rounded-0 border_color f-14 savechanges1">Save
 								changes</button>
 						</div>
 					</div>
@@ -429,6 +429,7 @@
 				virtualScroll : '600'
 			});
 		});
+							
 	</script>
 </body>
 </html>
