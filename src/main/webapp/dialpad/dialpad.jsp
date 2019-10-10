@@ -215,10 +215,10 @@
 			$.fn.validator($('#phone1').val($("#phone1").val()));
 		});
 		
-		$("#phone").on('click input'  , function(e){
+		$("#phone1").on('click input'  , function(e){
 			caret = e.target.selectionStart;
 			console.log("caret",caret);
-			var input = document.getElementById('phone')
+			var input = document.getElementById('phone1')
 			
 			input.setSelectionRange(caret, caret);
 			console.log(input.selectionStart, input.selectionEnd)
@@ -226,7 +226,7 @@
 		$(".deleteClick").on('click' , function(e){
 //			caret = e.target.selectionStart;
 			console.log("caret",caret);
-			var input = document.getElementById('phone')
+			var input = document.getElementById('phone1')
 			
 			input.setSelectionRange(caret, caret);
 			console.log(input.selectionStart, input.selectionEnd)
@@ -278,7 +278,7 @@
 				var s2 = text.substring(caret)
 //				console.log('caret', caret , s1 , s2)
 				input.value = s1+s2;
-				caret -= 1
+				caret -= 1;
 				input.setSelectionRange(caret,caret)
 				
 			}
