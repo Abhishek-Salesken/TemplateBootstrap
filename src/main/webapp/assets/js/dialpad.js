@@ -47,15 +47,17 @@ var caret = 0;
 		$.fn.validator($('#phone').val($("#phone").val()));
 	});
 	
-	$("#phone").on('click' , function(e){
+	$("#phone").on('click input'  , function(e){
 		caret = e.target.selectionStart;
+		console.log("caret",caret);
 		var input = document.getElementById('phone')
 		
 		input.setSelectionRange(caret, caret);
 		console.log(input.selectionStart, input.selectionEnd)
 	});
-	$("#btnclick").on('click' , function(e){
-		caret = e.target.selectionStart;
+	$(".btnclick").on('click' , function(e){
+//		caret = e.target.selectionStart;
+		console.log("caret",caret);
 		var input = document.getElementById('phone')
 		
 		input.setSelectionRange(caret, caret);
@@ -75,22 +77,22 @@ var caret = 0;
 			if (caret != 0){
 				input.value += num;
 				var text = input.value
-				console.log("content" , text)
-				console.log("caret :", caret)
-				console.log("substring", text.substring(0 ,caret) )
+//				console.log("content" , text)
+//				console.log("caret :", caret)
+//				console.log("substring", text.substring(0 ,caret) )
 				var s1 = text.substring(0 ,caret);
 				var s2 = text.substring(caret);
-				console.log('s1',s1,'s2',s2)
+//				console.log('s1',s1,'s2',s2)
 				input.value = s1 + num + s2;
 				input.value = input.value.slice(0,-1)
-				input.setSelectionRange(caret+1, caret+1)
-				console.log('new value', input.value );
+				
+//				console.log('new value', input.value );
 				caret += 1
+				input.setSelectionRange(caret, caret)
 			}
 			else{
 				input.value += num
-			}
-			
+			}  
 			
 		}
 
@@ -106,7 +108,7 @@ var caret = 0;
 			var text = input.value
 			var s1 = text.substring(0,caret-1);
 			var s2 = text.substring(caret)
-			console.log('caret', caret , s1 , s2)
+//			console.log('caret', caret , s1 , s2)
 			input.value = s1+s2;
 			caret -= 1
 			input.setSelectionRange(caret,caret)

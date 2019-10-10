@@ -177,47 +177,121 @@
 				a.find('.btnclick').removeClass('btnclick').addClass('deleteClick')
 				a.find('.positioning').css("left" ,"13.3rem");
 	$(document).ready(function() {
+		var caret = 0;
+
 		$("#phone1").on("keyup", function() {
 			if ($('#phone1').val().length == 14) {
 				alert("Limit Reached!");
 			}
 		});
-		$("#phone1").on("keypress keyup blur",function (e) {  
-	
-		    $(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
-		    console.log(e.which);
-		        if ((e.which < 48 || e.which > 57)) {
-		            e.preventDefault();
-		    }
+		
+
+		
+		$(".popoverClick").on("click", function() {
+			if ($('#phone1').val().length == 14) {
+				alert("Limit Reached!");
+				var formattedText = $.fn.format($('#phone1').val())
+				console.log("value here : ", formattedText);
+				$('#phone1').val(formattedText);
+				/* $('#phone').val() = oldVal; */
+
+			}
 		});
-				$.fn.validator = function(value) {
-			if (value.val().length == 0){
+		$.fn.validator = function(value) {
+			
+			if (value.val().length == 0) {
 				alert('No Input!');
 			}
 			else{
 				alertify.confirm('Dialing', ''+value.val(), function(e){ alertify.success('Connecting...') }
-			    , function(){ alertify.error('Hang up')});
+			    , function(){ alertify.error('Hang up!')});
 			}
 		}
 		$.fn.format = function(value) {
 			return value.slice(0, 14);
 		}
+
 		$(".dial-btnClick").click(function() {
 			$.fn.validator($('#phone1').val($("#phone1").val()));
 		});
-		$(".popoverClick").click(function() {
-			var num = $(this).find('.inner').html();
-			if ($('#phone1').val().length == 14) {
-				alert("Limit Reached!");
-			}
-			else  { if($('#phone1').val().length < 14) {
-				$('#phone1').val($('#phone1').val() + num)
-				}
-		}
+		
+		$("#phone").on('click input'  , function(e){
+			caret = e.target.selectionStart;
+			console.log("caret",caret);
+			var input = document.getElementById('phone')
+			
+			input.setSelectionRange(caret, caret);
+			console.log(input.selectionStart, input.selectionEnd)
 		});
+		$(".deleteClick").on('click' , function(e){
+//			caret = e.target.selectionStart;
+			console.log("caret",caret);
+			var input = document.getElementById('phone')
+			
+			input.setSelectionRange(caret, caret);
+			console.log(input.selectionStart, input.selectionEnd)
+		});
+		$(".popoverClick").click(function(e) {
+			var input = document.getElementById('phone1')
+			
+			input.focus();
+		
+			var num = $(this).find('.inner').html();
+			console.log(num);
+			
+			if ($('#phone1').val().length < 14) {
+
+//				$('#phone').val($('#phone').val() + num)
+				if (caret != 0){
+					input.value += num;
+					var text = input.value
+//					console.log("content" , text)
+//					console.log("caret :", caret)
+//					console.log("substring", text.substring(0 ,caret) )
+					var s1 = text.substring(0 ,caret);
+					var s2 = text.substring(caret);
+//					console.log('s1',s1,'s2',s2)
+					input.value = s1 + num + s2;
+					input.value = input.value.slice(0,-1)
+					
+//					console.log('new value', input.value );
+					caret += 1
+					input.setSelectionRange(caret, caret)
+				}
+				else{
+					input.value += num
+				}  
+				
+			}
+
+		});
+
 		$(".deleteClick").click(function() {
+			
 			/* console.log('button clicked'); */
-			$('#phone1').val($("#phone1").val().slice(0, -1));
+			if (caret != 0){
+				
+				var input = document.getElementById('phone1')
+				input.focus();
+				var text = input.value
+				var s1 = text.substring(0,caret-1);
+				var s2 = text.substring(caret)
+//				console.log('caret', caret , s1 , s2)
+				input.value = s1+s2;
+				caret -= 1
+				input.setSelectionRange(caret,caret)
+				
+			}
+			else{
+			$('#phone1').val($("#phone1").val().slice(0, -1));}
+		});
+
+		$("#phone1").on("keypress keyup blur", function(e) {
+
+			$(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
+			if ((e.which < 48 || e.which > 57)) {
+				e.preventDefault();
+			}
 		});
 		
 		
