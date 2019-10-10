@@ -37,40 +37,36 @@
 					</button>
 				</div>
 				<div class="modal-body">
-					<form id ="myform">
-						<div class="form-group row" >
+					<form id="myform">
+						<div class="form-group row">
 							<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
 							<div class="col-sm-10">
 								<input type="text" readonly class="form-control-plaintext"
 									id="staticEmail">
 							</div>
 						</div>
-						<div class="form-group row" >
+						<div class="form-group row">
 							<label for="name" class="col-sm-2 col-form-label">Name</label>
 							<div class="col-sm-10">
-								<input type="text"  class="form-control"
-									id="name">
+								<input type="text" class="form-control" id="name">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="username" class="col-sm-2 col-form-label">Username</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="username"
-									>
+								<input type="text" class="form-control" id="username">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="phone" class="col-sm-2 col-form-label">Phone</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="phone"
-									>
+								<input type="text" class="form-control" id="phone">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="website" class="col-sm-2 col-form-label">Website</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="website"
-									>
+								<input type="text" class="form-control" id="website">
 							</div>
 						</div>
 					</form>
@@ -78,7 +74,8 @@
 				<div class="modal-footer">
 					<button type="button" id="close" class="btn btn-secondary"
 						data-dismiss="modal">Close</button>
-					<button type="button" id="change" class="btn btn-primary">Save changes</button>
+					<button type="button" id="change" class="btn btn-primary">Save
+						changes</button>
 				</div>
 			</div>
 		</div>
@@ -125,13 +122,18 @@
 							 $('#myname').text($('#name').val())
 							  $('#myphone').text($('#phone').val())
 							   $('#mywebsite').text($('#website').val())
-							console.log('Change Saved!');
+							console.log('email: ',$('#staticEmail').val());
+						 console.log('name: ',$('#name').val());
+						 console.log('username', $('#username').val());
+						 
+						 console.log('phone: ',$('#phone').val());
+						 console.log('website: ',$('#website').val());
 						});
 					 $('#close').click(function(e){
 							console.log('Modal Closed!')
 						});
 					 
-					console.log('click')
+					
 				});
 					
 				
