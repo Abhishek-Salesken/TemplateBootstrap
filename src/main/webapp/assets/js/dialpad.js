@@ -54,10 +54,16 @@ var caret = 0;
 		input.setSelectionRange(caret, caret);
 		console.log(input.selectionStart, input.selectionEnd)
 	});
-	
+	$("#btnclick").on('click' , function(e){
+		caret = e.target.selectionStart;
+		var input = document.getElementById('phone')
+		
+		input.setSelectionRange(caret, caret);
+		console.log(input.selectionStart, input.selectionEnd)
+	});
 	$(".myClick").click(function(e) {
 		var input = document.getElementById('phone')
-		input.setSelectionRange(caret, caret);
+		
 		input.focus();
 	
 		var num = $(this).find('.inner').html();
@@ -77,8 +83,9 @@ var caret = 0;
 				console.log('s1',s1,'s2',s2)
 				input.value = s1 + num + s2;
 				input.value = input.value.slice(0,-1)
+				input.setSelectionRange(caret+1, caret+1)
 				console.log('new value', input.value );
-				caret = 0
+				caret += 1
 			}
 			else{
 				input.value += num
@@ -90,16 +97,20 @@ var caret = 0;
 	});
 
 	$(".btnclick").click(function() {
+		
 		/* console.log('button clicked'); */
 		if (caret != 0){
+			
 			var input = document.getElementById('phone')
-			input.setSelectionRange(caret, caret);
+			input.focus();
 			var text = input.value
 			var s1 = text.substring(0,caret-1);
 			var s2 = text.substring(caret)
 			console.log('caret', caret , s1 , s2)
 			input.value = s1+s2;
-			caret = 0
+			caret -= 1
+			input.setSelectionRange(caret,caret)
+			
 		}
 		else{
 		$('#phone').val($("#phone").val().slice(0, -1));}
