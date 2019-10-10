@@ -173,8 +173,6 @@
 			sanitize : false,
 			trigger : 'click',
 			content : function() {
-				
-			//$('#dialer_view').appendTo($('#dialer_view').clone().find('input').attr('id','phone1'))
 				var a = $('#dialer_view').clone()
 				a.find('#phone').attr('id','phone1')
 				a.find('.myClick').removeClass('myClick').addClass('popoverClick')
@@ -198,8 +196,6 @@
 				var formattedText = $.fn.format($('#phone1').val())
 				console.log("value here : ", formattedText);
 				$('#phone1').val(formattedText);
-				/* $('#phone').val() = oldVal; */
-
 			}
 		});
 		$.fn.validator = function(value) {
@@ -229,7 +225,6 @@
 			console.log(input.selectionStart, input.selectionEnd)
 		});
 		$(".deleteClick").on('click' , function(e){
-//			caret = e.target.selectionStart;
 			console.log("caret",caret);
 			var input = document.getElementById('phone1')
 			
@@ -245,21 +240,13 @@
 			console.log(num);
 			
 			if ($('#phone1').val().length < 14) {
-
-//				$('#phone').val($('#phone').val() + num)
 				if (caret != 0){
 					input.value += num;
 					var text = input.value
-//					console.log("content" , text)
-//					console.log("caret :", caret)
-//					console.log("substring", text.substring(0 ,caret) )
 					var s1 = text.substring(0 ,caret);
 					var s2 = text.substring(caret);
-//					console.log('s1',s1,'s2',s2)
 					input.value = s1 + num + s2;
 					input.value = input.value.slice(0,-1)
-					
-//					console.log('new value', input.value );
 					caret += 1
 					input.setSelectionRange(caret, caret)
 				}
@@ -272,16 +259,12 @@
 		});
 
 		$(".deleteClick").click(function() {
-			
-			/* console.log('button clicked'); */
 			if (caret != 0){
-				
 				var input = document.getElementById('phone1')
 				input.focus();
 				var text = input.value
 				var s1 = text.substring(0,caret-1);
 				var s2 = text.substring(caret)
-//				console.log('caret', caret , s1 , s2)
 				input.value = s1+s2;
 				caret -= 1;
 				input.setSelectionRange(caret,caret)
@@ -292,16 +275,14 @@
 		});
 
 		$("#phone1").on("keypress keyup blur", function(e) {
-
 			$(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
-			if ((e.which < 48 || e.which > 57)) {
+			if ((e.which < 48 || e.which > 57) && (e.key != '+' && e.key != '*' && e.key != '#' )) {
 				e.preventDefault();
 			}
 		});
 		
 		
 	});
-				
 				return a.html();
 			}
 		});

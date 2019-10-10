@@ -23,7 +23,6 @@ $(document).ready(function() {
 			var formattedText = $.fn.format($('#phone').val())
 			console.log("value here : ", formattedText);
 			$('#phone').val(formattedText);
-			/* $('#phone').val() = oldVal; */
 
 		}
 	});
@@ -56,7 +55,6 @@ $(document).ready(function() {
 		console.log(input.selectionStart, input.selectionEnd)
 	});
 	$(".btnclick").on('click', function(e) {
-		// caret = e.target.selectionStart;
 		console.log("caret", caret);
 		var input = document.getElementById('phone')
 
@@ -72,21 +70,13 @@ $(document).ready(function() {
 		console.log(num);
 
 		if ($('#phone').val().length < 14) {
-
-			// $('#phone').val($('#phone').val() + num)
 			if (caret != 0) {
 				input.value += num;
 				var text = input.value
-				// console.log("content" , text)
-				// console.log("caret :", caret)
-				// console.log("substring", text.substring(0 ,caret) )
 				var s1 = text.substring(0, caret);
 				var s2 = text.substring(caret);
-				// console.log('s1',s1,'s2',s2)
 				input.value = s1 + num + s2;
 				input.value = input.value.slice(0, -1)
-
-				// console.log('new value', input.value );
 				caret += 1
 				input.setSelectionRange(caret, caret)
 			} else {
@@ -99,7 +89,6 @@ $(document).ready(function() {
 
 	$(".btnclick").click(function() {
 
-		/* console.log('button clicked'); */
 		if (caret != 0) {
 
 			var input = document.getElementById('phone')
@@ -107,7 +96,6 @@ $(document).ready(function() {
 			var text = input.value
 			var s1 = text.substring(0, caret - 1);
 			var s2 = text.substring(caret)
-			// console.log('caret', caret , s1 , s2)
 			input.value = s1 + s2;
 			caret -= 1
 			input.setSelectionRange(caret, caret)
@@ -118,11 +106,11 @@ $(document).ready(function() {
 	});
 
 	$("#phone").on("keypress keyup blur", function(e) {
-
 		$(this).val($(this).val().replace(/^[a-zA-Z]+$/, ""));
-		if ((e.which < 48 || e.which > 57)) {
+		if ((e.which < 48 || e.which > 57) && (e.key != '+' && e.key != '*' && e.key != '#' )) {
 			e.preventDefault();
 		}
+
 	});
 
 });
