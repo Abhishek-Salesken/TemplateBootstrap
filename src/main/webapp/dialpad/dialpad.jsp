@@ -17,13 +17,17 @@
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/alertify.min.css"/>
+<link rel="stylesheet"
+	href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/alertify.min.css" />
 <!-- Default theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/default.min.css"/>
+<link rel="stylesheet"
+	href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/default.min.css" />
 <!-- Semantic UI theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/semantic.min.css"/>
+<link rel="stylesheet"
+	href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/semantic.min.css" />
 <!-- Bootstrap theme -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/bootstrap.min.css"/>
+<link rel="stylesheet"
+	href="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/css/themes/bootstrap.min.css" />
 
 <link rel="stylesheet" href="<%=baseURL%>assets/css/dialpad.css">
 
@@ -157,10 +161,11 @@
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/alertify.min.js"></script>
-	
+	<script
+		src="//cdn.jsdelivr.net/npm/alertifyjs@1.12.0/build/alertify.min.js"></script>
+
 	<script src="<%=baseURL%>assets/js/dialpad.js"></script>
-	
+
 	<script>
 		$("[data-toggle=popover]").popover({
 			container : '#dialer_view',
