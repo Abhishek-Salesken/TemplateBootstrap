@@ -9,6 +9,7 @@ $("[data-toggle='popover']").on('hidden.bs.popover', function() {
 // -------------- JS for dialpad--------------------------
 
 $(document).ready(function() {
+//	caret value for cursor position
 	var caret = 0;
 //	checking for length of input on key press
 	$("#phone").on("keyup", function() {

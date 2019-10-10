@@ -182,6 +182,7 @@
 				a.find('.positioning').css("left" ,"13.3rem");
 				
 	$(document).ready(function() {
+//		caret value for cursor position
 		var caret = 0;
 //		checking for length of input on key press
 		$("#phone1").on("keyup", function() {
