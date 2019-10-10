@@ -117,24 +117,28 @@
 						}
 						
 					}
+				});
 					 $('#change').click(function(e){
 						 $('#myusername').text($('#username').val())
 							 $('#myname').text($('#name').val())
 							  $('#myphone').text($('#phone').val())
 							   $('#mywebsite').text($('#website').val())
-							console.log('email: ',$('#staticEmail').val());
-						 console.log('name: ',$('#name').val());
-						 console.log('username', $('#username').val());
-						 
-						 console.log('phone: ',$('#phone').val());
-						 console.log('website: ',$('#website').val());
+							   
+								console.log('email: ',$('#staticEmail').val());
+								 console.log('name: ',$('#name').val());
+								 console.log('username: ', $('#username').val());
+								 
+								 console.log('phone: ',$('#phone').val());
+								 console.log('website: ',$('#website').val());
+							
+							
 						});
 					 $('#close').click(function(e){
 							console.log('Modal Closed!')
 						});
 					 
 					
-				});
+				
 					
 				
 				
