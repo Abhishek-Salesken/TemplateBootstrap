@@ -42,41 +42,46 @@
 							<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
 							<div class="col-sm-10">
 								<input type="text" readonly class="form-control-plaintext"
-									id="staticEmail">
+									name="email" id="staticEmail">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="name" class="col-sm-2 col-form-label">Name</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="name">
+								<input type="text" required="required" name="Name"
+									class="form-control" id="name">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="username" class="col-sm-2 col-form-label">Username</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="username">
+								<input type="text" required="required" name="Username"
+									class="form-control" id="username">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="phone" class="col-sm-2 col-form-label">Phone</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="phone">
+								<input type="text" required="required" name="Phone"
+									class="form-control" id="phone">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="website" class="col-sm-2 col-form-label">Website</label>
 							<div class="col-sm-10">
-								<input type="text" class="form-control" id="website">
+								<input type="text" required="required" name="Webiste"
+									class="form-control" id="website">
 							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" id="close" class="btn btn-secondary"
+								data-dismiss="modal">Close</button>
+							<button type="button" id="change" class="btn btn-primary">Save
+								changes</button>
 						</div>
 					</form>
 				</div>
-				<div class="modal-footer">
-					<button type="button" id="close" class="btn btn-secondary"
-						data-dismiss="modal">Close</button>
-					<button type="button" id="change" class="btn btn-primary">Save
-						changes</button>
-				</div>
+
 			</div>
 		</div>
 	</div>
@@ -86,12 +91,12 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script>
 		 $(document).ready(function() {
-			  $.get( "https://jsonplaceholder.typicode.com/users", function( data ) {
+			   $.get( "https://jsonplaceholder.typicode.com/users", function( data ) {
 				 console.log(data);
 				 localStorage.setItem("mydata",JSON.stringify(data));
 
 				 
-				});  
+				});   
 				
 		/* 		console.log(localStorage.getItem('mydata')); */
 		var data =JSON.parse(localStorage.getItem('mydata'));
@@ -119,30 +124,34 @@
 					}
 				});
 					 $('#change').click(function(e){
-						 $('#myusername').text($('#username').val())
-							 $('#myname').text($('#name').val())
-							  $('#myphone').text($('#phone').val())
-							   $('#mywebsite').text($('#website').val())
-							   
-								console.log('email: ',$('#staticEmail').val());
-								 console.log('name: ',$('#name').val());
-								 console.log('username: ', $('#username').val());
-								 
-								 console.log('phone: ',$('#phone').val());
-								 console.log('website: ',$('#website').val());
-							
-							
+						 var a = $('#myform').serializeArray();
+						 var empty = false;
+						 /* console.log($('#myform').serializeArray() , typeof(a)); */
+						 for (iter of a){
+							 if (iter.value.length != 0){
+							 }
+							 else{
+								 empty = true
+								 alert("Value for "+iter.name+' is empty!')
+								 break;
+							 }
+						 }
+						 if(empty == false){
+							 $('#myusername').text(a[2].value)
+							 $('#myname').text(a[1].value)
+							  $('#myphone').text(a[3].value)
+							   $('#mywebsite').text(a[4].value) 
+						 }
 						});
 					 $('#close').click(function(e){
 							console.log('Modal Closed!')
 						});
-					 
-					
-				
-					
-				
-				
-				
+					var postdata =   [{"id":11,"name":"Clementina3DuBuque","username":"Moriah.Sfgfgfgtanton","email":"Rey.Padberg@kggarina.biz","address":{"street":"KgfattieTurnpike","suite":"Suitefgf198","city":"Lebfgsackbury","zipcode":"31428-2261","geo":{"lat":"-38.2386","lng":"57.2232"}},"phone":"024-648-3804","website":"amdfdfbrose.net","company":{"name":"HoegerLLC","catchPhrase":"Centralizedempoweringtask-force","bs":"targetend-to-endmodels"}}]
+					console.log(typeof(postdata))
+					  $.post( "https://jsonplaceholder.typicode.com/users", postdata).done(function(postdata){
+						  console.log(postdata)
+						alert('Data Loaded! '+postdata)
+					});
 				/* var result = Object.keys(jj).map(function(key) {
 					  return [jj[key]];
 					});
