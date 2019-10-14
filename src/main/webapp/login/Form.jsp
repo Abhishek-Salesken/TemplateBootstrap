@@ -32,12 +32,13 @@
 						<label for="email">Email address</label> <input type="email"
 							class="form-control" id="email" aria-describedby="emailHelp"
 							placeholder="Enter email" name="email">
-
+						<div class="invalid-feedback">Please Enter Valid email.</div>
 					</div>
 					<div class="form-group">
 						<label for="password">Password</label> <input type="password"
 							class="form-control" id="password" placeholder="Password"
 							name="password">
+						<div class="invalid-feedback">Please enter password.</div>
 					</div>
 					<div class="form-group">
 						<select class="custom-select" required>
@@ -46,28 +47,28 @@
 							<option value="2">Two</option>
 							<option value="3">Three</option>
 						</select>
-					
+						<div class="invalid-feedback">Please select option.</div>
 					</div>
 					<div class="custom-file">
 						<input type="file" class="custom-file-input"
 							id="validatedCustomFile" name="customfile"> <label
 							class="custom-file-label" for="validatedCustomFile">Choose
 							file...</label>
-
+						<div class="invalid-feedback">Please select file.</div>
 					</div>
 					<div class="form-group">
 						<label for="message">Message</label>
-						<textarea id="message" rows="8" class="form-control"
+						<textarea id="message" rows="5" class="form-control"
 							placeholder="The message you want to send to us."
 							name="text_area"></textarea>
-		
+						<div class="invalid-feedback">Please write comment.</div>
 					</div>
 					<div class="form-group form-check">
 						<input type="checkbox" class="form-check-input" id="check_box[]"
 							name="check_box[]"> <label class="form-check-label"
 							for="check_box[]">Check me out</label>
 					</div>
-					<div class="form-group">
+					<div class="form-group" id="multipleselect">
 						<label class="control-label" for="mycheckbox">Multiple
 							Checkbox</label>
 						<div class="form-check">
@@ -90,11 +91,18 @@
 								name="mycheckbox[]" id="mycheckbox[]" value="option1"
 								aria-label="...">
 						</div>
+						
 					</div>
-					<div class="form-group">
-						<label><input type='radio' name='radio' />Radio1</label> <label><input
-							type='radio' name='radio' />Radio2</label>
-
+					<div class="form-group" id="radio">
+					<label>radio Button</label>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="radio"
+								id="blankCheckbox" aria-label="..." name="radio">
+						</div>
+						<div class="form-check">
+							<input class="form-check-input position-static" type="radio"
+								id="blankRadio1" aria-label="..." name="radio">
+						</div>
 					</div>
 
 					<button type="submit" class="btn btn-primary ">Submit</button>
@@ -119,7 +127,8 @@
 			$('#my-form').validate({
 				errorPlacement : function(error, element) {
 					error.addClass('invalid-feedback');
-					element.closest('.form-group ').append(error);
+			 	element.closest('#multipleselect').append(error); 
+			 	element.closest('#radio').append(error); 
 				},
 				highlight : function(element, errorClass, validClass) {
 					$(element).addClass('is-invalid');
@@ -147,7 +156,7 @@
 						required : true
 					},
 					'mycheckbox[]' : {
-						minlength : 2,
+						minlength:2,
 						required : true
 					},
 					radio : {
@@ -157,12 +166,13 @@
 						required : true
 					}
 				},
-				 messages : {
-					'check_box[]' : {
-						required : "You must select check  box"
-					},
+				messages : {
 					'mycheckbox[]' : {
-						required : "You must select atleast 2 check  box"
+						required : "You must select atleast 2 check  box",
+						minlength: "Check  more than {0} boxes"	
+					},
+					radio : {
+						required : "choose one"
 					}
 				}
 			});
