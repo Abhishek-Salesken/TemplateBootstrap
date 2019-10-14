@@ -11,20 +11,66 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
+<!-- Links to Stylesheet -->
 <link rel="stylesheet" href="<%=baseURL%>assets/css/bootstrap.min.css">
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/font-awesome.min.css">
 <link rel="stylesheet"
 	href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/sweetalert.css">
+<style>
+select {
+	width: 150px;
+	height: 40px;
+}
+</style>
 </head>
 <body>
+	<!-- Container starts -->
 	<div class="container pt-5">
 		<!-- Example row of columns -->
-		<div class="row" id="append"></div>
-	</div>
+		<div class="row py-4">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Home</a></li>
+					<li class="breadcrumb-item active" aria-current="page">Home</li>
+				</ol>
+			</nav>
+		</div>
 
-	<!-- Modal -->
+		<div class="row py-4">
+			<div class="col">
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item"><a class="nav-link active" id="home-tab"
+						data-toggle="tab" href="#home" role="tab" aria-controls="home"
+						aria-selected="true">Home</a></li>
+					<li class="nav-item"><a class="nav-link" id="profile-tab"
+						data-toggle="tab" href="#profile" role="tab"
+						aria-controls="profile" aria-selected="false">Profile</a></li>
+					<li class="nav-item"><a class="nav-link" id="contact-tab"
+						data-toggle="tab" href="#contact" role="tab"
+						aria-controls="contact" aria-selected="false">Contact</a></li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div class="tab-pane fade show active" id="home" role="tabpanel"
+						aria-labelledby="home-tab"><jsp:include
+							page="../tabcontent/home.jsp"></jsp:include></div>
+					<div class="tab-pane fade" id="profile" role="tabpanel"
+						aria-labelledby="profile-tab"><jsp:include
+							page="../tabcontent/profile.jsp"></jsp:include></div>
+					<div class="tab-pane fade" id="contact" role="tabpanel"
+						aria-labelledby="contact-tab">.contact..</div>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<!-- Container ends -->
+
+
+	<!-- Modal Start-->
 	<div class="modal fade" id="mymodal" tabindex="-1" role="dialog"
 		aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
@@ -74,9 +120,9 @@
 							</div>
 						</div>
 						<div class="modal-footer">
-							<button type="submit" id="close" class="btn btn-secondary"
+							<button type="button" id="close" class="btn btn-secondary"
 								data-dismiss="modal">Close</button>
-							<button type="button" id="change" class="btn btn-primary">Save
+							<button type="submit" id="change" class="btn btn-primary">Save
 								changes</button>
 						</div>
 					</form>
@@ -85,79 +131,14 @@
 			</div>
 		</div>
 	</div>
+	<!-- Modal Ends -->
+
 
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<script>
-		 $(document).ready(function() {
-			   $.get( "https://jsonplaceholder.typicode.com/users", function( data ) {
-				 console.log(data);
-				 localStorage.setItem("mydata",JSON.stringify(data));
-
-				 
-				});   
-				
-		/* 		console.log(localStorage.getItem('mydata')); */
-		var data =JSON.parse(localStorage.getItem('mydata'));
-				console.log(data);
-		
-				
-				for (var obj of data){
-					var newDiv = '<div class="col-md-4"> <div class="card mb-4 shadow-sm"> <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> <div class="card-body"> <p class="card-text"><div>Name: <span id="myname">'+obj.name+'</span></div> <div>Username: <span id="myusername">'+obj.username+'</span></div> <div>Email: '+obj.email+'</div> <div>Phone: <span id="myphone">'+obj.phone+'</span></div> <div>Website: <span id="mywebsite">'+obj.website+'</span></div> <div>Company Name: '+obj.company["name"]+'</div> </p> <div class="d-flex justify-content-between align-items-center"> <div class="btn-group"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button> <button type="button" data-toggle="modal" class="edit btn btn-sm btn-outline-secondary" data-target="#mymodal" id="'+obj.id+'">Edit</button> </div> </div> </div> </div> </div>'
-					$('#append').append(newDiv)
-					console.log(''+obj.id+'')
-				}
-
-				$('.edit').click(function(){
-					/* console.log(typeof($(this).attr('id'))) */
-					 for (var obj of data){
-						if (obj.id.toString() == $(this).attr('id')){
-							$('#staticEmail').val(''+obj.email+'')
-							$('#name').val(''+obj.name+'')
-							$('#username').val(''+obj.username+'')
-							$('#phone').val(''+obj.phone+'')
-							$('#website').val(''+obj.website+'')
-							break;
-						}
-						
-					}
-				});
-					 $('#change').click(function(e){
-						 var a = $('#myform').serializeArray();
-						 var empty = false;
-						 /* console.log($('#myform').serializeArray() , typeof(a)); */
-						 for (iter of a){
-							 if (iter.value.length != 0){
-							 }
-							 else{
-								 empty = true
-								 alert("Value for "+iter.name+' is empty!')
-								 break;
-							 }
-						 }
-						 if(empty == false){
-							 $('#myusername').text(a[2].value)
-							 $('#myname').text(a[1].value)
-							  $('#myphone').text(a[3].value)
-							   $('#mywebsite').text(a[4].value) 
-						 }
-						});
-					 $('#close').click(function(e){
-							console.log('Modal Closed!')
-						});
-					var postdata =  [{"id":11,"name":"Clementina3DuBuque","username":"Moriah.Sfgfgfgtanton","email":"Rey.Padberg@kggarina.biz","address":{"street":"KgfattieTurnpike","suite":"Suitefgf198","city":"Lebfgsackbury","zipcode":"31428-2261","geo":{"lat":"-38.2386","lng":"57.2232"}},"phone":"024-648-3804","website":"amdfdfbrose.net","company":{"name":"HoegerLLC","catchPhrase":"Centralizedempoweringtask-force","bs":"targetend-to-endmodels"}}]
-					console.log(typeof(postdata))
-					  $.post( "https://jsonplaceholder.typicode.com/users", postdata).done(function(postdata){
-						  console.log(postdata)
-						alert('Data Loaded! '+postdata)
-					});
-				/* var result = Object.keys(jj).map(function(key) {
-					  return [jj[key]];
-					});
-				console.log(result) */
-		});
-		
-		</script>
+	<script src="<%=baseURL%>assets/js/hometab.js"></script>
+	<script src="<%=baseURL%>assets/js/sweetalert.js"></script>
+	<script src="<%=baseURL%>assets/js/profiletab.js"></script>
 </body>
 </html>
