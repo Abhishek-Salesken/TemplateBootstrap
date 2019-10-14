@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Form</title>
+<title>Form Test</title>
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -19,192 +19,83 @@
 <link rel="stylesheet"
 	href="https://jqueryvalidation.org/files/demo/css/cmxform.css">
 </head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-8 offset-sm-2">
-				<div class="border-bottom mb-4 mt-4 pb-2">
-					<div class="alert alert-info" role="alert">
-						<h6>
-							This demo shows how to integrate JQuery-validation and the
-							Bootstrap 4 framework.
-							</h4>
-							<ul>
-								<li><a href="https://getbootstrap.com/" class="alert-link">Bootstrap
-										home project</a>.</li>
-							</ul>
-					</div>
+<div class="container h-100">
+
+	<!-- --------------------- start of main row of page  ------------------------->
+	<div class="row align-items-center justify-content-center h-100">
+		<div class="border border-primaryr p-3 col-md-6">
+			<!-- --------------------- start of form tag  ------------------------->
+			<form class="was-validated">
+				<div class="custom-control mb-3">
+					<input type="email" class="custom-control-input"
+						id="customControlValidation3" name="radio-stacked" required>
 				</div>
 
-				<div class="card">
-					<div class="card-header">
-						<h6 class="card-text">
-							Simple Form
-							</h3>
-					</div>
-					<div class="card-body">
-						<form id="signupForm" method="post" class="form-horizontal"
-							action="">
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="firstname">First
-									name</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" id="firstname"
-										name="firstname" placeholder="First name" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="lastname">Last
-									name</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" id="lastname"
-										name="lastname" placeholder="Last name" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="username">Username</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" id="username"
-										name="username" placeholder="Username" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="email">Email</label>
-								<div class="col-sm-6">
-									<input type="text" class="form-control" id="email" name="email"
-										placeholder="Email" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="password">Password</label>
-								<div class="col-sm-6">
-									<input type="password" class="form-control" id="password"
-										name="password" placeholder="Password" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<label class="col-sm-4 col-form-label" for="confirm_password">Confirm
-									password</label>
-								<div class="col-sm-6">
-									<input type="password" class="form-control"
-										id="confirm_password" name="confirm_password"
-										placeholder="Confirm password" />
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<div class="col-sm-6 offset-sm-4">
-									<div class="form-check">
-										<input type="checkbox" id="agree" name="agree" value="agree"
-											class="form-check-input" /> <label class="form-check-label">Please
-											agree to our policy</label>
-									</div>
-								</div>
-							</div>
-
-							<div class="form-group row">
-								<div class="col-sm-9 offset-sm-4">
-									<button type="submit" class="btn btn-primary" name="signup"
-										value="Sign up">Sign up</button>
-								</div>
-							</div>
-						</form>
-					</div>
+				<div class="mb-3">
+					<label for="validationTextarea">Textarea</label>
+					<textarea class="form-control is-invalid" id="validationTextarea"
+						placeholder="Required example textarea" required></textarea>
+					<div class="invalid-feedback">Please enter a message in the
+						textarea.</div>
 				</div>
-			</div>
+
+				<div class="custom-control custom-checkbox mb-3">
+					<input type="checkbox" class="custom-control-input"
+						id="customControlValidation1" required> <label
+						class="custom-control-label" for="customControlValidation1">Check
+						this custom checkbox</label>
+					<div class="invalid-feedback">Example invalid feedback text</div>
+				</div>
+
+				<div class="custom-control custom-radio">
+					<input type="radio" class="custom-control-input"
+						id="customControlValidation2" name="radio-stacked" required>
+					<label class="custom-control-label" for="customControlValidation2">Toggle
+						this custom radio</label>
+				</div>
+				<div class="custom-control custom-radio mb-3">
+					<input type="radio" class="custom-control-input"
+						id="customControlValidation3" name="radio-stacked" required>
+					<label class="custom-control-label" for="customControlValidation3">Or
+						toggle this other custom radio</label>
+					<div class="invalid-feedback">More example invalid feedback
+						text</div>
+				</div>
+
+				<div class="form-group">
+					<select class="custom-select" required>
+						<option value="">Open this select menu</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+					<div class="invalid-feedback">Example invalid custom select
+						feedback</div>
+				</div>
+
+				<div class="custom-file">
+					<input type="file" class="custom-file-input"
+						id="validatedCustomFile" required> <label
+						class="custom-file-label" for="validatedCustomFile">Choose
+						file...</label>
+					<div class="invalid-feedback">Example invalid custom file
+						feedback</div>
+				</div>
+			</form>
+			<!-- --------------------- end of form tag  ------------------------->
+
 		</div>
+		<!--  end of main row of page  -->
 	</div>
-	<script type="text/javascript">
-		$.validator.setDefaults({
-			submitHandler : function() {
-				alert("submitted!");
-			}
-		});
-		$(document)
-				.ready(
-						function() {
-							$("#signupForm")
-									.validate(
-											{
-												rules : {
-													firstname : "required",
-													lastname : "required",
-													username : {
-														required : true,
-														minlength : 2
-													},
-													password : {
-														required : true,
-														minlength : 5
-													},
-													confirm_password : {
-														required : true,
-														minlength : 5,
-														equalTo : "#password"
-													},
-													email : {
-														required : true,
-														email : true
-													},
-													agree : "required"
-												},
-												messages : {
-													firstname : "Please enter your firstname",
-													lastname : "Please enter your lastname",
-													username : {
-														required : "Please enter a username",
-														minlength : "Your username must consist of at least 2 characters"
-													},
-													password : {
-														required : "Please provide a password",
-														minlength : "Your password must be at least 5 characters long"
-													},
-													confirm_password : {
-														required : "Please provide a password",
-														minlength : "Your password must be at least 5 characters long",
-														equalTo : "Please enter the same password as above"
-													},
-													email : "Please enter a valid email address",
-													agree : "Please accept our policy"
-												},
-												errorElement : "em",
-												errorPlacement : function(
-														error, element) {
-													// Add the `invalid-feedback` class to the error element
-													error
-															.addClass("invalid-feedback");
-													if (element.prop("type") === "checkbox") {
-														error
-																.insertAfter(element
-																		.next("label"));
-													} else {
-														error
-																.insertAfter(element);
-													}
-												},
-												highlight : function(element,
-														errorClass, validClass) {
-													$(element).addClass(
-															"is-invalid")
-															.removeClass(
-																	"is-valid");
-												},
-												unhighlight : function(element,
-														errorClass, validClass) {
-													$(element)
-															.addClass(
-																	"is-valid")
-															.removeClass(
-																	"is-invalid");
-												}
-											});
-						});
-	</script>
-</body>
+</div>
+<!--------------------------------------------- closing of container ------------------------------------------------------>
+
+<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+<script src="<%=baseURL%>assets/js/popper.min.js"></script>
+<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
+<script src="<%=baseURL%>assets/js/jquery.validate.js"></script>
+
+
 </body>
 </html>
