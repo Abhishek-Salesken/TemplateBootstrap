@@ -60,43 +60,50 @@
 	<script src="<%=baseURL%>assets/js/jquery-ui.min.js"></script>
 
 	<script>
-		$(document).ready(
-				function() {
-					$("#date").datepicker();
-					
-					$("#draggable").draggable({
-					
-						addClasses : false,
-						appendTo : "body",
-						//delay: 300 ,
-						disabled : false,
-						distance : 10,
-						//grid : [ 100, 20 ]
-						// helper: "clone"
+		$(document).ready(function() {
+			
+	// Start of Creating a draggable box using id: #draggable
+			$("#draggable").draggable({
 
-						opacity : 0.55,
-						revert : "invalid",
-						revertDuration : 2000,
-						scroll : false,
-						zIndex : 1
-						
-					});
-					
+				addClasses : false,
+				appendTo : "body",
+				//delay: 300 ,
+				disabled : false,
+				distance : 10,
+				//grid : [ 100, 20 ]
+				// helper: "clone"
+
+				opacity : 0.55,
+				revert : "invalid",
+				revertDuration :1000,
+				scroll : false,
+				zIndex : 1
+
+			});
+	// End of creating a draggable box using id: #draggable
+	
+	
+			var addClasses = $("#draggable").draggable("option", "addClasses");
+			var appendTo = $("#draggable").draggable("option", "appendTo");
+			console.log(addClasses, appendTo)
+			
+	// Start of creating a droppable box for the draggable component using id: #droppable
+			$("#droppable").droppable({
+				accept : "#draggable",
+				disabled : false,
 				
+				drop : function(event, ui) {
+					$(this).css("background-color", "green");
+					$(this).find("p").html("Box Dropped!");
+				}
+			});
+			// End of creating a droppable box for the draggable component using id: #droppable
+			
+			var accept = $("#droppable").droppable("option", "accept");
+			console.log(accept)
+			
 
-					var addClasses = $("#draggable").draggable("option",
-							"addClasses");
-					var appendTo = $("#draggable").draggable("option",
-							"appendTo");
-					console.log(addClasses, appendTo)
-					$("#droppable").droppable(
-							{
-								drop : function(event, ui) {
-									$(this).addClass("ui-state-highlight")
-											.find("p").html("Box Dropped!");
-								}
-							});
-				});
+		});
 	</script>
 
 
