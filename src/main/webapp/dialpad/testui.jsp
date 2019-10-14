@@ -31,7 +31,6 @@
 	height: 300px;
 	padding: 0.5em;
 	margin: 10px;
-	
 }
 </style>
 
@@ -57,15 +56,39 @@
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<%-- <script src="<%=baseURL%>assets/js/jquery.js"></script> --%>
+	<script src="<%=baseURL%>assets/js/jquery.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery-ui.min.js"></script>
 
 	<script>
 		$(document).ready(
 				function() {
 					$("#date").datepicker();
+					
+					$("#draggable").draggable({
+					
+						addClasses : false,
+						appendTo : "body",
+						//delay: 300 ,
+						disabled : false,
+						distance : 10,
+						//grid : [ 100, 20 ]
+						// helper: "clone"
 
-					$("#draggable").draggable();
+						opacity : 0.55,
+						revert : "invalid",
+						revertDuration : 2000,
+						scroll : false,
+						zIndex : 1
+						
+					});
+					
+				
+
+					var addClasses = $("#draggable").draggable("option",
+							"addClasses");
+					var appendTo = $("#draggable").draggable("option",
+							"appendTo");
+					console.log(addClasses, appendTo)
 					$("#droppable").droppable(
 							{
 								drop : function(event, ui) {
