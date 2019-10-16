@@ -169,7 +169,7 @@
 				messages : {
 					'mycheckbox[]' : {
 						required : "You must select atleast 2 check  box",
-						minlength: "Check  more than {0} boxes"	
+						minlength: "Check no more than {0} boxes"	
 					},
 					radio : {
 						required : "choose one"

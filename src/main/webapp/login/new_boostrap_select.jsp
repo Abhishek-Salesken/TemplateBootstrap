@@ -1,16 +1,26 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Date"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html lang="en" class="h-100">
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chosen</title>
+<meta name="description" content="">
+<title>Chosen Validation</title>
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
+	SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+	SimpleDateFormat incoming = new SimpleDateFormat("dd-MM-yyyy");
+	String incomingDate = request.getParameter("var") != null
+			? request.getParameter("var")
+			: sdf.format(new Date());
+	String today_date = sdf.format(new Date());
 %>
 <link href="<%=baseURL%>assets/css/chosen.css" rel="stylesheet" />
 <link rel="stylesheet" href="<%=baseURL%>assets/css/bootstrap.min.css">
@@ -20,6 +30,8 @@
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/jquery.multiselect.css">
 <link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css">
+<link rel="stylesheet"
 	href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
 
 <!-- https://developer.snapappointments.com/bootstrap-select/options/#sanitizer -->
@@ -27,11 +39,11 @@
 
 <style type="text/css">
 
-
 /* start of searchbox related css */
 .inner>.dropdown-menu>li:nth-child(even) {
 	background-color: #f9f9f9;
 }
+
 .bs-searchbox {
 	padding: 22px 22px;
 }
@@ -40,7 +52,6 @@
 	border-radius: 0px !important;
 }
 /* end of searchbox related css */
-
 .inner>.dropdown-menu>li {
 	border-bottom: 1px solid #cccccc;
 }
@@ -65,7 +76,6 @@
 	width: 100%;
 }
 
-
 /* Start of task_type drop-down css */
 .task_type ~ .dropdown-menu li {
 	border-bottom: none !important;
@@ -79,7 +89,7 @@
 	background-color: #eeeeee;
 }
 
- .task_type  ~ .dropdown-menu .dropdown-item>.fas {
+.task_type ~ .dropdown-menu .dropdown-item>.fas {
 	display: inline-block;
 	border-radius: 50%;
 	width: 25px;
@@ -129,18 +139,19 @@
 	background-color: #6297f6 !important;
 }
 
-.lighter_purple_color  {
+.lighter_purple_color {
 	background-color: #8665eb !important;
 }
 
-.task_type ~ .dropdown-toggle .fas{
-	
-    background-color: #dae0e5 !important;
+.task_type ~ .dropdown-toggle .fas {
+	background-color: #dae0e5 !important;
 }
 
 /*end of task type drop-down css */
 
-
+.has-error .help-block{
+color:#b94a48;
+}
 </style>
 </head>
 <body>
@@ -167,110 +178,11 @@
 							</button>
 						</div>
 						<div class="modal-body">
-							<form>
+							<form id="myform">
 								<div class="form-group">
 									<label for="lead_name" class="h5 f-14">Lead Name</label> <select
-										class=" myselectchoosen chosen-select " tabindex="4"
-										title="Choose Lead Name">
-
-
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Miriam
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Dersa
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Swerat
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">gerwea
-											fgfd</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Ftdref
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Ddgry
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Ddgry
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Vehement Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Miriam
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Dersa
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Swerat Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Swerat
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>gerwea Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">gerwea
-											fgfd</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Ftdref Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Ftdref
-											Franklin</option>
-										<option
-											data-content="<div class='row'>
-											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
-											  </div>">Ddgry
-											Franklin</option>
-									</select>
-								</div>
-								<div class="form-group">
-									<label for="task_name" class="h5 f-14">Task Name</label> <select
 										class=" myselectchoosen chosen-select" tabindex="4"
-										title="Choose Task Name" multiple>
+										title="Choose Lead Name" name="lead">
 
 
 										<option
@@ -280,7 +192,6 @@
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
 											Franklin</option>
-
 										<option
 											data-content="<div class='row'>
 											 <div class='col-md-4 f-14 font-weight-bold black'>Dersa  Capital Partners</div> 
@@ -308,6 +219,13 @@
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ftdref
+											Franklin</option>
+										<option
+											data-content="<div class='row'>
+											 <div class='col-md-4 f-14 font-weight-bold black'>Ddgry  Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Ddgry
 											Franklin</option>
 										<option
 											data-content="<div class='row'>
@@ -358,17 +276,14 @@
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Ddgry
 											Franklin</option>
-
 									</select>
 								</div>
-
-
 								<div class="form-row">
 									<div class="form-group col-md-6">
 										<label for="task_type">Task Type</label>
 										<div>
 											<select class="selectpicker w-100 task_type"
-												title="Select here">
+												title="Select here" name="task_type">
 												<option data-icon="fas fa-phone-square-alt tea_color"
 													class="">Call Task</option>
 												<option data-icon="fas fa-envelope-square tangerine_color">Email
@@ -376,14 +291,16 @@
 												<option data-icon="fas fa-desktop soft_blue_color">Webinar
 													Task</option>
 												<option
-													data-icon="fas fa-file-powerpoint lighter_purple_color">Presentation Tasks</option>
+													data-icon="fas fa-file-powerpoint lighter_purple_color">Presentation
+													Tasks</option>
 											</select>
 										</div>
 									</div>
 									<div class="form-group col-md-6">
 										<label for="task_by">Task By</label>
 										<div class="form-group">
-											<select class="selectpicker form-control">
+											<select class="selectpicker form-control" name="task_by"
+												title="select here">
 												<option>Mustard</option>
 												<option>Ketchup</option>
 												<option>Relish</option>
@@ -391,7 +308,26 @@
 										</div>
 									</div>
 								</div>
-								
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<div class="f-14 fw-500 pb-1">Date</div>
+										<div class="custom-modal-input w-100 form-group d-flex mr-2">
+											<input class="f-14  removefocus w-100 pl-2"
+												placeholder="Select here" id="event_date"
+												value="<%=today_date%>" name="date"> <img
+												src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">
+										</div>
+									</div>
+									<div class="form-group col-md-6">
+										<div class="f-14 fw-500 pb-1">Time</div>
+										<div class="custom-modal-input form-group w-100 d-flex mr-2">
+											<input class="f-14  removefocus w-100 pl-2 timepicker"
+												type="text" name="timepicker" placeholder="Select here"
+												name="time"> <img
+												src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">
+										</div>
+									</div>
+								</div>
 							</form>
 						</div>
 						<div class="modal-footer">
@@ -399,7 +335,7 @@
 								class="btn f-14 g-transparent theme_color  border-0"
 								data-dismiss="modal">Reset</button>
 							<button type="button"
-								class="btn theme_bg_color btn-primary border_shadow_color rounded-0 border_color f-14 savechanges1">Save
+								class="btn theme_bg_color modal-submit-btn btn-primary border_shadow_color rounded-0 border_color f-14 savechanges">Save
 								changes</button>
 						</div>
 					</div>
@@ -415,21 +351,60 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script src="<%=baseURL%>assets/js/select2.min.js"></script>
 	<script src="<%=baseURL%>assets/js/chosen.jquery.js"></script>
-
-	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script
-		src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/i18n/defaults-*.min.js"></script>
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.js"></script>
+	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script>
-		$(document).ready(function() {
-			$('.chosen-select').selectpicker({
-				width : '100%',
-				sanitize : false,
-				showContent : false,
-				liveSearch : true,
-				virtualScroll : '600'
-			});
-		});
-							
+		$(document)
+				.ready(
+						function() {
+							$('.chosen-select').selectpicker({
+								width : '100%',
+								sanitize : false,
+								showContent : false,
+								liveSearch : true,
+								virtualScroll : '600'
+							});
+
+							$('#myform')
+									
+									.bootstrapValidator(
+											{
+												excluded : ':disabled',
+												feedbackIcons : {
+													valid : 'glyphicon glyphicon-ok',
+													invalid : 'glyphicon glyphicon-remove',
+													validating : 'glyphicon glyphicon-refresh'
+												},
+												fields : {
+													task_by : {
+														validators : {
+															notEmpty : {
+																message : 'Please select task by.'
+															}
+														}
+													},
+													task_type : {
+														validators : {
+															notEmpty : {
+																message : 'Please select task type.'
+															}
+														}
+													},
+													lead : {
+														validators : {
+															notEmpty : {
+																message : 'Please select Lead Name.'
+															}
+														}
+													}
+												}
+											});
+							$(".modal-submit-btn").click(function() {
+								$('#myform').submit();
+							});
+
+						});
 	</script>
 </body>
 </html>
