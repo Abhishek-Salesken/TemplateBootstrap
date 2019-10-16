@@ -26,6 +26,7 @@ select {
 }
 
 .previous {
+
 	position: absolute;
 	top: 0px;
 	right: 84px;
