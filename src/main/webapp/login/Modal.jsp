@@ -38,49 +38,43 @@
 </head>
 <body>
 	<!--------------------------------------------- Opening of container ------------------------------------------------------>
-	<div class="container h-100">
-		<!--  start of main row of page  -->
-		<div class="row  justify-content-center">
-			<form id="bootstrapSelectForm" method="post" class="form-horizontal">
-				<div class="form-group">
-					<label class=" control-label">Favorite color</label>
-					<div class=" selectContainer">
-						<select name="colors" class="form-control selectpicker" multiple
-							title="Choose 2-4 colors">
-							<option value="black">Black</option>
-							<option value="blue">Blue</option>
-							<option value="green">Green</option>
-							<option value="orange">Orange</option>
-							<option value="red">Red</option>
-							<option value="yellow">Yellow</option>
-							<option value="white">White</option>
-						</select>
-					</div>
-				</div>
+	<button class="btn btn-default" data-toggle="modal" data-target="#loginModal">Login</button>
 
-				<div class="form-group">
-					<label class=" control-label selectpicker">Language</label>
-					<div class="selectContainer">
-						<select name="language" class="form-control">
-							<option value=""></option>
-							<option value="english">English</option>
-							<option value="french">French</option>
-							<option value="german">German</option>
-							<option value="other">Other</option>
-						</select>
-					</div>
-				</div>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
 
-				<div class="form-group">
-					<div class=" col-sm-offset-3">
-						<button type="submit" class="btn btn-default">Validate</button>
-					</div>
-				</div>
-			</form>
-		
+            <div class="modal-body">
+                <!-- The form is placed inside the body of modal -->
+                <form id="loginForm" method="post" class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Username</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" name="username" />
+                        </div>
+                    </div>
 
-		</div>
-	</div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Password</label>
+                        <div class="col-sm-5">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-5 col-sm-offset-3">
+                            <button type="submit" class="btn btn-default">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 	<!--------------------------------------------- closing of container ------------------------------------------------------>
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
@@ -90,49 +84,7 @@
 		src="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
 	<script type="text/javascript">
 	$(document).ready(function() {
-	    $('#bootstrapSelectForm')
-	        .find('[name="colors"]')
-	            .selectpicker()
-	            .change(function(e) {
-	                // revalidate the color when it is changed
-	                $('#bootstrapSelectForm').bootstrapValidator('revalidateField', 'colors');
-	            })
-	            .end()
-	        .find('[name="language"]')
-	            .selectpicker()
-	            .change(function(e) {
-	                // revalidate the language when it is changed
-	                $('#bootstrapSelectForm').bootstrapValidator('revalidateField', 'language');
-	            })
-	            .end()
-	        .bootstrapValidator({
-	            excluded: ':disabled',
-	            feedbackIcons: {
-	                valid: 'glyphicon glyphicon-ok',
-	                invalid: 'glyphicon glyphicon-remove',
-	                validating: 'glyphicon glyphicon-refresh'
-	            },
-	            fields: {
-	                colors: {
-	                    validators: {
-	                        callback: {
-	                            message: 'Please choose 2-4 colors you like most',
-	                            callback: function(value, validator) {
-	                                // Get the selected options
-	                                var options = validator.getFieldElements('colors').val();
-	                                return (options != null && options.length >= 2 && options.length <= 4);
-	                            }
-	                        }
-	                    }
-	                },
-	                language: {
-	                    validators: {
-	                        notEmpty: {
-	                            message: 'Please select your native language.'
-	                        }
-	                    }
-	                }
-	            }
+	    
 	        });
 	});
 	</script>
